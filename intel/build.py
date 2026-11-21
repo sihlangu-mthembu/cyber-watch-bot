@@ -140,6 +140,11 @@ def esc(s):
     return html.escape(str(s or ""), quote=False)
 
 
+def short_desc(d, n=70):
+    d = re.sub(r"\s+", " ", d or "").strip()
+    return d if len(d) <= n else d[:n].rsplit(" ", 1)[0] + "…"
+
+
 def pct(x):
     return f"{x * 100:.0f}%" if x >= 0.01 else "<1%"
 
@@ -182,7 +187,8 @@ def digest_html(now, kev, kev_recent, critical, news, epss, ai, errors):
     L.append(f"<b>🆕 New critical CVEs (48h): {len(critical)}</b>")
     for c in critical[:3]:
         e = epss.get(c["cve"], {}).get("epss", 0)
-        L.append(f"• <code>{esc(c['cve'])}</code> {esc(c['vendor'] or '')} {esc(c['product'] or '')} · CVSS {(c.get('cvss') or {}).get('score')} · EPSS {pct(e)}")
+        what = f"{c['vendor']} {c['product']}".strip() or short_desc(c["desc"])
+        L.append(f"• <code>{esc(c['cve'])}</code> {esc(what)} · CVSS {(c.get('cvss') or {}).get('score')} · EPSS {pct(e)}")
     L.append("")
     if ai and ai.get("threats"):
         L.append("<b>📰 Threat picture</b>")
@@ -193,7 +199,8 @@ def digest_html(now, kev, kev_recent, critical, news, epss, ai, errors):
         L.append("<b>🔗 Read</b>")
         L += [f"• <a href=\"{esc(n['link'])}\">{esc(n['title'])}</a> ({esc(n['source'])})" for n in top_news]
         L.append("")
-    sa = [n for n in news if "South Africa" in n["tags"]][:3]
+    incident = {"Breach", "Ransomware", "Exploited", "Nation-state"}
+    sa = [n for n in news if "South Africa" in n["tags"] and incident & set(n["tags"])][:3]
     if sa or (ai and ai.get("sa_angle")):
         L.append("<b>🇿🇦 South Africa</b>")
         L += [f"• {esc(t)}" for t in (ai or {}).get("sa_angle", [])]
@@ -210,8 +217,8 @@ def digest_html(now, kev, kev_recent, critical, news, epss, ai, errors):
     if errors:
         L.append(f"<i>Data issues: {esc('; '.join(errors))[:300]}</i>")
     L.append("Ask me: /cve CVE-ID · /vendor fortinet · /kev · /news, or any question.")
-    text = "\n".join(L)
-    return text[:4000]
+    # each line is self-contained HTML, so the bot can split long digests on line breaks safely
+    return "\n".join(L)
 
 
 # ------------------------------------------------------------------ sample data
