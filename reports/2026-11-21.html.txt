@@ -14,9 +14,9 @@
   …and 4 more (/kev)
 
 <b>🆕 New critical CVEs (48h): 3</b>
-• <code>CVE-2026-120539</code>   · CVSS 9.8 · EPSS 2%
-• <code>CVE-2026-133500</code>   · CVSS 8.5 · EPSS 3%
-• <code>CVE-2026-133680</code>   · CVSS 8.6 · EPSS 2%
+• <code>CVE-2026-120539</code> The Restrictions for BuddyPress plugin for WordPress is vulnerable to… · CVSS 9.8 · EPSS 2%
+• <code>CVE-2026-133500</code> A vulnerability was identified in Gladys Assistant up to 4.71.0. This… · CVSS 8.5 · EPSS 3%
+• <code>CVE-2026-133680</code> A vulnerability was found in D-Link DCS-935L 1.10.01. This affects… · CVSS 8.6 · EPSS 2%
 
 <b>🔗 Read</b>
 • <a href="https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html">Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge</a> (The Hacker News)
@@ -26,7 +26,6 @@
 
 <b>🇿🇦 South Africa</b>
 • <a href="https://news.google.com/rss/articles/CBMi6wFBVV95cUxQc3J1cUt6czRwMm1JemFUUzFEQnRKX3lVcE5FZEd1VnlFbEV0T2p5ek4xellXNE56bEMycjlpS2oyVzlkOVlFY1BoRmFMdTAyQnIwc3NVbmhELXFmWXlaTnhjLXlqRkszeEstWWJtaGZPVTNJU0d3ZGNQMGtLd2x3dEgzYmdnaGg5cmdwNXgzZDdXMVFKYVVqbHlvVV9BUGRwaFdJZUx1TmpWQ3ZjLTNPSzJXTWo4NmtJdWg2ZUl6SjQ5NG42bzRVczk2RkFYbzFack5EUHZwamRvWXcydGp0UHVtSXFBb1RKTkVF?oc=5">Major South African financial technology company suffers data breach that involved personal information</a> (MyBroadband)
-• <a href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxPSVZjQldRWmRJbGxHUDEwSU9Sakc1czVMb000em51ZVhEUFVkNmlWcktWb2ZuT0ZTcUJEbGNfWEE2eWZpY1ZSTlhaNF9oYmVTRTdWZmE1Y1Q1MlM2bE9PeXB5bUQySWRyT0VOWlVwUnYxU0R0NnJVZmZkXzJaWXVTTld6TmZnRnVHeGdmZDgya0FINDZjSVJLNm1oWi1OTmZNZWJrTE9rM3ZRcUVzNkZVUW16RVVqMlB4TDRiRGpzNkNvOFUybTdiT0xNRnRQeENFaUswcjlGcVphUQ?oc=5">Bayobab and Google's Firebase launch API-based number authentication</a> (Developing Telecoms)
 • <a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxPU3ZPV1I1VU9mNUczYlRYbFAzc2JPazdQcVRBNm1WTkF2T2xIaVpzNURvN3d0QVMxZTFOdUg2ZEdhbUhwLUNJZkRiYTludV9zRzdSeC1XWWFDWEM1dzB5TWl6a1BlVDg5X1VlQzRqcjdHNDgta2pEQTVIMU5QVmhoV2ZfeE1Lc3BZOFVob0hnOUdWYkh4R2w3Z0pleXcxNTBKd05EaTFLZWFIMHN0eWYtVXVQb1hxT0dZWUlnOEp0OG9BUHhaX2Z5RWRB?oc=5">Travelstart data breach exposes customer details and flight ticket information</a> (MyBroadband)
 
 <i>Rule-based digest. Sources: CISA KEV v2026.11.20, NVD, FIRST EPSS, security news. ⭐ = on your vendor watchlist.</i>
