@@ -1,0 +1,16 @@
+name = "cyber-watch-bot"
+main = "src/index.js"
+compatibility_date = "2026-11-01"
+workers_dev = true
+
+[vars]
+DATA_BASE = "https://raw.githubusercontent.com/sihlangu-mthembu/cyber-watch-bot/main/data"
+AI_MODEL = "openai/gpt-oss-120b"
+
+# id is filled in by the deploy workflow (it creates the namespace on first run)
+[[kv_namespaces]]
+binding = "STATE"
+id = "__KV_ID__"
+
+[observability]
+enabled = true

@@ -1,0 +1,111 @@
+name: Deploy bot
+
+on:
+  push:
+    branches: [main]
+    paths: ["worker/**", ".github/workflows/deploy.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: write   # saves the bot's URL to data/worker.json
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: worker
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: worker/package-lock.json
+
+      - run: npm ci
+
+      - name: Tests (offline, stubbed APIs)
+        run: npm test
+
+      - name: Check secrets are set
+        run: |
+          missing=""
+          for s in CLOUDFLARE_API_TOKEN CLOUDFLARE_ACCOUNT_ID TELEGRAM_BOT_TOKEN GROQ_API_KEY; do
+            [ -n "${!s}" ] || missing="$missing $s"
+          done
+          if [ -n "$missing" ]; then echo "::error::Missing repository secrets:$missing"; exit 1; fi
+
+      - name: Storage (KV namespace, created on first run)
+        run: |
+          find_id() {
+            npx wrangler kv namespace list 2>/dev/null > ns.txt || true
+            node -e '
+              const t = require("fs").readFileSync("ns.txt", "utf8");
+              const i = t.indexOf("[");
+              const list = i < 0 ? [] : JSON.parse(t.slice(i, t.lastIndexOf("]") + 1));
+              const ns = list.find(n => n.title === "cyber-watch-state" || n.title.endsWith("-cyber-watch-state"));
+              process.stdout.write(ns ? ns.id : "");'
+          }
+          id=$(find_id)
+          if [ -z "$id" ]; then
+            npx wrangler kv namespace create cyber-watch-state
+            id=$(find_id)
+          fi
+          [ -n "$id" ] || { echo "::error::Could not create or find the KV namespace"; cat ns.txt; exit 1; }
+          sed -i "s/__KV_ID__/$id/" wrangler.toml
+          echo "KV namespace ready"
+
+      - name: Deploy to Cloudflare Workers
+        id: deploy
+        run: |
+          npx wrangler deploy 2>&1 | tee deploy.log
+          url=$(grep -oE 'https://[a-zA-Z0-9.-]+\.workers\.dev' deploy.log | head -1)
+          [ -n "$url" ] || { echo "::error::No workers.dev URL in deploy output. Open Workers & Pages in the Cloudflare dashboard once to create your workers.dev subdomain."; exit 1; }
+          echo "url=$url" >> "$GITHUB_OUTPUT"
+
+      - name: Worker secrets
+        run: |
+          printf '%s' "$TELEGRAM_BOT_TOKEN" | npx wrangler secret put TELEGRAM_BOT_TOKEN
+          printf '%s' "$GROQ_API_KEY" | npx wrangler secret put GROQ_API_KEY
+
+      - name: Connect Telegram (webhook + commands) and health check
+        env:
+          URL: ${{ steps.deploy.outputs.url }}
+        run: |
+          auth=$(printf 'setup:%s' "$TELEGRAM_BOT_TOKEN" | sha256sum | cut -d' ' -f1)
+          for i in 1 2 3 4 5 6; do
+            sleep 10
+            if curl -fsS -X POST "$URL/setup" -H "Authorization: Bearer $auth" -o setup.json; then break; fi
+          done
+          cat setup.json; echo
+          curl -fsS "$URL/health" -o health.json || echo '{}' > health.json
+          cat health.json; echo
+          node -e '
+            const fs = require("fs");
+            const out = { url: process.env.URL, deployed_at: new Date().toISOString(),
+              setup: JSON.parse(fs.readFileSync("setup.json", "utf8") || "{}"),
+              health: JSON.parse(fs.readFileSync("health.json", "utf8") || "{}") };
+            fs.writeFileSync("../data/worker.json", JSON.stringify(out, null, 2) + "\n");'
+          grep -q '"webhook":true' setup.json || { echo "::error::Telegram webhook was not set"; exit 1; }
+
+      - name: Save the bot URL
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -- wrangler.toml
+          git add ../data/worker.json
+          git commit -m "Bot deployed" || echo "No change"
+          git pull --rebase --autostash
+          git push

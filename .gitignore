@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+data/offline/
+worker/node_modules/
+worker/.wrangler/
+.dev.vars

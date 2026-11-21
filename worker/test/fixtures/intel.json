@@ -1,0 +1,96 @@
+{
+ "generated": "2026-11-21T17:43:23+02:00",
+ "kev_version": "2026.11.20",
+ "kev_count": 3,
+ "kev_recent": [
+  {
+   "cve": "CVE-2026-11111",
+   "vendor": "Fortinet",
+   "product": "FortiOS",
+   "name": "Fortinet FortiOS Heap Overflow",
+   "added": "2026-11-20",
+   "due": "2026-12-11",
+   "ransomware": true,
+   "desc": "Heap overflow in SSL-VPN allows RCE.",
+   "priority": 89
+  },
+  {
+   "cve": "CVE-2026-22222",
+   "vendor": "Microsoft",
+   "product": "Windows",
+   "name": "Windows Kernel EoP",
+   "added": "2026-11-18",
+   "due": "2026-12-09",
+   "ransomware": false,
+   "desc": "Elevation of privilege.",
+   "priority": 63
+  }
+ ],
+ "critical": [
+  {
+   "cve": "CVE-2026-33333",
+   "published": "2026-11-20",
+   "status": "Received",
+   "desc": "Auth bypass in Ivanti Connect Secure.",
+   "cvss": {
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "version": "3.1"
+   },
+   "vendor": "ivanti",
+   "product": "connect secure",
+   "cwe": [
+    "CWE-287"
+   ],
+   "refs": [],
+   "in_kev": false,
+   "priority": 35
+  }
+ ],
+ "epss": {
+  "CVE-2026-11111": {
+   "epss": 0.94,
+   "percentile": 0.99
+  },
+  "CVE-2026-22222": {
+   "epss": 0.12,
+   "percentile": 0.9
+  },
+  "CVE-2026-33333": {
+   "epss": 0.41,
+   "percentile": 0.97
+  }
+ },
+ "news": [
+  {
+   "title": "Fortinet warns of FortiOS zero-day exploited in attacks",
+   "source": "BleepingComputer",
+   "link": "https://example.com/1",
+   "published": "2026-11-21T15:43:23+00:00",
+   "tags": [
+    "Exploited"
+   ],
+   "vendors": [
+    "Fortinet"
+   ],
+   "cves": [
+    "CVE-2026-11111"
+   ]
+  },
+  {
+   "title": "South African municipality hit by ransomware attack",
+   "source": "MyBroadband",
+   "link": "https://example.com/2",
+   "published": "2026-11-21T15:43:23+00:00",
+   "tags": [
+    "Ransomware",
+    "South Africa"
+   ],
+   "vendors": [],
+   "cves": []
+  }
+ ],
+ "ai": null,
+ "errors": [],
+ "digest_html": "\ud83d\udee1 <b>Cyber Watch \u00b7 Sat 21 Nov 2026</b>\n\n<b>\ud83d\udd27 Patch first</b>\n1. <code>CVE-2026-11111</code> Fortinet FortiOS \u00b7 on KEV \u00b7 EPSS 94% \u00b7 ransomware\n2. <code>CVE-2026-22222</code> Microsoft Windows \u00b7 on KEV \u00b7 EPSS 12%\n3. <code>CVE-2026-33333</code> ivanti connect secure \u00b7 EPSS 41% \u00b7 CVSS 9.8\n\n<b>\ud83d\udea8 New on CISA KEV (7 days): 2</b>\n\u2022 <code>CVE-2026-11111</code> Fortinet FortiOS \u00b7 added 20 Nov \u26a0\ufe0f ransomware \u2b50\n\u2022 <code>CVE-2026-22222</code> Microsoft Windows \u00b7 added 18 Nov \u2b50\n\n<b>\ud83c\udd95 New critical CVEs (48h): 1</b>\n\u2022 <code>CVE-2026-33333</code> ivanti connect secure \u00b7 CVSS 9.8 \u00b7 EPSS 41%\n\n<b>\ud83d\udd17 Read</b>\n\u2022 <a href=\"https://example.com/1\">Fortinet warns of FortiOS zero-day exploited in attacks</a> (BleepingComputer)\n\n<b>\ud83c\uddff\ud83c\udde6 South Africa</b>\n\u2022 <a href=\"https://example.com/2\">South African municipality hit by ransomware attack</a> (MyBroadband)\n\n<i>Rule-based digest. Sources: CISA KEV v2026.11.20, NVD, FIRST EPSS, security news. \u2b50 = on your vendor watchlist.</i>\nAsk me: /cve CVE-ID \u00b7 /vendor fortinet \u00b7 /kev \u00b7 /news, or any question."
+}
