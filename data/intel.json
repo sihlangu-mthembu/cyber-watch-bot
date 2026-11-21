@@ -1,0 +1,630 @@
+{
+ "generated": "2026-11-21T17:44:47+02:00",
+ "kev_version": "2026.11.20",
+ "kev_count": 1790,
+ "kev_recent": [
+  {
+   "cve": "CVE-2026-40217",
+   "vendor": "BerriAI",
+   "product": "LiteLLM",
+   "name": "BerriAI LiteLLM Unprotected Alternate Channel Vulnerability",
+   "added": "2026-11-18",
+   "due": "2026-12-02",
+   "ransomware": false,
+   "desc": "BerriAI LiteLLM contains an unprotected alternate channel vulnerability that could allow remote attackers to execute arbitrary code via bytecode rewriting at the /guardrails/test_custom_code URI.",
+   "priority": 70
+  },
+  {
+   "cve": "CVE-2026-123890",
+   "vendor": "Broadcom",
+   "product": "VMware vCenter",
+   "name": "VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+   "added": "2026-11-20",
+   "due": "2026-11-23",
+   "ransomware": false,
+   "desc": "Broadcom VMware vCenter contains an authentication bypass using an alternate path or channel vulnerability in the VMware Directory Service that allows an unauthenticated attacker with network access to vCenter to bypass authentication and g",
+   "priority": 61
+  },
+  {
+   "cve": "CVE-2026-76466",
+   "vendor": "Cisco",
+   "product": "Expressway Series",
+   "name": "Cisco Expressway Series Use of Hard-coded Credentials Vulnerability",
+   "added": "2026-11-20",
+   "due": "2026-11-23",
+   "ransomware": false,
+   "desc": "Cisco Expressway Series contains a use of hard-coded credentials vulnerability that allows an unauthenticated, remote attacker with persistent cookies and network access to execute commands as root on a clustered device via the database ser",
+   "priority": 61
+  },
+  {
+   "cve": "CVE-2025-42884",
+   "vendor": "SAP",
+   "product": "NetWeaver",
+   "name": "SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability",
+   "added": "2026-11-20",
+   "due": "2026-11-23",
+   "ransomware": false,
+   "desc": "SAP NetWeaver Enterprise Portal contains an improper neutralization of special elements in data query logic vulnerability that allows an unauthenticated attacker to disclose or modify server information via injected JNDI environment propert",
+   "priority": 60
+  },
+  {
+   "cve": "CVE-2026-90817",
+   "vendor": "Vanderbilt University",
+   "product": "Research Electronic Data Capture (REDCap)",
+   "name": "Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability",
+   "added": "2026-11-18",
+   "due": "2026-11-21",
+   "ransomware": false,
+   "desc": "Vanderbilt University Research Electronic Data Capture (REDCap) contains a code injection vulnerability which could allow an unauthenticated attacker to execute arbitrary code on the server. An attacker could exploit this via crafted HTTP r",
+   "priority": 58
+  },
+  {
+   "cve": "CVE-2024-10441",
+   "vendor": "Synology",
+   "product": "DiskStation Manager (DSM)",
+   "name": "Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability",
+   "added": "2026-11-18",
+   "due": "2026-11-21",
+   "ransomware": false,
+   "desc": "Synology DSM contains an improper encoding or escaping of output vulnerability in the system plugin daemon in Synology BeeStation OS (BSM) that could allow a remote attacker to execute arbitrary code via unspecified vectors.",
+   "priority": 51
+  },
+  {
+   "cve": "CVE-2026-90436",
+   "vendor": "Apache",
+   "product": "Axis",
+   "name": "Apache Axis Unsafe Reflection Vulnerability",
+   "added": "2026-11-18",
+   "due": "2026-11-21",
+   "ransomware": false,
+   "desc": "Apache Axis contains an unsafe reflection vulnerability that could allow an unauthenticated remote attacker to execute arbitrary code via a crafted SOAP fault message that causes Axis to load and instantiate an attacker-specified class when",
+   "priority": 51
+  },
+  {
+   "cve": "CVE-2026-129448",
+   "vendor": "Apache",
+   "product": "Roller",
+   "name": "Apache Roller Deserialization of Untrusted Data Vulnerability",
+   "added": "2026-11-20",
+   "due": "2026-11-23",
+   "ransomware": false,
+   "desc": "Apache Roller contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via the XML-RPC endpoint, which accepts and deserializes vendor extension types before authent",
+   "priority": 51
+  },
+  {
+   "cve": "CVE-2026-115731",
+   "vendor": "Perforce",
+   "product": "Puppet Enterprise",
+   "name": "Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability",
+   "added": "2026-11-17",
+   "due": "2026-12-01",
+   "ransomware": false,
+   "desc": "Perforce Puppet Enterprise contains a deserialization of untrusted data vulnerability in Puppet\u2019s report-processing code that allows a client with any CA-signed agent certificate to execute arbitrary code on the Puppet Server as the service",
+   "priority": 50
+  }
+ ],
+ "critical": [
+  {
+   "cve": "CVE-2026-120539",
+   "published": "2026-11-21",
+   "status": "Deferred",
+   "desc": "The Restrictions for BuddyPress plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 1.5.4 This is due to the plugin splicing the attacker-controlled request URI into a PHP expression inside a double-quoted string and evaluating it with eval(). Because PHP interpolates double-quoted strings, a payload of the form {${...}} in the URL path is executed dur",
+   "cvss": {
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "version": "3.1",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-95"
+   ],
+   "refs": [
+    "https://github.com/seventhqueen/buddypress-restrict/releases/tag/1.5.5",
+    "https://plugins.trac.wordpress.org/browser/bp-restrict/tags/1.5.4/admin/class-bp-restrict-admin.php#L213",
+    "https://plugins.trac.wordpress.org/browser/bp-restrict/tags/1.5.4/admin/class-bp-restrict-pmpro.php#L184"
+   ],
+   "in_kev": false,
+   "priority": 16
+  },
+  {
+   "cve": "CVE-2026-133500",
+   "published": "2026-11-20",
+   "status": "Deferred",
+   "desc": "A vulnerability was identified in Gladys Assistant up to 4.71.0. This affects an unknown function of the file gateway.downloadBackup.js of the component Backup Restore Endpoint. The manipulation of the argument file_url leads to os command injection. The attack can be initiated remotely. The exploit is publicly available and might be used. Upgrading to version 4.72.0 mitigates this issue. Upgradin",
+   "cvss": {
+    "score": 8.5,
+    "severity": "HIGH",
+    "version": "4.0",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-77",
+    "CWE-78"
+   ],
+   "refs": [
+    "https://github.com/GladysAssistant/Gladys/issues/2494",
+    "https://github.com/GladysAssistant/Gladys/releases/tag/v4.72.0",
+    "https://vuldb.com/cve/CVE-2026-133500"
+   ],
+   "in_kev": false,
+   "priority": 14
+  },
+  {
+   "cve": "CVE-2026-133680",
+   "published": "2026-11-20",
+   "status": "Deferred",
+   "desc": "A vulnerability was found in D-Link DCS-935L 1.10.01. This affects the function loginRouter of the file web/cgi-bin/localrecording/setconf.cgi of the component Local Recording CGI. Performing a manipulation of the argument account/password results in os command injection. Remote exploitation of the attack is possible. The exploit has been made public and could be used.",
+   "cvss": {
+    "score": 8.6,
+    "severity": "HIGH",
+    "version": "4.0",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-77",
+    "CWE-78"
+   ],
+   "refs": [
+    "https://github.com/roit-wolf/CVE/",
+    "https://vuldb.com/cve/CVE-2026-133680",
+    "https://vuldb.com/submit/1051805"
+   ],
+   "in_kev": false,
+   "priority": 14
+  }
+ ],
+ "epss": {
+  "CVE-2026-90817": {
+   "epss": 0.33395,
+   "percentile": 0.98413,
+   "date": "2026-11-21"
+  },
+  "CVE-2026-90436": {
+   "epss": 0.03813,
+   "percentile": 0.90307,
+   "date": "2026-11-21"
+  },
+  "CVE-2026-76466": {
+   "epss": 0.02187,
+   "percentile": 0.82863,
+   "date": "2026-11-21"
+  },
+  "CVE-2026-40217": {
+   "epss": 0.78004,
+   "percentile": 0.99581,
+   "date": "2026-11-21"
+  },
+  "CVE-2026-133680": {
+   "epss": 0.02215,
+   "percentile": 0.83073,
+   "date": "2026-11-21"
+  },
+  "CVE-2026-133500": {
+   "epss": 0.03022,
+   "percentile": 0.87782,
+   "date": "2026-11-21"
+  },
+  "CVE-2026-129448": {
+   "epss": 0.05459,
+   "percentile": 0.92934,
+   "date": "2026-11-21"
+  },
+  "CVE-2026-123890": {
+   "epss": 0.02985,
+   "percentile": 0.87629,
+   "date": "2026-11-21"
+  },
+  "CVE-2026-120539": {
+   "epss": 0.02157,
+   "percentile": 0.82633,
+   "date": "2026-11-21"
+  },
+  "CVE-2026-115731": {
+   "epss": 0.01231,
+   "percentile": 0.69681,
+   "date": "2026-11-21"
+  },
+  "CVE-2025-42884": {
+   "epss": 0.00714,
+   "percentile": 0.54582,
+   "date": "2026-11-21"
+  },
+  "CVE-2024-10441": {
+   "epss": 0.03129,
+   "percentile": 0.8818,
+   "date": "2026-11-21"
+  }
+ },
+ "news": [
+  {
+   "title": "Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge",
+   "source": "The Hacker News",
+   "link": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html",
+   "published": "2026-11-21T14:19:13+05:30",
+   "tags": [
+    "Exploited",
+    "Advisory",
+    "Nation-state"
+   ],
+   "vendors": [
+    "Cisco",
+    "VMware",
+    "Broadcom",
+    "SAP"
+   ],
+   "cves": [
+    "CVE-2026-129448"
+   ]
+  },
+  {
+   "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+   "source": "CISA",
+   "link": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+   "published": "2026-11-20T12:00:00+00:00",
+   "tags": [
+    "Exploited",
+    "Advisory"
+   ],
+   "vendors": [
+    "Cisco",
+    "SAP"
+   ],
+   "cves": [
+    "CVE-2025-42884",
+    "CVE-2026-123890",
+    "CVE-2026-129448",
+    "CVE-2026-76466"
+   ]
+  },
+  {
+   "title": "Hackers Exploit Critical Cisco Expressway Flaw, Breach Four Devices and Reach Internal Network",
+   "source": "The Hacker News",
+   "link": "https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html",
+   "published": "2026-11-20T16:02:50+05:30",
+   "tags": [
+    "Exploited",
+    "Breach",
+    "Advisory"
+   ],
+   "vendors": [
+    "Cisco"
+   ],
+   "cves": [
+    "CVE-2026-76466"
+   ]
+  },
+  {
+   "title": "China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data",
+   "source": "The Hacker News",
+   "link": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html",
+   "published": "2026-11-20T15:08:15+05:30",
+   "tags": [
+    "Exploited",
+    "Advisory",
+    "Nation-state"
+   ],
+   "vendors": [
+    "VMware"
+   ],
+   "cves": [
+    "CVE-2026-123890"
+   ]
+  },
+  {
+   "title": "Amazon: China-Linked Hackers\u2019 AI Agents Exploited Medical Software Zero-Day",
+   "source": "SecurityWeek",
+   "link": "https://www.securityweek.com/amazon-china-linked-hackers-ai-agents-exploited-medical-software-zero-day/",
+   "published": "2026-11-21T12:08:50+00:00",
+   "tags": [
+    "Exploited",
+    "Advisory",
+    "Nation-state"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access",
+   "source": "The Hacker News",
+   "link": "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html",
+   "published": "2026-11-21T16:33:17+05:30",
+   "tags": [
+    "Exploited",
+    "Nation-state"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "Major South African financial technology company suffers data breach that involved personal information",
+   "source": "MyBroadband",
+   "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQc3J1cUt6czRwMm1JemFUUzFEQnRKX3lVcE5FZEd1VnlFbEV0T2p5ek4xellXNE56bEMycjlpS2oyVzlkOVlFY1BoRmFMdTAyQnIwc3NVbmhELXFmWXlaTnhjLXlqRkszeEstWWJtaGZPVTNJU0d3ZGNQMGtLd2x3dEgzYmdnaGg5cmdwNXgzZDdXMVFKYVVqbHlvVV9BUGRwaFdJZUx1TmpWQ3ZjLTNPSzJXTWo4NmtJdWg2ZUl6SjQ5NG42bzRVczk2RkFYbzFack5EUHZwamRvWXcydGp0UHVtSXFBb1RKTkVF?oc=5",
+   "published": "2026-11-20T11:23:18+00:00",
+   "tags": [
+    "Breach",
+    "South Africa"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "JPMorgan, Visa, Mastercard Cite Third-Party Incidents Amid Data Leak",
+   "source": "SecurityWeek",
+   "link": "https://www.securityweek.com/jpmorgan-visa-mastercard-cite-third-party-incidents-amid-data-leak/",
+   "published": "2026-11-20T07:35:46+00:00",
+   "tags": [
+    "Ransomware",
+    "Breach"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "Bayobab and Google's Firebase launch API-based number authentication",
+   "source": "Developing Telecoms",
+   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPSVZjQldRWmRJbGxHUDEwSU9Sakc1czVMb000em51ZVhEUFVkNmlWcktWb2ZuT0ZTcUJEbGNfWEE2eWZpY1ZSTlhaNF9oYmVTRTdWZmE1Y1Q1MlM2bE9PeXB5bUQySWRyT0VOWlVwUnYxU0R0NnJVZmZkXzJaWXVTTld6TmZnRnVHeGdmZDgya0FINDZjSVJLNm1oWi1OTmZNZWJrTE9rM3ZRcUVzNkZVUW16RVVqMlB4TDRiRGpzNkNvOFUybTdiT0xNRnRQeENFaUswcjlGcVphUQ?oc=5",
+   "published": "2026-11-20T06:14:47+00:00",
+   "tags": [
+    "South Africa"
+   ],
+   "vendors": [
+    "Google"
+   ],
+   "cves": []
+  },
+  {
+   "title": "Travelstart data breach exposes customer details and flight ticket information",
+   "source": "MyBroadband",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPU3ZPV1I1VU9mNUczYlRYbFAzc2JPazdQcVRBNm1WTkF2T2xIaVpzNURvN3d0QVMxZTFOdUg2ZEdhbUhwLUNJZkRiYTludV9zRzdSeC1XWWFDWEM1dzB5TWl6a1BlVDg5X1VlQzRqcjdHNDgta2pEQTVIMU5QVmhoV2ZfeE1Lc3BZOFVob0hnOUdWYkh4R2w3Z0pleXcxNTBKd05EaTFLZWFIMHN0eWYtVXVQb1hxT0dZWUlnOEp0OG9BUHhaX2Z5RWRB?oc=5",
+   "published": "2026-11-20T06:00:39+00:00",
+   "tags": [
+    "Breach",
+    "South Africa"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "Hackers use autonomous AI tool Cairn to find zero-day, take over server",
+   "source": "BleepingComputer",
+   "link": "https://www.bleepingcomputer.com/news/security/hackers-use-autonomous-ai-tool-cairn-to-find-zero-day-take-over-server/",
+   "published": "2026-11-20T12:30:00-05:00",
+   "tags": [
+    "Exploited",
+    "Advisory"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "Bell expanding its cybersecurity operations in New Brunswick",
+   "source": "CTV News",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQbDJZb3dxYWI1ZURhYWpYWWY0Umg2U3pGd2RGdFZxYVY3NjVPN1pHcGF6MUgzQ0YtY19Xd1BNeHI1QnE3VE5MVWFEdmhraUZxY0JUNmdQQ2NCMHRVZUpNQ0l1TVpTSHBaZHJ3Z1lZd1VzMGFGZHRoVzloX09MaGpITzlHS1NsaHliRXk3NTdldjZVcnpIZ2ZGS253TlE0WWFuSzdRcnpSanliWGVZRjRV?oc=5",
+   "published": "2026-11-20T22:45:47+00:00",
+   "tags": [
+    "South Africa"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "Africa's biggest airline digs into hackers targeting 5.38 million customer accounts as it connects the U.S., Canada and South Africa",
+   "source": "Business Insider Africa",
+   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNdWRDMTdoWlJ5cGJwUHhuQTlfWUtQaGlKamxtaTNDOG85VXV3U1c0SzJta2FmR2hlcUVSYWpURjY5cFpQZUllSXZZZ09xV0ppcEpQc1cxUk5BRzJOV2hQWVBOWWVVN0VZZFB4WklONk5kM1I1MW1lQmtlUjhHQmdvR2o0cUZtYWZpdzVtcFNmdUhkeklDMTFZbEhQcFg3cWRjR1lkd3lFY0Zid1BVT2JEQlR2Ulc5aW5BWU1xcVFyQmxIUGJvOXc1ejZ2cTJ2WkZkMzNYbkpR?oc=5",
+   "published": "2026-11-20T21:35:54+00:00",
+   "tags": [
+    "South Africa"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "Cyber resilience is the foundation for Africa\u2019s next phase of digital growth, Mastercard whitepaper finds",
+   "source": "IOL",
+   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOczZIamZfMmU3REFyNzRJbHg5M1BCclFPM2Q3WEV0TnViRUNEN1IxNUk5TUpwR2xwSnpFeE53U3Ixcnpfb1h1dWNrS0lXaDJvd2dyN2t6Z2FQbkhsbWRranN2Q01sRnV5YVRTZldhMnZSalBWcko2VXNHS1NteUxzM0NuaExZZV9FVXoycDN6ZUw5RjI2eVN5WnpjTS1MNExXVEV1RkVpYXc4ZDJkakJmel81VWtxcWF1SEtYbS02ZEU4RDNtXy1JYTczeDRMUS10YUJXYS13?oc=5",
+   "published": "2026-11-20T15:00:00+00:00",
+   "tags": [
+    "South Africa"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "F5 releases emergency patches for critical BIG-IP RCE flaws",
+   "source": "BleepingComputer",
+   "link": "https://www.bleepingcomputer.com/news/security/f5-releases-emergency-patches-for-critical-big-ip-rce-flaws/",
+   "published": "2026-11-20T05:57:43-05:00",
+   "tags": [
+    "Advisory"
+   ],
+   "vendors": [
+    "F5"
+   ],
+   "cves": []
+  },
+  {
+   "title": "FBI Sting Targets Florida Firm Accused of Secretly Paying Hackers in Bitcoin",
+   "source": "The Crypto Times",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQajZLakw0UlFOZkoxc3dFRGlWdmYyeFQ4VTN0eDZTTFZVMW1lU0tWaGdIQjhNSTh1bUtqMzRpd2JEYzNVb3VpMmZSOGJ2dkRQdmxhWDhsVWIzZWNTMFgzZENQRXJMWVhWTGwwckx3QWNxaE9ibmpURVZhdzVEaTZZUTV2RmgwRGU2SUJ6UUJpZE5ZT3NWa1Y5QnJldksyT05EX1RmUGhMQmk2V1c3NFhPeFZSN3cyQQ?oc=5",
+   "published": "2026-11-20T10:06:23+00:00",
+   "tags": [
+    "South Africa"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "Windows 11 KB5132057 update released with 28 changes and fixes",
+   "source": "BleepingComputer",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5132057-update-released-with-28-changes-and-fixes/",
+   "published": "2026-11-20T04:25:35-05:00",
+   "tags": [
+    "Advisory"
+   ],
+   "vendors": [
+    "Microsoft"
+   ],
+   "cves": []
+  },
+  {
+   "title": "Hackers steal ID numbers and personal information of South African retail giant\u2019s customers",
+   "source": "MyBroadband",
+   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQRUdPakhpT29rN3h5UExKZF9VSEJxb19RY1N6YnhoeWx1MElHWVFjR2VCc29ZbkdwZXFybXdMbDFjMWFhRUJURkJwdzYzNnJWUGpSekdqYWlaMVdTb3NUMTdDcnN1NnRmNlhaM2QzcmVtM2pqS0tDTWxxZ2VFb2pGYURIWm5vOGgzRFVRWXROUUpMc3RRM0hSSFM4R3R6cE9INjVZekFGU3JlaDJPTVBlZmlJaVRONWhXLUM5ckJ6aHJnaDE0bGo5RHZLVFczU1FuYTFlRUd0Qm1VUQ?oc=5",
+   "published": "2026-11-20T06:00:57+00:00",
+   "tags": [
+    "South Africa"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "New Unpatched Windows 0-Day FastUnlock Lets Someone Holding a Locked PC Run Programs on It",
+   "source": "The Hacker News",
+   "link": "https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html",
+   "published": "2026-11-20T11:00:01+05:30",
+   "tags": [
+    "Exploited"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "Meet Donald Trump\u2019s new cyber director \u2013 Absa\u2019s former security chief in South Africa",
+   "source": "SAPeople",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQUEJ1cDd5aDNPOWg4VDk0cldIdHBhSWg2Z1Z0Q2kyU2kyZ29WOXNZdDQ5NDNmRDRpaW5UNndtM3N0WG43X3RXUFVULUpoSVJjdUVURFBNcVlVcGI2eVdVVlNaMlg1c3hmUklGVUloZm5Fc0tSZFZZTlBtTzVpQ3FfdU1PUGJpQWlPeHlEUnRpODRJRWpTQ3VTdGNGd3RvVDRZTzlIUXZuR3N4U29HLTl4VWFkNUZBdWNfOVE?oc=5",
+   "published": "2026-11-20T05:22:44+00:00",
+   "tags": [
+    "South Africa"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "Vendor data breach exposes Chase, Visa, Mastercard customer info",
+   "source": "BleepingComputer",
+   "link": "https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/",
+   "published": "2026-11-20T10:58:06-05:00",
+   "tags": [
+    "Breach"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "Still tracking company passwords in spreadsheets? You\u2019re flying blind.",
+   "source": "BleepingComputer",
+   "link": "https://www.bleepingcomputer.com/news/security/still-tracking-company-passwords-in-spreadsheets-youre-flying-blind/",
+   "published": "2026-11-20T10:00:10-05:00",
+   "tags": [
+    "Breach"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "N-able says recent security breach led to major service outage",
+   "source": "BleepingComputer",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/n-able-says-recent-security-breach-led-to-major-service-outage/",
+   "published": "2026-11-20T08:18:36-05:00",
+   "tags": [
+    "Breach"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "Microsoft now automatically installs Windows 11 26H2 on unmanaged devices",
+   "source": "BleepingComputer",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-now-automatically-installs-windows-11-26h2-on-personal-and-unmanaged-pcs/",
+   "published": "2026-11-20T07:14:28-05:00",
+   "tags": [],
+   "vendors": [
+    "Microsoft"
+   ],
+   "cves": []
+  },
+  {
+   "title": "SBC Medical Group Data Breach Impacts Over 2 Million",
+   "source": "SecurityWeek",
+   "link": "https://www.securityweek.com/sbc-medical-group-data-breach-impacts-over-2-million/",
+   "published": "2026-11-20T11:36:51+00:00",
+   "tags": [
+    "Breach"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "European Commission Confirms AI-Assisted Cyberattack Disrupted Services",
+   "source": "SecurityWeek",
+   "link": "https://www.securityweek.com/european-commission-confirms-ai-assisted-cyberattack-disrupted-services/",
+   "published": "2026-11-20T10:51:42+00:00",
+   "tags": [
+    "Breach"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "SonicWall Warns Gen 6 Firewalls Won't Get Security Patches, Even for Critical Flaws",
+   "source": "The Hacker News",
+   "link": "https://thehackernews.com/2026/11/sonicwall-warns-gen-6-firewalls-wont.html",
+   "published": "2026-11-20T16:08:22+05:30",
+   "tags": [],
+   "vendors": [
+    "SonicWall"
+   ],
+   "cves": []
+  },
+  {
+   "title": "WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams",
+   "source": "The Hacker News",
+   "link": "https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html",
+   "published": "2026-11-20T23:27:20+05:30",
+   "tags": [
+    "Advisory"
+   ],
+   "vendors": [],
+   "cves": [
+    "CVE-2026-23871"
+   ]
+  },
+  {
+   "title": "WhatsApp Fixes Flaw Uncovered While Disrupting Scam Campaign",
+   "source": "SecurityWeek",
+   "link": "https://www.securityweek.com/whatsapp-fixes-flaw-uncovered-while-disrupting-scam-campaign/",
+   "published": "2026-11-20T16:01:02+00:00",
+   "tags": [
+    "Advisory"
+   ],
+   "vendors": [],
+   "cves": [
+    "CVE-2026-23871"
+   ]
+  },
+  {
+   "title": "Linux KVM Flaw CVE-2026-99312 Lets Guest VMs Access Host Memory on AMD Hosts",
+   "source": "The Hacker News",
+   "link": "https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html",
+   "published": "2026-11-20T17:50:00+05:30",
+   "tags": [
+    "Advisory"
+   ],
+   "vendors": [],
+   "cves": [
+    "CVE-2026-99312"
+   ]
+  }
+ ],
+ "ai": null,
+ "errors": [
+  "AI: GROQ_API_KEY not set, digest built by rules only"
+ ],
+ "digest_html": "\ud83d\udee1 <b>Cyber Watch \u00b7 Sat 21 Nov 2026</b>\n\n<b>\ud83d\udd27 Patch first</b>\n1. <code>CVE-2026-40217</code> BerriAI LiteLLM \u00b7 on KEV \u00b7 EPSS 78%\n2. <code>CVE-2026-123890</code> Broadcom VMware vCenter \u00b7 on KEV \u00b7 EPSS 3%\n3. <code>CVE-2026-76466</code> Cisco Expressway Series \u00b7 on KEV \u00b7 EPSS 2%\n\n<b>\ud83d\udea8 New on CISA KEV (7 days): 9</b>\n\u2022 <code>CVE-2026-40217</code> BerriAI LiteLLM \u00b7 added 18 Nov\n\u2022 <code>CVE-2026-123890</code> Broadcom VMware vCenter \u00b7 added 20 Nov \u2b50\n\u2022 <code>CVE-2026-76466</code> Cisco Expressway Series \u00b7 added 20 Nov \u2b50\n\u2022 <code>CVE-2025-42884</code> SAP NetWeaver \u00b7 added 20 Nov \u2b50\n\u2022 <code>CVE-2026-90817</code> Vanderbilt University Research Electronic Data Capture (REDCap) \u00b7 added 18 Nov\n  \u2026and 4 more (/kev)\n\n<b>\ud83c\udd95 New critical CVEs (48h): 3</b>\n\u2022 <code>CVE-2026-120539</code>   \u00b7 CVSS 9.8 \u00b7 EPSS 2%\n\u2022 <code>CVE-2026-133500</code>   \u00b7 CVSS 8.5 \u00b7 EPSS 3%\n\u2022 <code>CVE-2026-133680</code>   \u00b7 CVSS 8.6 \u00b7 EPSS 2%\n\n<b>\ud83d\udd17 Read</b>\n\u2022 <a href=\"https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html\">Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge</a> (The Hacker News)\n\u2022 <a href=\"https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog\">CISA Adds Four Known Exploited Vulnerabilities to Catalog</a> (CISA)\n\u2022 <a href=\"https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html\">Hackers Exploit Critical Cisco Expressway Flaw, Breach Four Devices and Reach Internal Network</a> (The Hacker News)\n\u2022 <a href=\"https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html\">China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data</a> (The Hacker News)\n\n<b>\ud83c\uddff\ud83c\udde6 South Africa</b>\n\u2022 <a href=\"https://news.google.com/rss/articles/CBMi6wFBVV95cUxQc3J1cUt6czRwMm1JemFUUzFEQnRKX3lVcE5FZEd1VnlFbEV0T2p5ek4xellXNE56bEMycjlpS2oyVzlkOVlFY1BoRmFMdTAyQnIwc3NVbmhELXFmWXlaTnhjLXlqRkszeEstWWJtaGZPVTNJU0d3ZGNQMGtLd2x3dEgzYmdnaGg5cmdwNXgzZDdXMVFKYVVqbHlvVV9BUGRwaFdJZUx1TmpWQ3ZjLTNPSzJXTWo4NmtJdWg2ZUl6SjQ5NG42bzRVczk2RkFYbzFack5EUHZwamRvWXcydGp0UHVtSXFBb1RKTkVF?oc=5\">Major South African financial technology company suffers data breach that involved personal information</a> (MyBroadband)\n\u2022 <a href=\"https://news.google.com/rss/articles/CBMi2gFBVV95cUxPSVZjQldRWmRJbGxHUDEwSU9Sakc1czVMb000em51ZVhEUFVkNmlWcktWb2ZuT0ZTcUJEbGNfWEE2eWZpY1ZSTlhaNF9oYmVTRTdWZmE1Y1Q1MlM2bE9PeXB5bUQySWRyT0VOWlVwUnYxU0R0NnJVZmZkXzJaWXVTTld6TmZnRnVHeGdmZDgya0FINDZjSVJLNm1oWi1OTmZNZWJrTE9rM3ZRcUVzNkZVUW16RVVqMlB4TDRiRGpzNkNvOFUybTdiT0xNRnRQeENFaUswcjlGcVphUQ?oc=5\">Bayobab and Google's Firebase launch API-based number authentication</a> (Developing Telecoms)\n\u2022 <a href=\"https://news.google.com/rss/articles/CBMiygFBVV95cUxPU3ZPV1I1VU9mNUczYlRYbFAzc2JPazdQcVRBNm1WTkF2T2xIaVpzNURvN3d0QVMxZTFOdUg2ZEdhbUhwLUNJZkRiYTludV9zRzdSeC1XWWFDWEM1dzB5TWl6a1BlVDg5X1VlQzRqcjdHNDgta2pEQTVIMU5QVmhoV2ZfeE1Lc3BZOFVob0hnOUdWYkh4R2w3Z0pleXcxNTBKd05EaTFLZWFIMHN0eWYtVXVQb1hxT0dZWUlnOEp0OG9BUHhaX2Z5RWRB?oc=5\">Travelstart data breach exposes customer details and flight ticket information</a> (MyBroadband)\n\n<i>Rule-based digest. Sources: CISA KEV v2026.11.20, NVD, FIRST EPSS, security news. \u2b50 = on your vendor watchlist.</i>\n<i>Data issues: AI: GROQ_API_KEY not set, digest built by rules only</i>\nAsk me: /cve CVE-ID \u00b7 /vendor fortinet \u00b7 /kev \u00b7 /news, or any question."
+}
