@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T14:45:59+02:00",
+ "generated": "2026-11-22T18:26:06+02:00",
  "kev_version": "2026.11.20",
  "kev_count": 1790,
  "kev_recent": [
@@ -56,7 +56,7 @@
    "due": "2026-11-21",
    "ransomware": false,
    "desc": "Vanderbilt University Research Electronic Data Capture (REDCap) contains a code injection vulnerability which could allow an unauthenticated attacker to execute arbitrary code on the server. An attacker could exploit this via crafted HTTP r",
-   "priority": 58
+   "priority": 59
   },
   {
    "cve": "CVE-2024-10441",
@@ -227,59 +227,74 @@
  ],
  "epss": {
   "CVE-2026-90817": {
-   "epss": 0.33395,
-   "percentile": 0.98413,
-   "date": "2026-11-21"
+   "epss": 0.34335,
+   "percentile": 0.98448,
+   "date": "2026-11-22"
   },
   "CVE-2026-90436": {
    "epss": 0.03813,
-   "percentile": 0.90307,
-   "date": "2026-11-21"
+   "percentile": 0.90314,
+   "date": "2026-11-22"
   },
   "CVE-2026-76466": {
    "epss": 0.02187,
-   "percentile": 0.82863,
-   "date": "2026-11-21"
+   "percentile": 0.82875,
+   "date": "2026-11-22"
   },
   "CVE-2026-40217": {
    "epss": 0.78004,
    "percentile": 0.99581,
-   "date": "2026-11-21"
+   "date": "2026-11-22"
+  },
+  "CVE-2026-134292": {
+   "epss": 0.00703,
+   "percentile": 0.54194,
+   "date": "2026-11-22"
+  },
+  "CVE-2026-133993": {
+   "epss": 0.01052,
+   "percentile": 0.65184,
+   "date": "2026-11-22"
   },
   "CVE-2026-133680": {
    "epss": 0.02215,
-   "percentile": 0.83073,
-   "date": "2026-11-21"
+   "percentile": 0.83085,
+   "date": "2026-11-22"
   },
   "CVE-2026-129448": {
    "epss": 0.05459,
-   "percentile": 0.92934,
-   "date": "2026-11-21"
+   "percentile": 0.92939,
+   "date": "2026-11-22"
+  },
+  "CVE-2026-125294": {
+   "epss": 0.00801,
+   "percentile": 0.57566,
+   "date": "2026-11-22"
   },
   "CVE-2026-123890": {
-   "epss": 0.02985,
-   "percentile": 0.87629,
-   "date": "2026-11-21"
+   "epss": 0.03526,
+   "percentile": 0.8953,
+   "date": "2026-11-22"
   },
   "CVE-2026-120539": {
    "epss": 0.02157,
-   "percentile": 0.82633,
-   "date": "2026-11-21"
+   "percentile": 0.82645,
+   "date": "2026-11-22"
   },
   "CVE-2026-115731": {
    "epss": 0.01231,
-   "percentile": 0.69681,
-   "date": "2026-11-21"
+   "percentile": 0.69697,
+   "date": "2026-11-22"
   },
   "CVE-2025-42884": {
    "epss": 0.00714,
-   "percentile": 0.54582,
-   "date": "2026-11-21"
+   "percentile": 0.54603,
+   "date": "2026-11-22"
   },
   "CVE-2024-10441": {
    "epss": 0.03129,
-   "percentile": 0.8818,
-   "date": "2026-11-21"
+   "percentile": 0.88188,
+   "date": "2026-11-22"
   }
  },
  "news": [
@@ -338,6 +353,50 @@
    "tags": [
     "Exploited",
     "Nation-state"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "Reverse Engineer Anything: The Legal Risks And Opportunities Of AI-assisted Reverse Engineering",
+   "source": "Legal 500",
+   "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOSHYyMFpVWlJteTF5Z1ZybHJ1MEFMNVFsSkM3VVg3OVZabG1MX0owSUJNeS1hZzF5SWs3S0czZzh5a1F0T0Z3bUQyQUZoT21wSG1SY0VlOEZ1cHgzenFReEpvRE9CZnVoaHVSTDNOdEpPaE1BdTZfV1BGRlRwZlBBMGJleEJZakJLNXgxc3NXam16dnpVTVR4QTBDMzNnNURjOVZnOHlSWUFCWWw5TzNPYnh2dm1GVlo5UU5ucjFtSnRhOWxsd3BtQVRIRFI3SFloTXZvSWRlOFBhT21EWWVCSTBEVE1ybE96SmxXcWlmU3VpcVlSdWhQOTMwbw?oc=5",
+   "published": "2026-11-22T15:23:20+00:00",
+   "tags": [
+    "South Africa"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "Presidential PhD Programme in Electrical Engineering 2027 \u2013 R200,000 Annual Doctoral Scholarship in South Africa",
+   "source": "Global South Opportunities",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE12b0F1Tkh1aHJTMmVPQmNKWXVDczBoTXEyMGZFYlBnc2NFSjdqSzNhWUh2bTdXX1N0c3dETnFtOXJtVzlnbElNbnZEekpzMWJsR3h3Y1pyMWw0UEVRVDYxZDVyR1Q0Ti1rbnhPX1R3cFU3VFk?oc=5",
+   "published": "2026-11-22T14:39:25+00:00",
+   "tags": [
+    "South Africa"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "JPMorgan Chase (JPM) Says Vendor Cyberattack Exposed Customer Data",
+   "source": "Simply Wall St",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPZVF5aFBkb2l0THVYcnNDTVZ1RmJlWlREZHRqS2xBQlBkNXRvUXNyMWVGVTRxTmViWGZjVzFMbnRXNnRGR2JOYWNJQ0hvUEZPdi1rMzlIcnh5dGJ5Y2M4bUZYYktKS0k3ZVJDVVpIX0w2UFZQSEtLY0sxcXdIQmFVdG5TNThINDU2UFhSZXNBWWl5UTdqbThGQUdIYlItcUpmdDFaM1JKSmtwWjNVUWctSGZKanZBaHJhOTJUa3hDaUo3VDdITjYxWHh30gHKAUFVX3lxTE9lUXloUGRvaXRMdVhyc0NNVnVGYmVaVERkdGpLbEFCUGQ1dG9Rc3IxZUZVNHFOZWJYZmNXMUxudFc2dEZHYk5hY0lDSG9QRk92LWszOUhyeHl0YnljYzhtRlhiS0pLSTdlUkNVWkhfTDZQVlBIS0tjSzFxd0hCYVV0blM1OEg0NTZQWFJlc0FZaXlRN2ptOEZBR0hiUi1xSmZ0MVozUkpKa3BaM1VRZy1IZkpqdkFocmE5MlRreENpSjdUN0hONjFYeHc?oc=5",
+   "published": "2026-11-22T14:08:13+00:00",
+   "tags": [
+    "South Africa"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "SA eyes R100m venture capital fund to support AI start-ups",
+   "source": "South African Government News Agency",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPeVF4S3hfLTREYVhWcFRIcmpxLUwzMnlTX3ZlSXZLei1VQVZtTzdVeUZmV3lqbWRzTG9wSkd0Rm05dEE1ay1IcVBrZWVDS3B4Zlk4QS01VkVIVHFxc3h3dHNQTU4tZGtOcGZuVFJOWk8xd3hHaTRFVTh5YjZnbHNmZEhqYmR6RHI4QkFCRUdCOFlMQ3FLYS1PRGJB?oc=5",
+   "published": "2026-11-22T09:18:48+00:00",
+   "tags": [
+    "South Africa"
    ],
    "vendors": [],
    "cves": []
@@ -442,23 +501,12 @@
    "cves": []
   },
   {
-   "title": "President explores deeper AI, technology partnerships with Silicon Valley giants",
-   "source": "South African Government News Agency",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPejNXallnWEZVaVlSUG1QV1RKMHB1VC1sSTBrQl9zYU84cjRkOC14UTB5T21NNFdfMkd1bWxvNF9GYTNNUExlbjlkeXVORV8ta05RY196dk5HUWRpRy1saHhXNkUwZm1HTkotbTYzbWZGX1I1M0Y4ekVqc0tfYVpoYTlycnUwNDhtMlhMc0I4aGRsYnlWdEFOdTVmUjI2UEZ1WlVjYmhGV1JuZkpEZDBWZ1RVbw?oc=5",
-   "published": "2026-11-21T03:13:08+00:00",
+   "title": "Cleverbridge warns hackers stole credit card numbers, CVVs in data breach",
+   "source": "BleepingComputer",
+   "link": "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/",
+   "published": "2026-11-22T10:43:04-05:00",
    "tags": [
-    "South Africa"
-   ],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "Markus Jooste",
-   "source": "Forbes",
-   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFB1dWxlTzZEaVJJTHhrMkdUZnRQUVJ3WGV3Ql9PdEp5aXVraWJsMHIyLTlCd05ubHBsRTFYOXBuQ2ZsNVRlYXp1MG5PYTRFWndxVGExZTRwaGc?oc=5",
-   "published": "2026-11-21T01:38:09+00:00",
-   "tags": [
-    "South Africa"
+    "Breach"
    ],
    "vendors": [],
    "cves": []
@@ -471,6 +519,15 @@
    "tags": [
     "Breach"
    ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "Signal to block Siri, Gemini AI from capturing chats on iOS, Android",
+   "source": "BleepingComputer",
+   "link": "https://www.bleepingcomputer.com/news/security/signal-to-block-siri-gemini-ai-from-capturing-chats-on-ios-android/",
+   "published": "2026-11-22T10:15:25-05:00",
+   "tags": [],
    "vendors": [],
    "cves": []
   },
@@ -558,9 +615,34 @@
    "cves": []
   }
  ],
- "ai": null,
- "errors": [
-  "AI: GROQ_API_KEY not set, digest built by rules only"
- ],
- "digest_html": "\ud83d\udee1 <b>Cyber Watch \u00b7 Sun 22 Nov 2026</b>\n\n<b>\ud83d\udd27 Patch first</b>\n1. <code>CVE-2026-40217</code> BerriAI LiteLLM \u00b7 on KEV \u00b7 EPSS 78%\n2. <code>CVE-2026-123890</code> Broadcom VMware vCenter \u00b7 on KEV \u00b7 EPSS 3%\n3. <code>CVE-2026-76466</code> Cisco Expressway Series \u00b7 on KEV \u00b7 EPSS 2%\n\n<b>\ud83d\udea8 New on CISA KEV (7 days): 9</b>\n\u2022 <code>CVE-2026-40217</code> BerriAI LiteLLM \u00b7 added 18 Nov\n\u2022 <code>CVE-2026-123890</code> Broadcom VMware vCenter \u00b7 added 20 Nov \u2b50\n\u2022 <code>CVE-2026-76466</code> Cisco Expressway Series \u00b7 added 20 Nov \u2b50\n\u2022 <code>CVE-2025-42884</code> SAP NetWeaver \u00b7 added 20 Nov \u2b50\n\u2022 <code>CVE-2026-90817</code> Vanderbilt University Research Electronic Data Capture (REDCap) \u00b7 added 18 Nov\n  \u2026and 4 more (/kev)\n\n<b>\ud83c\udd95 New critical CVEs (48h): 5</b>\n\u2022 <code>CVE-2026-120539</code> The Restrictions for BuddyPress plugin for WordPress is vulnerable to\u2026 \u00b7 CVSS 9.8 \u00b7 EPSS 2%\n\u2022 <code>CVE-2026-125294</code> The Nexter Blocks Pro plugin for WordPress is vulnerable to Privilege\u2026 \u00b7 CVSS 9.8 \u00b7 EPSS <1%\n\u2022 <code>CVE-2026-133680</code> A vulnerability was found in D-Link DCS-935L 1.10.01. This affects\u2026 \u00b7 CVSS 8.6 \u00b7 EPSS 2%\n\n<b>\ud83d\udd17 Read</b>\n\u2022 <a href=\"https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html\">Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge</a> (The Hacker News)\n\u2022 <a href=\"https://www.securityweek.com/amazon-china-linked-hackers-ai-agents-exploited-medical-software-zero-day/\">Amazon: China-Linked Hackers\u2019 AI Agents Exploited Medical Software Zero-Day</a> (SecurityWeek)\n\u2022 <a href=\"https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/\">Microsoft Entra Connect Health flaw exploited to steal tenant data</a> (BleepingComputer)\n\u2022 <a href=\"https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html\">Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access</a> (The Hacker News)\n\n<i>Rule-based digest. Sources: CISA KEV v2026.11.20, NVD, FIRST EPSS, security news. \u2b50 = on your vendor watchlist.</i>\n<i>Data issues: AI: GROQ_API_KEY not set, digest built by rules only</i>\nAsk me: /cve CVE-ID \u00b7 /vendor fortinet \u00b7 /kev \u00b7 /news, or any question."
+ "ai": {
+  "headline": "Nation-state actors exploiting VMware, Cisco, and Apache flaws in new espionage campaigns",
+  "patch_first": [
+   {
+    "cve": "CVE-2026-40217",
+    "why": "High EPSS; actively exploited on CISA KEV, targets BerriAI LiteLLM"
+   },
+   {
+    "cve": "CVE-2026-123890",
+    "why": "Active KEV exploit; VMware vCenter authentication bypass"
+   },
+   {
+    "cve": "CVE-2026-76466",
+    "why": "KEV listed; hard\u2011coded credentials in Cisco Expressway"
+   }
+  ],
+  "threats": [
+   "Hackers exploit critical VMware, Cisco, and Apache flaws for espionage",
+   "China\u2011linked hackers use AI agents to exploit medical software zero\u2011day",
+   "Attackers\u2019 AI agents found zero\u2011day in medical\u2011imaging software, gaining root access"
+  ],
+  "sa_angle": [
+   "South Africa re\u2011elected to UN Telecoms Council, shaping global telecom policy",
+   "Government plans R100m AI start\u2011up fund, a new potential cyber\u2011target"
+  ],
+  "exec_note": "Patch the three KEV\u2011listed vulnerabilities immediately and keep watch for related exploitation activity.",
+  "fact_check_removed": 0
+ },
+ "errors": [],
+ "digest_html": "\ud83d\udee1 <b>Cyber Watch \u00b7 Sun 22 Nov 2026</b>\n<b>Nation-state actors exploiting VMware, Cisco, and Apache flaws in new espionage campaigns</b>\n\n<b>\ud83d\udd27 Patch first</b>\n1. <code>CVE-2026-40217</code> BerriAI LiteLLM \u00b7 on KEV \u00b7 EPSS 78%\n   High EPSS; actively exploited on CISA KEV, targets BerriAI LiteLLM\n2. <code>CVE-2026-123890</code> Broadcom VMware vCenter \u00b7 on KEV \u00b7 EPSS 4%\n   Active KEV exploit; VMware vCenter authentication bypass\n3. <code>CVE-2026-76466</code> Cisco Expressway Series \u00b7 on KEV \u00b7 EPSS 2%\n   KEV listed; hard\u2011coded credentials in Cisco Expressway\n\n<b>\ud83d\udea8 New on CISA KEV (7 days): 9</b>\n\u2022 <code>CVE-2026-40217</code> BerriAI LiteLLM \u00b7 added 18 Nov\n\u2022 <code>CVE-2026-123890</code> Broadcom VMware vCenter \u00b7 added 20 Nov \u2b50\n\u2022 <code>CVE-2026-76466</code> Cisco Expressway Series \u00b7 added 20 Nov \u2b50\n\u2022 <code>CVE-2025-42884</code> SAP NetWeaver \u00b7 added 20 Nov \u2b50\n\u2022 <code>CVE-2026-90817</code> Vanderbilt University Research Electronic Data Capture (REDCap) \u00b7 added 18 Nov\n  \u2026and 4 more (/kev)\n\n<b>\ud83c\udd95 New critical CVEs (48h): 5</b>\n\u2022 <code>CVE-2026-120539</code> The Restrictions for BuddyPress plugin for WordPress is vulnerable to\u2026 \u00b7 CVSS 9.8 \u00b7 EPSS 2%\n\u2022 <code>CVE-2026-125294</code> The Nexter Blocks Pro plugin for WordPress is vulnerable to Privilege\u2026 \u00b7 CVSS 9.8 \u00b7 EPSS <1%\n\u2022 <code>CVE-2026-133680</code> A vulnerability was found in D-Link DCS-935L 1.10.01. This affects\u2026 \u00b7 CVSS 8.6 \u00b7 EPSS 2%\n\n<b>\ud83d\udcf0 Threat picture</b>\n\u2022 Hackers exploit critical VMware, Cisco, and Apache flaws for espionage\n\u2022 China\u2011linked hackers use AI agents to exploit medical software zero\u2011day\n\u2022 Attackers\u2019 AI agents found zero\u2011day in medical\u2011imaging software, gaining root access\n\n<b>\ud83d\udd17 Read</b>\n\u2022 <a href=\"https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html\">Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge</a> (The Hacker News)\n\u2022 <a href=\"https://www.securityweek.com/amazon-china-linked-hackers-ai-agents-exploited-medical-software-zero-day/\">Amazon: China-Linked Hackers\u2019 AI Agents Exploited Medical Software Zero-Day</a> (SecurityWeek)\n\u2022 <a href=\"https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/\">Microsoft Entra Connect Health flaw exploited to steal tenant data</a> (BleepingComputer)\n\u2022 <a href=\"https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html\">Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access</a> (The Hacker News)\n\n<b>\ud83c\uddff\ud83c\udde6 South Africa</b>\n\u2022 South Africa re\u2011elected to UN Telecoms Council, shaping global telecom policy\n\u2022 Government plans R100m AI start\u2011up fund, a new potential cyber\u2011target\n\n<i>For leadership:</i> Patch the three KEV\u2011listed vulnerabilities immediately and keep watch for related exploitation activity.\n\n<i>AI summary fact-checked against the data. Sources: CISA KEV v2026.11.20, NVD, FIRST EPSS, security news. \u2b50 = on your vendor watchlist.</i>\nAsk me: /cve CVE-ID \u00b7 /vendor fortinet \u00b7 /kev \u00b7 /news, or any question."
 }

@@ -1,9 +1,13 @@
 🛡 <b>Cyber Watch · Sun 22 Nov 2026</b>
+<b>Nation-state actors exploiting VMware, Cisco, and Apache flaws in new espionage campaigns</b>
 
 <b>🔧 Patch first</b>
 1. <code>CVE-2026-40217</code> BerriAI LiteLLM · on KEV · EPSS 78%
-2. <code>CVE-2026-123890</code> Broadcom VMware vCenter · on KEV · EPSS 3%
+   High EPSS; actively exploited on CISA KEV, targets BerriAI LiteLLM
+2. <code>CVE-2026-123890</code> Broadcom VMware vCenter · on KEV · EPSS 4%
+   Active KEV exploit; VMware vCenter authentication bypass
 3. <code>CVE-2026-76466</code> Cisco Expressway Series · on KEV · EPSS 2%
+   KEV listed; hard‑coded credentials in Cisco Expressway
 
 <b>🚨 New on CISA KEV (7 days): 9</b>
 • <code>CVE-2026-40217</code> BerriAI LiteLLM · added 18 Nov
@@ -18,12 +22,22 @@
 • <code>CVE-2026-125294</code> The Nexter Blocks Pro plugin for WordPress is vulnerable to Privilege… · CVSS 9.8 · EPSS <1%
 • <code>CVE-2026-133680</code> A vulnerability was found in D-Link DCS-935L 1.10.01. This affects… · CVSS 8.6 · EPSS 2%
 
+<b>📰 Threat picture</b>
+• Hackers exploit critical VMware, Cisco, and Apache flaws for espionage
+• China‑linked hackers use AI agents to exploit medical software zero‑day
+• Attackers’ AI agents found zero‑day in medical‑imaging software, gaining root access
+
 <b>🔗 Read</b>
 • <a href="https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html">Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge</a> (The Hacker News)
 • <a href="https://www.securityweek.com/amazon-china-linked-hackers-ai-agents-exploited-medical-software-zero-day/">Amazon: China-Linked Hackers’ AI Agents Exploited Medical Software Zero-Day</a> (SecurityWeek)
 • <a href="https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/">Microsoft Entra Connect Health flaw exploited to steal tenant data</a> (BleepingComputer)
 • <a href="https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html">Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access</a> (The Hacker News)
 
-<i>Rule-based digest. Sources: CISA KEV v2026.11.20, NVD, FIRST EPSS, security news. ⭐ = on your vendor watchlist.</i>
-<i>Data issues: AI: GROQ_API_KEY not set, digest built by rules only</i>
+<b>🇿🇦 South Africa</b>
+• South Africa re‑elected to UN Telecoms Council, shaping global telecom policy
+• Government plans R100m AI start‑up fund, a new potential cyber‑target
+
+<i>For leadership:</i> Patch the three KEV‑listed vulnerabilities immediately and keep watch for related exploitation activity.
+
+<i>AI summary fact-checked against the data. Sources: CISA KEV v2026.11.20, NVD, FIRST EPSS, security news. ⭐ = on your vendor watchlist.</i>
 Ask me: /cve CVE-ID · /vendor fortinet · /kev · /news, or any question.
