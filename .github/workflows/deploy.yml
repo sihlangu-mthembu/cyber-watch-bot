@@ -67,6 +67,18 @@ jobs:
           sed -i "s/__KV_ID__/$id/" wrangler.toml
           echo "KV namespace ready"
 
+      - name: workers.dev address (registered once if the account has none)
+        run: |
+          api="https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/workers/subdomain"
+          current=$(curl -s "$api" -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" | node -e 'let d="";process.stdin.on("data",c=>d+=c).on("end",()=>{try{process.stdout.write(JSON.parse(d).result?.subdomain||"")}catch{}})')
+          if [ -n "$current" ]; then echo "Subdomain: $current.workers.dev"; exit 0; fi
+          for name in sihlangu sihlangu-mthembu "sihlangu-$(date +%s | tail -c 5)"; do
+            res=$(curl -s -X PUT "$api" -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" -H "Content-Type: application/json" --data "{\"subdomain\":\"$name\"}")
+            if echo "$res" | grep -q '"success":true'; then echo "Registered $name.workers.dev"; sleep 20; exit 0; fi
+            echo "Could not use $name: $(echo "$res" | head -c 300)"
+          done
+          echo "::error::Could not register a workers.dev subdomain"; exit 1
+
       - name: Deploy to Cloudflare Workers
         id: deploy
         run: |
@@ -85,8 +97,8 @@ jobs:
           URL: ${{ steps.deploy.outputs.url }}
         run: |
           auth=$(printf 'setup:%s' "$TELEGRAM_BOT_TOKEN" | sha256sum | cut -d' ' -f1)
-          for i in 1 2 3 4 5 6; do
-            sleep 10
+          for i in $(seq 1 12); do
+            sleep 15
             if curl -fsS -X POST "$URL/setup" -H "Authorization: Bearer $auth" -o setup.json; then break; fi
           done
           cat setup.json; echo
