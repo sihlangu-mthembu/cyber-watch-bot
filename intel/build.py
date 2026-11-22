@@ -50,8 +50,8 @@ SYSTEM = ("You are a threat-intelligence analyst writing a morning brief for a S
 SCHEMA = """Return exactly:
 {"headline": "max 16 words, the single most important thing today",
  "patch_first": [{"cve": "CVE id from the facts", "why": "max 22 words"}],   (up to 3, most urgent first)
- "threats": ["2-3 bullets, max 25 words each, from the headlines"],
- "sa_angle": ["0-2 bullets on South African relevance, only if South African headlines exist"],
+ "threats": ["2-3 bullets, max 25 words each, each about a DIFFERENT story from the headlines"],
+ "sa_angle": ["0-2 bullets, only about South African cyber INCIDENTS (breach, ransomware, attack) in the SA headlines; [] if none. Never speculate"],
  "exec_note": "one sentence a non-technical executive can act on"}"""
 
 
@@ -68,7 +68,9 @@ def facts_text(kev_recent, critical, news, epss):
         L.append(f"- {c['cve']} | {c['vendor']} {c['product']} | CVSS {cv.get('score')} | EPSS {e.get('epss', 0):.3f}"
                  f" | {c['desc'][:180]}")
     L.append("\nHEADLINES (last 36h):")
-    for n in news[:15]:
+    incident = {"Breach", "Ransomware", "Exploited", "Nation-state"}
+    relevant = [n for n in news if "South Africa" not in n["tags"] or incident & set(n["tags"])]
+    for n in relevant[:15]:
         L.append(f"- {n['title']} ({n['source']}) [tags: {', '.join(n['tags'])}]")
     return "\n".join(L)
 
