@@ -1,0 +1,17 @@
+{
+  "url": "https://cyber-watch-bot.sihlangu-mthembu.workers.dev",
+  "deployed_at": "2026-11-22T16:21:07.101Z",
+  "setup": {
+    "webhook": true,
+    "commands": true,
+    "description": true,
+    "bot": "sihla_cyberwatch_bot"
+  },
+  "health": {
+    "ok": true,
+    "owner_set": false,
+    "allowed": 0,
+    "data_ok": true,
+    "data_generated": "2026-11-22T14:45:59+02:00"
+  }
+}
