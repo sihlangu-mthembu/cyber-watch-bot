@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-22T18:26:06+02:00",
- "kev_version": "2026.11.20",
+ "generated": "2026-11-23T17:07:45+02:00",
+ "kev_version": "2026.11.23",
  "kev_count": 1790,
  "kev_recent": [
   {
@@ -12,7 +12,7 @@
    "due": "2026-12-02",
    "ransomware": false,
    "desc": "BerriAI LiteLLM contains an unprotected alternate channel vulnerability that could allow remote attackers to execute arbitrary code via bytecode rewriting at the /guardrails/test_custom_code URI.",
-   "priority": 70
+   "priority": 71
   },
   {
    "cve": "CVE-2026-123890",
@@ -65,9 +65,20 @@
    "name": "Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability",
    "added": "2026-11-18",
    "due": "2026-11-21",
-   "ransomware": false,
+   "ransomware": true,
    "desc": "Synology DSM contains an improper encoding or escaping of output vulnerability in the system plugin daemon in Synology BeeStation OS (BSM) that could allow a remote attacker to execute arbitrary code via unspecified vectors.",
-   "priority": 51
+   "priority": 56
+  },
+  {
+   "cve": "CVE-2026-115731",
+   "vendor": "Perforce",
+   "product": "Puppet Enterprise",
+   "name": "Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability",
+   "added": "2026-11-17",
+   "due": "2026-12-01",
+   "ransomware": false,
+   "desc": "Perforce Puppet Enterprise contains a deserialization of untrusted data vulnerability in Puppet\u2019s report-processing code that allows a client with any CA-signed agent certificate to execute arbitrary code on the Puppet Server as the service",
+   "priority": 53
   },
   {
    "cve": "CVE-2026-90436",
@@ -90,40 +101,30 @@
    "ransomware": false,
    "desc": "Apache Roller contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via the XML-RPC endpoint, which accepts and deserializes vendor extension types before authent",
    "priority": 51
-  },
-  {
-   "cve": "CVE-2026-115731",
-   "vendor": "Perforce",
-   "product": "Puppet Enterprise",
-   "name": "Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability",
-   "added": "2026-11-17",
-   "due": "2026-12-01",
-   "ransomware": false,
-   "desc": "Perforce Puppet Enterprise contains a deserialization of untrusted data vulnerability in Puppet\u2019s report-processing code that allows a client with any CA-signed agent certificate to execute arbitrary code on the Puppet Server as the service",
-   "priority": 50
   }
  ],
  "critical": [
   {
-   "cve": "CVE-2026-120539",
-   "published": "2026-11-21",
+   "cve": "CVE-2026-134882",
+   "published": "2026-11-23",
    "status": "Deferred",
-   "desc": "The Restrictions for BuddyPress plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 1.5.4 This is due to the plugin splicing the attacker-controlled request URI into a PHP expression inside a double-quoted string and evaluating it with eval(). Because PHP interpolates double-quoted strings, a payload of the form {${...}} in the URL path is executed dur",
+   "desc": "A weakness has been identified in TOTOLINK A7100RU 7.4cu.2313_B20191024. This issue affects the function exportOvpn of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. This manipulation of the argument Username causes os command injection. The attack is possible to be carried out remotely.",
    "cvss": {
-    "score": 9.8,
+    "score": 10.0,
     "severity": "CRITICAL",
-    "version": "3.1",
-    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    "version": "4.0",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
    },
    "vendor": "",
    "product": "",
    "cwe": [
-    "CWE-95"
+    "CWE-77",
+    "CWE-78"
    ],
    "refs": [
-    "https://github.com/seventhqueen/buddypress-restrict/releases/tag/1.5.5",
-    "https://plugins.trac.wordpress.org/browser/bp-restrict/tags/1.5.4/admin/class-bp-restrict-admin.php#L213",
-    "https://plugins.trac.wordpress.org/browser/bp-restrict/tags/1.5.4/admin/class-bp-restrict-pmpro.php#L184"
+    "https://vuldb.com/cve/CVE-2026-134882",
+    "https://vuldb.com/submit/1054781",
+    "https://vuldb.com/vuln/442238"
    ],
    "in_kev": false,
    "priority": 16
@@ -152,29 +153,26 @@
    "priority": 15
   },
   {
-   "cve": "CVE-2026-133680",
-   "published": "2026-11-20",
-   "status": "Deferred",
-   "desc": "A vulnerability was found in D-Link DCS-935L 1.10.01. This affects the function loginRouter of the file web/cgi-bin/localrecording/setconf.cgi of the component Local Recording CGI. Performing a manipulation of the argument account/password results in os command injection. Remote exploitation of the attack is possible. The exploit has been made public and could be used.",
+   "cve": "CVE-2026-120382",
+   "published": "2026-11-23",
+   "status": "Awaiting Analysis",
+   "desc": "An improper neutralization of argument delimiters in a command vulnerability in the OAuth API in Synology DiskStation Manager (DSM) before 7.1.1-42962-10, 7.2.1-69057-14, 7.2.2-72806-11, 7.3.2-86009-6, and 7.4.1-90080-2 allows remote attackers to read or write arbitrary files and conduct denial-of-service attacks.",
    "cvss": {
-    "score": 8.6,
-    "severity": "HIGH",
-    "version": "4.0",
-    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "version": "3.1",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
    },
    "vendor": "",
    "product": "",
    "cwe": [
-    "CWE-77",
-    "CWE-78"
+    "CWE-88"
    ],
    "refs": [
-    "https://github.com/roit-wolf/CVE/",
-    "https://vuldb.com/cve/CVE-2026-133680",
-    "https://vuldb.com/submit/1051805"
+    "https://www.synology.com/en-global/security/advisory/Synology_SA_26_21"
    ],
    "in_kev": false,
-   "priority": 14
+   "priority": 15
   },
   {
    "cve": "CVE-2026-134292",
@@ -223,281 +221,205 @@
    ],
    "in_kev": false,
    "priority": 14
+  },
+  {
+   "cve": "CVE-2026-121613",
+   "published": "2026-11-23",
+   "status": "Received",
+   "desc": "Missing authentication and authorization on an exposed interface allows an unauthenticated remote attacker to send arbitrary commands to the affected component, which can force a device reboot or let the attacker upload malicious firmware.",
+   "cvss": {
+    "score": 9.3,
+    "severity": "CRITICAL",
+    "version": "4.0",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-306"
+   ],
+   "refs": [
+    "https://www.certvde.com/en/advisories/VDE-2026-148/"
+   ],
+   "in_kev": false,
+   "priority": 14
   }
  ],
  "epss": {
   "CVE-2026-90817": {
    "epss": 0.34335,
    "percentile": 0.98448,
-   "date": "2026-11-22"
+   "date": "2026-11-23"
   },
   "CVE-2026-90436": {
-   "epss": 0.03813,
-   "percentile": 0.90314,
-   "date": "2026-11-22"
+   "epss": 0.05874,
+   "percentile": 0.93395,
+   "date": "2026-11-23"
   },
   "CVE-2026-76466": {
    "epss": 0.02187,
-   "percentile": 0.82875,
-   "date": "2026-11-22"
+   "percentile": 0.82879,
+   "date": "2026-11-23"
   },
   "CVE-2026-40217": {
-   "epss": 0.78004,
-   "percentile": 0.99581,
-   "date": "2026-11-22"
+   "epss": 0.82799,
+   "percentile": 0.99678,
+   "date": "2026-11-23"
+  },
+  "CVE-2026-134882": {
+   "epss": 0.02524,
+   "percentile": 0.85271,
+   "date": "2026-11-23"
   },
   "CVE-2026-134292": {
    "epss": 0.00703,
-   "percentile": 0.54194,
-   "date": "2026-11-22"
+   "percentile": 0.54198,
+   "date": "2026-11-23"
   },
   "CVE-2026-133993": {
    "epss": 0.01052,
-   "percentile": 0.65184,
-   "date": "2026-11-22"
-  },
-  "CVE-2026-133680": {
-   "epss": 0.02215,
-   "percentile": 0.83085,
-   "date": "2026-11-22"
+   "percentile": 0.6519,
+   "date": "2026-11-23"
   },
   "CVE-2026-129448": {
    "epss": 0.05459,
-   "percentile": 0.92939,
-   "date": "2026-11-22"
+   "percentile": 0.9294,
+   "date": "2026-11-23"
   },
   "CVE-2026-125294": {
    "epss": 0.00801,
-   "percentile": 0.57566,
-   "date": "2026-11-22"
+   "percentile": 0.57573,
+   "date": "2026-11-23"
   },
   "CVE-2026-123890": {
    "epss": 0.03526,
-   "percentile": 0.8953,
-   "date": "2026-11-22"
+   "percentile": 0.89533,
+   "date": "2026-11-23"
   },
-  "CVE-2026-120539": {
-   "epss": 0.02157,
-   "percentile": 0.82645,
-   "date": "2026-11-22"
+  "CVE-2026-120382": {
+   "epss": 0.01214,
+   "percentile": 0.69299,
+   "date": "2026-11-23"
   },
   "CVE-2026-115731": {
-   "epss": 0.01231,
-   "percentile": 0.69697,
-   "date": "2026-11-22"
+   "epss": 0.12839,
+   "percentile": 0.96392,
+   "date": "2026-11-23"
   },
   "CVE-2025-42884": {
-   "epss": 0.00714,
-   "percentile": 0.54603,
-   "date": "2026-11-22"
+   "epss": 0.00902,
+   "percentile": 0.60644,
+   "date": "2026-11-23"
   },
   "CVE-2024-10441": {
    "epss": 0.03129,
-   "percentile": 0.88188,
-   "date": "2026-11-22"
+   "percentile": 0.88191,
+   "date": "2026-11-23"
   }
  },
  "news": [
   {
-   "title": "Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge",
-   "source": "The Hacker News",
-   "link": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html",
-   "published": "2026-11-21T14:19:13+05:30",
+   "title": "SAP NetWeaver, Cisco Expressway Flaws Exploited in Attacks",
+   "source": "SecurityWeek",
+   "link": "https://www.securityweek.com/sap-netweaver-cisco-expressway-flaws-exploited-in-attacks/",
+   "published": "2026-11-23T11:35:15+00:00",
    "tags": [
-    "Exploited",
-    "Advisory",
-    "Nation-state"
+    "Breach"
    ],
    "vendors": [
     "Cisco",
-    "VMware",
-    "Broadcom",
     "SAP"
    ],
-   "cves": [
-    "CVE-2026-129448"
-   ]
-  },
-  {
-   "title": "Amazon: China-Linked Hackers\u2019 AI Agents Exploited Medical Software Zero-Day",
-   "source": "SecurityWeek",
-   "link": "https://www.securityweek.com/amazon-china-linked-hackers-ai-agents-exploited-medical-software-zero-day/",
-   "published": "2026-11-21T12:08:50+00:00",
-   "tags": [
-    "Exploited",
-    "Advisory",
-    "Nation-state"
-   ],
-   "vendors": [],
    "cves": []
   },
   {
-   "title": "Microsoft Entra Connect Health flaw exploited to steal tenant data",
+   "title": "CISA flags critical Cisco RCE flaw as actively exploited in attacks",
    "source": "BleepingComputer",
-   "link": "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/",
-   "published": "2026-11-21T13:01:58-05:00",
+   "link": "https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/",
+   "published": "2026-11-23T02:44:19-05:00",
+   "tags": [
+    "Exploited",
+    "Advisory"
+   ],
+   "vendors": [
+    "Cisco"
+   ],
+   "cves": []
+  },
+  {
+   "title": "Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE",
+   "source": "The Hacker News",
+   "link": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html",
+   "published": "2026-11-23T14:41:56+05:30",
+   "tags": [
+    "Exploited",
+    "Advisory"
+   ],
+   "vendors": [],
+   "cves": [
+    "CVE-2026-131914"
+   ]
+  },
+  {
+   "title": "Hackers Exploit Critical ScreenConnect Flaw to Hijack MSP Technician PCs Without Warning",
+   "source": "The Hacker News",
+   "link": "https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html",
+   "published": "2026-11-23T18:11:04+05:30",
+   "tags": [
+    "Advisory"
+   ],
+   "vendors": [
+    "ConnectWise"
+   ],
+   "cves": [
+    "CVE-2026-84869"
+   ]
+  },
+  {
+   "title": "N-able Discloses Critical Mail Assure Vulnerability Found During Breach Investigation",
+   "source": "The Hacker News",
+   "link": "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html",
+   "published": "2026-11-23T17:58:09+05:30",
    "tags": [
     "Breach",
     "Advisory"
    ],
+   "vendors": [],
+   "cves": [
+    "CVE-2026-134624"
+   ]
+  },
+  {
+   "title": "Microsoft testing fix for Windows 11 Bluetooth audio quality drops",
+   "source": "BleepingComputer",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-testing-fix-for-windows-11-bluetooth-audio-quality-drops/",
+   "published": "2026-11-23T08:28:45-05:00",
+   "tags": [],
    "vendors": [
     "Microsoft"
    ],
    "cves": []
   },
   {
-   "title": "Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access",
-   "source": "The Hacker News",
-   "link": "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html",
-   "published": "2026-11-21T16:33:17+05:30",
+   "title": "GL.iNet Routers, KVMs Compromised via Remote Management Service Flaw",
+   "source": "SecurityWeek",
+   "link": "https://www.securityweek.com/gl-inet-routers-kvms-compromised-via-remote-management-service-flaw/",
+   "published": "2026-11-23T13:26:22+00:00",
    "tags": [
-    "Exploited",
-    "Nation-state"
+    "Breach"
    ],
    "vendors": [],
    "cves": []
   },
   {
-   "title": "Reverse Engineer Anything: The Legal Risks And Opportunities Of AI-assisted Reverse Engineering",
-   "source": "Legal 500",
-   "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOSHYyMFpVWlJteTF5Z1ZybHJ1MEFMNVFsSkM3VVg3OVZabG1MX0owSUJNeS1hZzF5SWs3S0czZzh5a1F0T0Z3bUQyQUZoT21wSG1SY0VlOEZ1cHgzenFReEpvRE9CZnVoaHVSTDNOdEpPaE1BdTZfV1BGRlRwZlBBMGJleEJZakJLNXgxc3NXam16dnpVTVR4QTBDMzNnNURjOVZnOHlSWUFCWWw5TzNPYnh2dm1GVlo5UU5ucjFtSnRhOWxsd3BtQVRIRFI3SFloTXZvSWRlOFBhT21EWWVCSTBEVE1ybE96SmxXcWlmU3VpcVlSdWhQOTMwbw?oc=5",
-   "published": "2026-11-22T15:23:20+00:00",
-   "tags": [
-    "South Africa"
+   "title": "Microsoft confirms Windows printing issues affecting Forcepoint users",
+   "source": "BleepingComputer",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-printing-issues-after-kb5132043-windows-hotpatch/",
+   "published": "2026-11-23T04:11:15-05:00",
+   "tags": [],
+   "vendors": [
+    "Microsoft"
    ],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "Presidential PhD Programme in Electrical Engineering 2027 \u2013 R200,000 Annual Doctoral Scholarship in South Africa",
-   "source": "Global South Opportunities",
-   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE12b0F1Tkh1aHJTMmVPQmNKWXVDczBoTXEyMGZFYlBnc2NFSjdqSzNhWUh2bTdXX1N0c3dETnFtOXJtVzlnbElNbnZEekpzMWJsR3h3Y1pyMWw0UEVRVDYxZDVyR1Q0Ti1rbnhPX1R3cFU3VFk?oc=5",
-   "published": "2026-11-22T14:39:25+00:00",
-   "tags": [
-    "South Africa"
-   ],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "JPMorgan Chase (JPM) Says Vendor Cyberattack Exposed Customer Data",
-   "source": "Simply Wall St",
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPZVF5aFBkb2l0THVYcnNDTVZ1RmJlWlREZHRqS2xBQlBkNXRvUXNyMWVGVTRxTmViWGZjVzFMbnRXNnRGR2JOYWNJQ0hvUEZPdi1rMzlIcnh5dGJ5Y2M4bUZYYktKS0k3ZVJDVVpIX0w2UFZQSEtLY0sxcXdIQmFVdG5TNThINDU2UFhSZXNBWWl5UTdqbThGQUdIYlItcUpmdDFaM1JKSmtwWjNVUWctSGZKanZBaHJhOTJUa3hDaUo3VDdITjYxWHh30gHKAUFVX3lxTE9lUXloUGRvaXRMdVhyc0NNVnVGYmVaVERkdGpLbEFCUGQ1dG9Rc3IxZUZVNHFOZWJYZmNXMUxudFc2dEZHYk5hY0lDSG9QRk92LWszOUhyeHl0YnljYzhtRlhiS0pLSTdlUkNVWkhfTDZQVlBIS0tjSzFxd0hCYVV0blM1OEg0NTZQWFJlc0FZaXlRN2ptOEZBR0hiUi1xSmZ0MVozUkpKa3BaM1VRZy1IZkpqdkFocmE5MlRreENpSjdUN0hONjFYeHc?oc=5",
-   "published": "2026-11-22T14:08:13+00:00",
-   "tags": [
-    "South Africa"
-   ],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "SA eyes R100m venture capital fund to support AI start-ups",
-   "source": "South African Government News Agency",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPeVF4S3hfLTREYVhWcFRIcmpxLUwzMnlTX3ZlSXZLei1VQVZtTzdVeUZmV3lqbWRzTG9wSkd0Rm05dEE1ay1IcVBrZWVDS3B4Zlk4QS01VkVIVHFxc3h3dHNQTU4tZGtOcGZuVFJOWk8xd3hHaTRFVTh5YjZnbHNmZEhqYmR6RHI4QkFCRUdCOFlMQ3FLYS1PRGJB?oc=5",
-   "published": "2026-11-22T09:18:48+00:00",
-   "tags": [
-    "South Africa"
-   ],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "South Africa stumbles into Nations Championship final after losing to Ireland 20-17",
-   "source": "Bluefield Daily Telegraph",
-   "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxPTkl4bGZ4dm9hNlIzLWVrdGlENU1kN0tpTmNtSXppd0hWbHZaQ1pIWnZjaWZzVHpfeEpjbTRtU0loU2ZJYnptb1Q3aG5ybTlkMjhoenZOTnZHNWVsek5KNTRjaThzc3VjTnd0Yms5VDBRaVl4UUNRdUlnM1NQSEt0cmtDelhzRjFmQ3lRUzYxSVZiV05TNTJWNW1WYVN4dkdnV3pMejdqWFJhV0JBQzZSVHUyN3BqcGM1VXZDTzFINkdCRkQwQ0ZwWDkyYWl5TzFZNTZYQmZXclIyeE9Kd2ZTT29OTm5veENQR3lQaFFKYmNubE1NN256NnRKaGk2TW9reTM5ajRkaVhEb1lXMV9N?oc=5",
-   "published": "2026-11-21T23:16:01+00:00",
-   "tags": [
-    "South Africa"
-   ],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "South Africa Re-Elected to UN Telecoms Council",
-   "source": "Business explainer",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNUTJtTWpJQTVGWExMenAyMnk2RjFwbnByd3l4YXFwZk91ZlhkdzBtVUdsQUtvT2Uzb1lXc2s3T0xmbWQ1dXpScXM5ZW1kN2Ewei1lY1p5Zzl2N2ZKdldQbWNjeGZDUE1VVlpySVg1a2c3WTZqV3Nkc0ZibHVFYjZ4NHBGS28tNzBsQ2xKT0xLaXdlWWQ0aUJiaGhuS3NSZFc3?oc=5",
-   "published": "2026-11-21T22:16:51+00:00",
-   "tags": [
-    "South Africa"
-   ],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "South African Payment Ring That Never Needs Charging Wins Over Big Banks",
-   "source": "Business explainer",
-   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOY0RUbjl2R1dieXd5dGpGTkNhU2RWRk5PRFRtbUtGaEpiajl4d0VNNmVGNWZ1UjNwN0NWUzFJUldIOFFTMmVDdmtMNTRYODQ3TVBLcFpBNERjTnB0LXpaU0VYaXdhU1VleERULXVoR2VjQzctNi12TzhoamJlVlJaOXZYX3BJdjhITXQzUmJGcEdkMl8xbmNuTkp3ZFhDcWFQVlg2VDhEWGxmZ0RhN3ZHWGNUQUY1UXVTQmoyeEpHYjUyR25ka19CakdXUTBfaEQ3?oc=5",
-   "published": "2026-11-21T21:08:21+00:00",
-   "tags": [
-    "South Africa"
-   ],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "Praavin Chavda Appointed Vice President \u2013 Information Technology at Intas Pharmaceuticals",
-   "source": "https://hrtoday.in/",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPckpCRFhzT25jMzkxSVotamNEQWNkNVFZbnh6MEJyRmJpLVljcFNtZkpuRnBOZEotSC0zUFB1ZHFIZVZGQ0FUYzB0bFJqU1FXazZuaTdVal9TLVpOZ3YyTmprcU81NGpkRENaQWE5UjNfRlBlaHBYb3Foc0FQTTNiektFOXlNNllSOUVtSFFwSHIzX2V4cndKSXJUVkJYYjFoemdCN2txVE5zbFU?oc=5",
-   "published": "2026-11-21T15:36:56+00:00",
-   "tags": [
-    "South Africa"
-   ],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "USDA hit with cyberattack: Sources",
-   "source": "KAKE",
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPRmdOZlU5bS1PdjYySW9qdTBBS1VzLXpMNjloWHFtRkRTd0lHblBqNU1iQlFaMFRyOUVpQ0NlTVduMTZGUU9aWF9LTXgydmE1VENzbmM5azlqSGZ5TE1HUk02SHNQVk55ZG9OM3VyaUpSMlFZcGRDQmhZeVJHM1V0d29EbXRxUjUzR21XYWp4cmdrZGdWaks1Ri00R0o5MC1lSHV2aWk2bk5zNThTU2xtNUhhWTJoby1YMFE?oc=5",
-   "published": "2026-11-21T12:14:00+00:00",
-   "tags": [
-    "South Africa"
-   ],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "Samuel Ubido thinks African startups are overlooking Gulf capital",
-   "source": "TechCabal",
-   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5GY0g1OXMwZ05GSnZINjNleG1na1RTOFdWVnp1WGQxMTdwQU44UmM0a0xXbXc4T3VWRlh1R3dlbmdQRmNSNnZKQVZWQ2ZiNnNvck5wOVdITHZOTWpxS3hUbnV5bE8zZ2JXT2U5b3hn?oc=5",
-   "published": "2026-11-21T11:55:41+00:00",
-   "tags": [
-    "South Africa"
-   ],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "The great tech: Ramaphosa returns from Silicon Valley with plan for AI startup fund",
-   "source": "News24",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQcmdsdTB0cnU2dm92NWJDdEVSaG9tb05oUllKUEt6MTZMLTVRTVAtbVZtdTA3NWV5ZERyNm42RWhOeHlsSGtfNXBWWDFuaG9fbE9SZlp6QXd3VjNnVkthdXB2dzBKODJWNlRsc2RmTmYwclpHYTl4QThEUWFLdmtqNjc5bWFQLWpBdVVhemNmUDR6NHZEYnJPLVRhcVBnb2ZlVWYzdkg2QjRGZm1ocnhlS0M5X1FxTC1kaUtwb2hzN05GbVg0OEZF?oc=5",
-   "published": "2026-11-21T10:37:11+00:00",
-   "tags": [
-    "South Africa"
-   ],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "Garda and Revenue credit unions are among those hit by the Cyberattack",
-   "source": "Irish Independent",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPdldYb3J1OURlX0xyb193cnhPYl8ySDhZY25Mb2oxeVluS3NiTVJud3pOWTl3aFM4MXVLWHBiY25ZUWN5SjNEbHBiVngtcnZyWjQ3bS1JUHN0T2JSb0xCTkVhRUpsWjZDcU42czZrUkpJU1NuVHZjTmJRd1R4cEVWMEN4WkM1eHpFR2dPT1JUVjRfNU1GekdUalVxYUdEM1lmTFFIT1laT2FRTkRZUDEybnl4c1lQOHlyb0lEZmlB?oc=5",
-   "published": "2026-11-21T05:00:00+00:00",
-   "tags": [
-    "South Africa"
-   ],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "President Ramaphosa emphasises data sovereignty, cybersecurity in AI partnerships",
-   "source": "South African Government News Agency",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNeHdHdnFqREJOOE5vbE9CckQxclVXbV91all5WnJDQ1Q5TFNqc1Y5SGlrcEYwd1hGUFJCMGlNVFBxUjhjYXhNUnc5QXY0SlJWTkJseVRPaThtTTloV0V0T3o4SGxJQ0ZRMXR3OERxR0ZoR1ZGckJJZkp6Q2JQYlh2U0pxVENhcGlIcTVaQ013Ukg2enFpcEh4Tzc4c1pCM241bUMwaFZJSVhyaTIyRDQ0aVFEcTBPUUE?oc=5",
-   "published": "2026-11-21T04:37:24+00:00",
-   "tags": [
-    "South Africa"
-   ],
-   "vendors": [],
    "cves": []
   },
   {
@@ -512,13 +434,102 @@
    "cves": []
   },
   {
-   "title": "Rackspace Spot breach let hackers access customer Kubernetes secrets",
-   "source": "BleepingComputer",
-   "link": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/",
-   "published": "2026-11-21T17:59:58-05:00",
+   "title": "phpAfterShell Vulnerability Revives PHP2Shell\u2019s Attack Path",
+   "source": "SecurityWeek",
+   "link": "https://www.securityweek.com/phpaftershell-vulnerability-revives-php2shells-attack-path/",
+   "published": "2026-11-23T13:58:07+00:00",
    "tags": [
-    "Breach"
+    "Advisory"
    ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "Critical binary-parser Flaw Enables JavaScript Injection via Malicious Parser Definitions",
+   "source": "The Hacker News",
+   "link": "https://thehackernews.com/2026/11/critical-binary-parser-flaw-enables.html",
+   "published": "2026-11-23T18:52:20+05:30",
+   "tags": [
+    "Advisory"
+   ],
+   "vendors": [],
+   "cves": [
+    "CVE-2026-134814"
+   ]
+  },
+  {
+   "title": "Hackers Exploited GL.iNet Cloud Flaw to Install Malware on Routers and KVM Devices",
+   "source": "The Hacker News",
+   "link": "https://thehackernews.com/2026/11/hackers-exploited-glinet-cloud-flaw-to.html",
+   "published": "2026-11-23T14:34:08+05:30",
+   "tags": [
+    "Advisory"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "Hackers exploit GL.iNet cloud flaw to infect routers, KVM devices",
+   "source": "BleepingComputer",
+   "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/",
+   "published": "2026-11-22T13:45:37-05:00",
+   "tags": [
+    "Advisory"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "AI Agents Are Creating a Shared Responsibility Gap",
+   "source": "BleepingComputer",
+   "link": "https://www.bleepingcomputer.com/news/security/ai-agents-are-creating-a-shared-responsibility-gap/",
+   "published": "2026-11-23T10:00:10-05:00",
+   "tags": [],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "AI Inference Providers Failed to Detect Hacking and Prompt Theft, Says Dragos",
+   "source": "SecurityWeek",
+   "link": "https://www.securityweek.com/ai-inference-providers-failed-to-detect-hacking-and-prompt-theft-says-dragos/",
+   "published": "2026-11-23T12:16:20+00:00",
+   "tags": [],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "Call center operator gets 8 years for helping scam 30,000 Americans",
+   "source": "BleepingComputer",
+   "link": "https://www.bleepingcomputer.com/news/security/call-center-operator-gets-8-years-for-helping-scam-30-000-americans/",
+   "published": "2026-11-23T07:02:23-05:00",
+   "tags": [],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "BadBox 3.0 Ad Fraud Operation Generating 40 Billion Daily Bid Requests Disrupted",
+   "source": "SecurityWeek",
+   "link": "https://www.securityweek.com/badbox-3-0-ad-fraud-operation-generating-40-billion-daily-bid-requests-disrupted/",
+   "published": "2026-11-23T11:44:18+00:00",
+   "tags": [],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "CrowdStrike to Acquire Zscaler in $43.9 Billion Deal",
+   "source": "SecurityWeek",
+   "link": "https://www.securityweek.com/crowdstrike-to-acquire-zscaler-in-43-9-billion-deal/",
+   "published": "2026-11-23T11:31:44+00:00",
+   "tags": [],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "AI-Assisted Cyber Attacks Trigger Unauthorized Payments at Indian Banks and Fintech Firms",
+   "source": "The Hacker News",
+   "link": "https://thehackernews.com/2026/11/ai-assisted-cyberattacks-trigger.html",
+   "published": "2026-11-23T13:54:15+05:30",
+   "tags": [],
    "vendors": [],
    "cves": []
   },
@@ -548,101 +559,35 @@
    "tags": [],
    "vendors": [],
    "cves": []
-  },
-  {
-   "title": "FBI Investigating Apparent Hack of Its Key National Criminal Justice Database, AP Source Says",
-   "source": "SecurityWeek",
-   "link": "https://www.securityweek.com/fbi-investigating-apparent-hack-of-its-key-national-criminal-justice-database-ap-source-says/",
-   "published": "2026-11-22T00:53:02+00:00",
-   "tags": [],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "BADBOX botnet returns with record-breaking 40 billion daily ad requests",
-   "source": "BleepingComputer",
-   "link": "https://www.bleepingcomputer.com/news/security/badbox-30-botnet-returns-with-record-breaking-40-billion-daily-ad-requests/",
-   "published": "2026-11-21T10:17:27-05:00",
-   "tags": [],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "FBI reportedly hacked again, this time targeting nationwide police database",
-   "source": "BleepingComputer",
-   "link": "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/",
-   "published": "2026-11-21T09:26:04-05:00",
-   "tags": [],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "President Trump Taps Kirsten Davies as National Cyber Director",
-   "source": "SecurityWeek",
-   "link": "https://www.securityweek.com/president-trump-taps-kirsten-davies-as-national-cyber-director/",
-   "published": "2026-11-21T13:00:00+00:00",
-   "tags": [],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "A Single Malicious Webpage Let Researchers Hijack Meta Muse and Access Private Chats",
-   "source": "The Hacker News",
-   "link": "https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html",
-   "published": "2026-11-21T17:23:07+05:30",
-   "tags": [],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "GnuPG Warns Critical GPGME Flaw Could Expose App Data via Malicious OpenPGP Keys",
-   "source": "The Hacker News",
-   "link": "https://thehackernews.com/2026/11/gnupg-warns-critical-gpgme-flaw-could.html",
-   "published": "2026-11-21T16:35:53+05:30",
-   "tags": [],
-   "vendors": [],
-   "cves": [
-    "CVE-2026-129975"
-   ]
-  },
-  {
-   "title": "Signal Blocks AI Agents From Reading Private Chats via Screenshots on Android and iOS",
-   "source": "The Hacker News",
-   "link": "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html",
-   "published": "2026-11-21T14:19:20+05:30",
-   "tags": [],
-   "vendors": [],
-   "cves": []
   }
  ],
  "ai": {
-  "headline": "Nation-state actors exploiting VMware, Cisco, and Apache flaws in new espionage campaigns",
+  "headline": "SAP NetWeaver and Cisco Expressway vulnerabilities actively exploited in recent attacks",
   "patch_first": [
    {
     "cve": "CVE-2026-40217",
-    "why": "High EPSS; actively exploited on CISA KEV, targets BerriAI LiteLLM"
+    "why": "High EPSS (0.828) \u2013 unprotected channel in BerriAI LiteLLM, actively exploited per CISA KEV"
    },
    {
-    "cve": "CVE-2026-123890",
-    "why": "Active KEV exploit; VMware vCenter authentication bypass"
+    "cve": "CVE-2026-90817",
+    "why": "EPSS 0.343 \u2013 code injection in REDCap, flagged as actively exploited"
    },
    {
-    "cve": "CVE-2026-76466",
-    "why": "KEV listed; hard\u2011coded credentials in Cisco Expressway"
+    "cve": "CVE-2026-115731",
+    "why": "EPSS 0.128 \u2013 deserialization issue in Perforce Puppet Enterprise, on KEV list"
    }
   ],
   "threats": [
-   "Hackers exploit critical VMware, Cisco, and Apache flaws for espionage",
-   "China\u2011linked hackers use AI agents to exploit medical software zero\u2011day",
-   "Attackers\u2019 AI agents found zero\u2011day in medical\u2011imaging software, gaining root access"
+   "ASP.NET Anti\u2011CSRF library flaw exploited for unauthenticated RCE (The Hacker News)",
+   "ScreenConnect critical flaw used to hijack MSP technician PCs (The Hacker News)",
+   "GL.iNet routers and KVM devices compromised via remote\u2011management service flaw (SecurityWeek)"
   ],
-  "sa_angle": [
-   "South Africa re\u2011elected to UN Telecoms Council, shaping global telecom policy",
-   "Government plans R100m AI start\u2011up fund, a new potential cyber\u2011target"
-  ],
-  "exec_note": "Patch the three KEV\u2011listed vulnerabilities immediately and keep watch for related exploitation activity.",
+  "sa_angle": [],
+  "exec_note": "Prioritize patching the listed KEV vulnerabilities and monitor for exploitation attempts immediately.",
   "fact_check_removed": 0
  },
- "errors": [],
- "digest_html": "\ud83d\udee1 <b>Cyber Watch \u00b7 Sun 22 Nov 2026</b>\n<b>Nation-state actors exploiting VMware, Cisco, and Apache flaws in new espionage campaigns</b>\n\n<b>\ud83d\udd27 Patch first</b>\n1. <code>CVE-2026-40217</code> BerriAI LiteLLM \u00b7 on KEV \u00b7 EPSS 78%\n   High EPSS; actively exploited on CISA KEV, targets BerriAI LiteLLM\n2. <code>CVE-2026-123890</code> Broadcom VMware vCenter \u00b7 on KEV \u00b7 EPSS 4%\n   Active KEV exploit; VMware vCenter authentication bypass\n3. <code>CVE-2026-76466</code> Cisco Expressway Series \u00b7 on KEV \u00b7 EPSS 2%\n   KEV listed; hard\u2011coded credentials in Cisco Expressway\n\n<b>\ud83d\udea8 New on CISA KEV (7 days): 9</b>\n\u2022 <code>CVE-2026-40217</code> BerriAI LiteLLM \u00b7 added 18 Nov\n\u2022 <code>CVE-2026-123890</code> Broadcom VMware vCenter \u00b7 added 20 Nov \u2b50\n\u2022 <code>CVE-2026-76466</code> Cisco Expressway Series \u00b7 added 20 Nov \u2b50\n\u2022 <code>CVE-2025-42884</code> SAP NetWeaver \u00b7 added 20 Nov \u2b50\n\u2022 <code>CVE-2026-90817</code> Vanderbilt University Research Electronic Data Capture (REDCap) \u00b7 added 18 Nov\n  \u2026and 4 more (/kev)\n\n<b>\ud83c\udd95 New critical CVEs (48h): 5</b>\n\u2022 <code>CVE-2026-120539</code> The Restrictions for BuddyPress plugin for WordPress is vulnerable to\u2026 \u00b7 CVSS 9.8 \u00b7 EPSS 2%\n\u2022 <code>CVE-2026-125294</code> The Nexter Blocks Pro plugin for WordPress is vulnerable to Privilege\u2026 \u00b7 CVSS 9.8 \u00b7 EPSS <1%\n\u2022 <code>CVE-2026-133680</code> A vulnerability was found in D-Link DCS-935L 1.10.01. This affects\u2026 \u00b7 CVSS 8.6 \u00b7 EPSS 2%\n\n<b>\ud83d\udcf0 Threat picture</b>\n\u2022 Hackers exploit critical VMware, Cisco, and Apache flaws for espionage\n\u2022 China\u2011linked hackers use AI agents to exploit medical software zero\u2011day\n\u2022 Attackers\u2019 AI agents found zero\u2011day in medical\u2011imaging software, gaining root access\n\n<b>\ud83d\udd17 Read</b>\n\u2022 <a href=\"https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html\">Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge</a> (The Hacker News)\n\u2022 <a href=\"https://www.securityweek.com/amazon-china-linked-hackers-ai-agents-exploited-medical-software-zero-day/\">Amazon: China-Linked Hackers\u2019 AI Agents Exploited Medical Software Zero-Day</a> (SecurityWeek)\n\u2022 <a href=\"https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/\">Microsoft Entra Connect Health flaw exploited to steal tenant data</a> (BleepingComputer)\n\u2022 <a href=\"https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html\">Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access</a> (The Hacker News)\n\n<b>\ud83c\uddff\ud83c\udde6 South Africa</b>\n\u2022 South Africa re\u2011elected to UN Telecoms Council, shaping global telecom policy\n\u2022 Government plans R100m AI start\u2011up fund, a new potential cyber\u2011target\n\n<i>For leadership:</i> Patch the three KEV\u2011listed vulnerabilities immediately and keep watch for related exploitation activity.\n\n<i>AI summary fact-checked against the data. Sources: CISA KEV v2026.11.20, NVD, FIRST EPSS, security news. \u2b50 = on your vendor watchlist.</i>\nAsk me: /cve CVE-ID \u00b7 /vendor fortinet \u00b7 /kev \u00b7 /news, or any question."
+ "errors": [
+  "News Google News (SA): https://news.google.com/rss/search: HTTP 503"
+ ],
+ "digest_html": "\ud83d\udee1 <b>Cyber Watch \u00b7 Mon 23 Nov 2026</b>\n<b>SAP NetWeaver and Cisco Expressway vulnerabilities actively exploited in recent attacks</b>\n\n<b>\ud83d\udd27 Patch first</b>\n1. <code>CVE-2026-40217</code> BerriAI LiteLLM \u00b7 on KEV \u00b7 EPSS 83%\n   High EPSS (0.828) \u2013 unprotected channel in BerriAI LiteLLM, actively exploited per CISA KEV\n2. <code>CVE-2026-90817</code> Vanderbilt University Research Electronic Data Capture (REDCap) \u00b7 on KEV \u00b7 EPSS 34%\n   EPSS 0.343 \u2013 code injection in REDCap, flagged as actively exploited\n3. <code>CVE-2026-115731</code> Perforce Puppet Enterprise \u00b7 on KEV \u00b7 EPSS 13%\n   EPSS 0.128 \u2013 deserialization issue in Perforce Puppet Enterprise, on KEV list\n\n<b>\ud83d\udea8 New on CISA KEV (7 days): 9</b>\n\u2022 <code>CVE-2026-40217</code> BerriAI LiteLLM \u00b7 added 18 Nov\n\u2022 <code>CVE-2026-123890</code> Broadcom VMware vCenter \u00b7 added 20 Nov \u2b50\n\u2022 <code>CVE-2026-76466</code> Cisco Expressway Series \u00b7 added 20 Nov \u2b50\n\u2022 <code>CVE-2025-42884</code> SAP NetWeaver \u00b7 added 20 Nov \u2b50\n\u2022 <code>CVE-2026-90817</code> Vanderbilt University Research Electronic Data Capture (REDCap) \u00b7 added 18 Nov\n  \u2026and 4 more (/kev)\n\n<b>\ud83c\udd95 New critical CVEs (48h): 6</b>\n\u2022 <code>CVE-2026-134882</code> A weakness has been identified in TOTOLINK A7100RU\u2026 \u00b7 CVSS 10.0 \u00b7 EPSS 3%\n\u2022 <code>CVE-2026-125294</code> The Nexter Blocks Pro plugin for WordPress is vulnerable to Privilege\u2026 \u00b7 CVSS 9.8 \u00b7 EPSS <1%\n\u2022 <code>CVE-2026-120382</code> An improper neutralization of argument delimiters in a command\u2026 \u00b7 CVSS 9.8 \u00b7 EPSS 1%\n\n<b>\ud83d\udcf0 Threat picture</b>\n\u2022 ASP.NET Anti\u2011CSRF library flaw exploited for unauthenticated RCE (The Hacker News)\n\u2022 ScreenConnect critical flaw used to hijack MSP technician PCs (The Hacker News)\n\u2022 GL.iNet routers and KVM devices compromised via remote\u2011management service flaw (SecurityWeek)\n\n<b>\ud83d\udd17 Read</b>\n\u2022 <a href=\"https://www.securityweek.com/sap-netweaver-cisco-expressway-flaws-exploited-in-attacks/\">SAP NetWeaver, Cisco Expressway Flaws Exploited in Attacks</a> (SecurityWeek)\n\u2022 <a href=\"https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/\">CISA flags critical Cisco RCE flaw as actively exploited in attacks</a> (BleepingComputer)\n\u2022 <a href=\"https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html\">Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE</a> (The Hacker News)\n\u2022 <a href=\"https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html\">Hackers Exploit Critical ScreenConnect Flaw to Hijack MSP Technician PCs Without Warning</a> (The Hacker News)\n\n<i>For leadership:</i> Prioritize patching the listed KEV vulnerabilities and monitor for exploitation attempts immediately.\n\n<i>AI summary fact-checked against the data. Sources: CISA KEV v2026.11.23, NVD, FIRST EPSS, security news. \u2b50 = on your vendor watchlist.</i>\n<i>Data issues: News Google News (SA): https://news.google.com/rss/search: HTTP 503</i>\nAsk me: /cve CVE-ID \u00b7 /vendor fortinet \u00b7 /kev \u00b7 /news, or any question."
 }

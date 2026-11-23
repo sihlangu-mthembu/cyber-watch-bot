@@ -1,0 +1,40 @@
+🛡 <b>Cyber Watch · Mon 23 Nov 2026</b>
+<b>SAP NetWeaver and Cisco Expressway vulnerabilities actively exploited in recent attacks</b>
+
+<b>🔧 Patch first</b>
+1. <code>CVE-2026-40217</code> BerriAI LiteLLM · on KEV · EPSS 83%
+   High EPSS (0.828) – unprotected channel in BerriAI LiteLLM, actively exploited per CISA KEV
+2. <code>CVE-2026-90817</code> Vanderbilt University Research Electronic Data Capture (REDCap) · on KEV · EPSS 34%
+   EPSS 0.343 – code injection in REDCap, flagged as actively exploited
+3. <code>CVE-2026-115731</code> Perforce Puppet Enterprise · on KEV · EPSS 13%
+   EPSS 0.128 – deserialization issue in Perforce Puppet Enterprise, on KEV list
+
+<b>🚨 New on CISA KEV (7 days): 9</b>
+• <code>CVE-2026-40217</code> BerriAI LiteLLM · added 18 Nov
+• <code>CVE-2026-123890</code> Broadcom VMware vCenter · added 20 Nov ⭐
+• <code>CVE-2026-76466</code> Cisco Expressway Series · added 20 Nov ⭐
+• <code>CVE-2025-42884</code> SAP NetWeaver · added 20 Nov ⭐
+• <code>CVE-2026-90817</code> Vanderbilt University Research Electronic Data Capture (REDCap) · added 18 Nov
+  …and 4 more (/kev)
+
+<b>🆕 New critical CVEs (48h): 6</b>
+• <code>CVE-2026-134882</code> A weakness has been identified in TOTOLINK A7100RU… · CVSS 10.0 · EPSS 3%
+• <code>CVE-2026-125294</code> The Nexter Blocks Pro plugin for WordPress is vulnerable to Privilege… · CVSS 9.8 · EPSS <1%
+• <code>CVE-2026-120382</code> An improper neutralization of argument delimiters in a command… · CVSS 9.8 · EPSS 1%
+
+<b>📰 Threat picture</b>
+• ASP.NET Anti‑CSRF library flaw exploited for unauthenticated RCE (The Hacker News)
+• ScreenConnect critical flaw used to hijack MSP technician PCs (The Hacker News)
+• GL.iNet routers and KVM devices compromised via remote‑management service flaw (SecurityWeek)
+
+<b>🔗 Read</b>
+• <a href="https://www.securityweek.com/sap-netweaver-cisco-expressway-flaws-exploited-in-attacks/">SAP NetWeaver, Cisco Expressway Flaws Exploited in Attacks</a> (SecurityWeek)
+• <a href="https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/">CISA flags critical Cisco RCE flaw as actively exploited in attacks</a> (BleepingComputer)
+• <a href="https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html">Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE</a> (The Hacker News)
+• <a href="https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html">Hackers Exploit Critical ScreenConnect Flaw to Hijack MSP Technician PCs Without Warning</a> (The Hacker News)
+
+<i>For leadership:</i> Prioritize patching the listed KEV vulnerabilities and monitor for exploitation attempts immediately.
+
+<i>AI summary fact-checked against the data. Sources: CISA KEV v2026.11.23, NVD, FIRST EPSS, security news. ⭐ = on your vendor watchlist.</i>
+<i>Data issues: News Google News (SA): https://news.google.com/rss/search: HTTP 503</i>
+Ask me: /cve CVE-ID · /vendor fortinet · /kev · /news, or any question.
