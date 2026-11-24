@@ -1,0 +1,47 @@
+🛡 <b>Cyber Watch · Tue 24 Nov 2026</b>
+<b>VMware vCenter zero‑day authentication bypass actively exploited, targeting critical infrastructure worldwide</b>
+
+<b>🔧 Patch first</b>
+1. <code>CVE-2026-40217</code> BerriAI LiteLLM · on KEV · EPSS 83%
+   BerriAI LiteLLM unprotected channel allows remote code execution; high EPSS indicates likely exploitation
+2. <code>CVE-2026-133968</code> Project MONAI MONAI Label · on KEV · EPSS 50%
+   Project MONAI Label path traversal can lead to file read/write; medium EPSS suggests active interest
+3. <code>CVE-2026-129448</code> Apache Roller · on KEV · EPSS 40%
+   Apache Roller deserialization of untrusted data may enable remote code execution; notable EPSS
+
+<b>🚨 New on CISA KEV (7 days): 11</b>
+• <code>CVE-2026-40217</code> BerriAI LiteLLM · added 18 Nov
+• <code>CVE-2026-133968</code> Project MONAI MONAI Label · added 23 Nov
+• <code>CVE-2026-123890</code> Broadcom VMware vCenter · added 20 Nov ⭐
+• <code>CVE-2026-76466</code> Cisco Expressway Series · added 20 Nov ⭐
+• <code>CVE-2026-129448</code> Apache Roller · added 20 Nov
+  …and 6 more (/kev)
+
+<b>🆕 New critical CVEs (48h): 16</b>
+• <code>CVE-2026-134882</code> A weakness has been identified in TOTOLINK A7100RU… · CVSS 10.0 · EPSS 3%
+• <code>CVE-2026-120382</code> An improper neutralization of argument delimiters in a command… · CVSS 9.8 · EPSS 1%
+• <code>CVE-2026-50691</code> Improper authorization in M365 Copilot allows an authorized attacker… · CVSS 9.9 · EPSS <1%
+
+<b>📰 Threat picture</b>
+• VMware vCenter zero‑day auth bypass is being weaponized in the wild, threatening virtualized environments.
+• Cisco Expressway Series hard‑coded credentials flaw is actively exploited, giving attackers persistent access.
+• Hackers are leveraging N‑able MailAssure SSRF vulnerability alongside AI tools to bypass defenses.
+
+<b>🔗 Read</b>
+• <a href="https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html">VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation</a> (The Hacker News)
+• <a href="https://www.bleepingcomputer.com/news/security/new-shirudo-tool-uses-ai-to-shield-unpatched-linux-systems-from-exploits/">New Shirudo tool uses AI to shield unpatched Linux systems from exploits</a> (BleepingComputer)
+• <a href="https://thehackernews.com/2026/11/weekly-recap-vmware-0-day-java4shell.html">⚡ Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble</a> (The Hacker News)
+• <a href="https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/">CISA flags critical Cisco RCE flaw as actively exploited in attacks</a> (BleepingComputer)
+
+<b>🇿🇦 South Africa</b>
+• SJP suffered a ransomware attack affecting operations in South Africa.
+• Travelstart confirmed a customer data breach impacting South African users.
+• Next reported a data breach after a cyber‑attack, investigations ongoing in South Africa.
+• <a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxNWEhGbUd1T1cyZHdCWjdRMi13bmxPWE1WZHd3UElHeURvU09TaEhNTFJGNnlGcUFITUlTOWxubk9lVXB4TFZtX0RHY0pfbzNZNGpwczlldE8tNF8teDlILWVObDcxS1pTc2ZsYVV5UTMwWFlNdGJiS0RQTUVlckEtV3h2SkFQLVVRSkFlR0tnQXpZaDlXR0VQMnJYRQ?oc=5">VMware vCenter Zero-Day: CVSS 9.8, Hit Since September</a> (shattered.io)
+• <a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxQaTI5V0llVGVhWGJUbnNnRWsxMEJLQUFLM3BRckFqLWV1ZDZZQXA5ZWU1TEo5NWhZTVZLXzEwOG5oYUhLM3IyemNjTF9zZHJIUy0yZVliYUk1Q1UyU1FYaVZMMW90LUkwMVExZEp2OEhpU3FDSzJkenBYUVFTMTRBTWczNFd6UFlUQXNiRzRTazNqYlRvX09WdWVsUQ?oc=5">Revealed: SJP hit by ransomware cyberattack</a> (Citywire)
+• <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxOelRnSWxpSG9KZktQV19lNmJsa0oxaGlIZ1R6M3Y5T3MtbzR3UldFamJselJZOGdxbVI4UDVoMzdLRTUwU1VaaURiamg5YjBBOW8tTmtMQWw3MUF5Vkp3NXV1cjFZWldhQWV3S2R2bXotZU8yektnRlhxY2VkMTRldUI1UEtXMlZhT0J3?oc=5">Travelstart Confirms Customer Data Breach</a> (Wisevoter)
+
+<i>For leadership:</i> Prioritize patching the listed high‑risk vulnerabilities and review incident response plans for ransomware and data‑breach scenarios.
+
+<i>AI summary fact-checked against the data. Sources: CISA KEV v2026.11.23, NVD, FIRST EPSS, security news. ⭐ = on your vendor watchlist.</i>
+Ask me: /cve CVE-ID · /vendor fortinet · /kev · /news, or any question.
