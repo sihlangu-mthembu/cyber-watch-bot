@@ -1,30 +1,8 @@
 {
- "generated": "2026-11-24T17:05:21+02:00",
- "kev_version": "2026.11.23",
- "kev_count": 1792,
+ "generated": "2026-11-25T16:45:34+02:00",
+ "kev_version": "2026.11.24",
+ "kev_count": 1795,
  "kev_recent": [
-  {
-   "cve": "CVE-2026-40217",
-   "vendor": "BerriAI",
-   "product": "LiteLLM",
-   "name": "BerriAI LiteLLM Unprotected Alternate Channel Vulnerability",
-   "added": "2026-11-18",
-   "due": "2026-12-02",
-   "ransomware": false,
-   "desc": "BerriAI LiteLLM contains an unprotected alternate channel vulnerability that could allow remote attackers to execute arbitrary code via bytecode rewriting at the /guardrails/test_custom_code URI.",
-   "priority": 71
-  },
-  {
-   "cve": "CVE-2026-133968",
-   "vendor": "Project MONAI",
-   "product": "MONAI Label",
-   "name": "Project MONAI MONAI Label Path Traversal Vulnerability",
-   "added": "2026-11-23",
-   "due": "2026-11-26",
-   "ransomware": false,
-   "desc": "Project MONAI MONAI Label contains a path traversal vulnerability that allows an unauthenticated remote attacker to write arbitrary files outside the intended datastore directory, potentially resulting in remote code execution.",
-   "priority": 62
-  },
   {
    "cve": "CVE-2026-123890",
    "vendor": "Broadcom",
@@ -35,28 +13,6 @@
    "ransomware": false,
    "desc": "Broadcom VMware vCenter contains an authentication bypass using an alternate path or channel vulnerability in the VMware Directory Service that allows an unauthenticated attacker with network access to vCenter to bypass authentication and g",
    "priority": 61
-  },
-  {
-   "cve": "CVE-2026-76466",
-   "vendor": "Cisco",
-   "product": "Expressway Series",
-   "name": "Cisco Expressway Series Use of Hard-coded Credentials Vulnerability",
-   "added": "2026-11-20",
-   "due": "2026-11-23",
-   "ransomware": false,
-   "desc": "Cisco Expressway Series contains a use of hard-coded credentials vulnerability that allows an unauthenticated, remote attacker with persistent cookies and network access to execute commands as root on a clustered device via the database ser",
-   "priority": 61
-  },
-  {
-   "cve": "CVE-2026-129448",
-   "vendor": "Apache",
-   "product": "Roller",
-   "name": "Apache Roller Deserialization of Untrusted Data Vulnerability",
-   "added": "2026-11-20",
-   "due": "2026-11-23",
-   "ransomware": false,
-   "desc": "Apache Roller contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via the XML-RPC endpoint, which accepts and deserializes vendor extension types before authent",
-   "priority": 60
   },
   {
    "cve": "CVE-2025-42884",
@@ -70,15 +26,26 @@
    "priority": 60
   },
   {
-   "cve": "CVE-2026-90817",
-   "vendor": "Vanderbilt University",
-   "product": "Research Electronic Data Capture (REDCap)",
-   "name": "Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability",
-   "added": "2026-11-18",
-   "due": "2026-11-21",
+   "cve": "CVE-2026-76466",
+   "vendor": "Cisco",
+   "product": "Expressway Series",
+   "name": "Cisco Expressway Series Use of Hard-coded Credentials Vulnerability",
+   "added": "2026-11-20",
+   "due": "2026-11-23",
    "ransomware": false,
-   "desc": "Vanderbilt University Research Electronic Data Capture (REDCap) contains a code injection vulnerability which could allow an unauthenticated attacker to execute arbitrary code on the server. An attacker could exploit this via crafted HTTP r",
-   "priority": 59
+   "desc": "Cisco Expressway Series contains a use of hard-coded credentials vulnerability that allows an unauthenticated, remote attacker with persistent cookies and network access to execute commands as root on a clustered device via the database ser",
+   "priority": 60
+  },
+  {
+   "cve": "CVE-2026-133968",
+   "vendor": "Project MONAI",
+   "product": "MONAI Label",
+   "name": "Project MONAI MONAI Label Path Traversal Vulnerability",
+   "added": "2026-11-23",
+   "due": "2026-11-26",
+   "ransomware": false,
+   "desc": "Project MONAI MONAI Label contains a path traversal vulnerability that allows an unauthenticated remote attacker to write arbitrary files outside the intended datastore directory, potentially resulting in remote code execution.",
+   "priority": 57
   },
   {
    "cve": "CVE-2024-10441",
@@ -92,15 +59,37 @@
    "priority": 56
   },
   {
-   "cve": "CVE-2026-115731",
-   "vendor": "Perforce",
-   "product": "Puppet Enterprise",
-   "name": "Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability",
-   "added": "2026-11-17",
-   "due": "2026-12-01",
+   "cve": "CVE-2026-129448",
+   "vendor": "Apache",
+   "product": "Roller",
+   "name": "Apache Roller Deserialization of Untrusted Data Vulnerability",
+   "added": "2026-11-20",
+   "due": "2026-11-23",
    "ransomware": false,
-   "desc": "Perforce Puppet Enterprise contains a deserialization of untrusted data vulnerability in Puppet\u2019s report-processing code that allows a client with any CA-signed agent certificate to execute arbitrary code on the Puppet Server as the service",
-   "priority": 53
+   "desc": "Apache Roller contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via the XML-RPC endpoint, which accepts and deserializes vendor extension types before authent",
+   "priority": 56
+  },
+  {
+   "cve": "CVE-2026-40217",
+   "vendor": "BerriAI",
+   "product": "LiteLLM",
+   "name": "BerriAI LiteLLM Unprotected Alternate Channel Vulnerability",
+   "added": "2026-11-18",
+   "due": "2026-12-02",
+   "ransomware": false,
+   "desc": "BerriAI LiteLLM contains an unprotected alternate channel vulnerability that could allow remote attackers to execute arbitrary code via bytecode rewriting at the /guardrails/test_custom_code URI.",
+   "priority": 55
+  },
+  {
+   "cve": "CVE-2026-90817",
+   "vendor": "Vanderbilt University",
+   "product": "Research Electronic Data Capture (REDCap)",
+   "name": "Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability",
+   "added": "2026-11-18",
+   "due": "2026-11-21",
+   "ransomware": false,
+   "desc": "Vanderbilt University Research Electronic Data Capture (REDCap) contains a code injection vulnerability which could allow an unauthenticated attacker to execute arbitrary code on the server. An attacker could exploit this via crafted HTTP r",
+   "priority": 55
   },
   {
    "cve": "CVE-2026-90436",
@@ -114,6 +103,17 @@
    "priority": 51
   },
   {
+   "cve": "CVE-2026-131914",
+   "vendor": "Idunno",
+   "product": "AntiCsrf",
+   "name": "Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability",
+   "added": "2026-11-24",
+   "due": "2026-11-27",
+   "ransomware": false,
+   "desc": "Idunno AntiCsrf contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via object injection. The impacted product(s) could be end-of-life (EoL) and/or end-of-servi",
+   "priority": 51
+  },
+  {
    "cve": "CVE-2026-134624",
    "vendor": "N-able",
    "product": "MailAssure",
@@ -123,150 +123,35 @@
    "ransomware": false,
    "desc": "N-able MailAssure (SpamExperts) contains a server-side request forgery vulnerability in the LDAP synchronization connection check that allows an authenticated API user to connect to arbitrary internal hosts and ports, determine which are re",
    "priority": 50
+  },
+  {
+   "cve": "CVE-2026-132224",
+   "vendor": "Optimizely",
+   "product": "Web Experimentation",
+   "name": "Optimizely Web Experimentation External Control of Critical State Data Vulnerability",
+   "added": "2026-11-24",
+   "due": "2026-11-27",
+   "ransomware": false,
+   "desc": "Optimizely Web Experimentation contains an external control of critical state data vulnerability in its account signup flow that could allow an attacker to impersonate existing customer users and modify Project JavaScript. Successful exploi",
+   "priority": 50
+  },
+  {
+   "cve": "CVE-2026-132165",
+   "vendor": "Drupal",
+   "product": "Core",
+   "name": "Drupal Core Remote Code Execution Vulnerability",
+   "added": "2026-11-24",
+   "due": "2026-11-27",
+   "ransomware": false,
+   "desc": "Drupal Core contains a not failing securely vulnerability that could allow an unauthenticated attacker to take over an existing site or execute arbitrary code via the Drupal installer. Under specific conditions, the attacker can use install",
+   "priority": 50
   }
  ],
  "critical": [
   {
-   "cve": "CVE-2026-134882",
-   "published": "2026-11-23",
-   "status": "Deferred",
-   "desc": "A weakness has been identified in TOTOLINK A7100RU 7.4cu.2313_B20191024. This issue affects the function exportOvpn of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. This manipulation of the argument Username causes os command injection. The attack is possible to be carried out remotely.",
-   "cvss": {
-    "score": 10.0,
-    "severity": "CRITICAL",
-    "version": "4.0",
-    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
-   },
-   "vendor": "",
-   "product": "",
-   "cwe": [
-    "CWE-77",
-    "CWE-78"
-   ],
-   "refs": [
-    "https://vuldb.com/cve/CVE-2026-134882",
-    "https://vuldb.com/submit/1054781",
-    "https://vuldb.com/vuln/442238"
-   ],
-   "in_kev": false,
-   "priority": 16
-  },
-  {
-   "cve": "CVE-2026-120382",
-   "published": "2026-11-23",
-   "status": "Awaiting Analysis",
-   "desc": "An improper neutralization of argument delimiters in a command vulnerability in the OAuth API in Synology DiskStation Manager (DSM) before 7.1.1-42962-10, 7.2.1-69057-14, 7.2.2-72806-11, 7.3.2-86009-6, and 7.4.1-90080-2 allows remote attackers to read or write arbitrary files and conduct denial-of-service attacks.",
-   "cvss": {
-    "score": 9.8,
-    "severity": "CRITICAL",
-    "version": "3.1",
-    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-   },
-   "vendor": "",
-   "product": "",
-   "cwe": [
-    "CWE-88"
-   ],
-   "refs": [
-    "https://www.synology.com/en-global/security/advisory/Synology_SA_26_21"
-   ],
-   "in_kev": false,
-   "priority": 15
-  },
-  {
-   "cve": "CVE-2026-50691",
-   "published": "2026-11-23",
-   "status": "Awaiting Analysis",
-   "desc": "Improper authorization in M365 Copilot allows an authorized attacker to elevate privileges over a network.",
-   "cvss": {
-    "score": 9.9,
-    "severity": "CRITICAL",
-    "version": "3.1",
-    "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
-   },
-   "vendor": "",
-   "product": "",
-   "cwe": [
-    "CWE-285"
-   ],
-   "refs": [
-    "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50691"
-   ],
-   "in_kev": false,
-   "priority": 15
-  },
-  {
-   "cve": "CVE-2026-62841",
-   "published": "2026-11-23",
-   "status": "Awaiting Analysis",
-   "desc": "Improper authentication in Azure Event Grid allows an unauthorized attacker to elevate privileges over a network.",
-   "cvss": {
-    "score": 10.0,
-    "severity": "CRITICAL",
-    "version": "3.1",
-    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
-   },
-   "vendor": "",
-   "product": "",
-   "cwe": [
-    "CWE-287"
-   ],
-   "refs": [
-    "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62841"
-   ],
-   "in_kev": false,
-   "priority": 15
-  },
-  {
-   "cve": "CVE-2026-70193",
-   "published": "2026-11-23",
-   "status": "Awaiting Analysis",
-   "desc": "Improper limitation of a pathname to a restricted directory ('path traversal') in Microsoft Office SharePoint allows an authorized attacker to execute code over a network.",
-   "cvss": {
-    "score": 9.9,
-    "severity": "CRITICAL",
-    "version": "3.1",
-    "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
-   },
-   "vendor": "",
-   "product": "",
-   "cwe": [
-    "CWE-22"
-   ],
-   "refs": [
-    "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70193"
-   ],
-   "in_kev": false,
-   "priority": 15
-  },
-  {
-   "cve": "CVE-2026-135202",
-   "published": "2026-11-24",
-   "status": "Deferred",
-   "desc": "Several plugins for WordPress published by WP connect (Orders Sync to Airtable for WooCommerce, Add-On for Contact Form 7 to Notion, WP Sync for Notion \u2013 Notion to WordPress, Add-On for Contact Form 7 to Airtable, Add-on Brevo for Gravity Forms, and Air WP Sync \u2013 Airtable to WordPress) contain embedded malicious code (a backdoor) in the versions listed. The affected releases unconditionally load a",
-   "cvss": {
-    "score": 9.8,
-    "severity": "CRITICAL",
-    "version": "3.1",
-    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-   },
-   "vendor": "",
-   "product": "",
-   "cwe": [
-    "CWE-506"
-   ],
-   "refs": [
-    "https://plugins.trac.wordpress.org/browser/add-on-cf7-for-airtable/tags/2.5.4/includes/airwp-online.php#L258",
-    "https://plugins.trac.wordpress.org/browser/add-on-cf7-for-notion/tags/1.6.4/includes/airwp-online.php#L258",
-    "https://plugins.trac.wordpress.org/browser/addon-gravityforms-sendinblue-free/tags/2.6.3/includes/airwp-online.php#L258"
-   ],
-   "in_kev": false,
-   "priority": 15
-  },
-  {
    "cve": "CVE-2026-119582",
    "published": "2026-11-24",
-   "status": "Received",
+   "status": "Deferred",
    "desc": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in ITG Bilgisayar Teknoloji Grubu Tic. Ltd. \u015eti. VSRM allows SQL Injection.\n\nThis issue affects vSRM: from v14.08.3 before v14.08.5.",
    "cvss": {
     "score": 9.8,
@@ -281,6 +166,193 @@
    ],
    "refs": [
     "https://siberguvenlik.gov.tr/guvenlik-bildirimleri/detay/tr-26-1600"
+   ],
+   "in_kev": false,
+   "priority": 15
+  },
+  {
+   "cve": "CVE-2026-123342",
+   "published": "2026-11-24",
+   "status": "Awaiting Analysis",
+   "desc": "Adobe Campaign Classic (ACC) is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execution in the context of the current user. A low-privileged attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
+   "cvss": {
+    "score": 9.9,
+    "severity": "CRITICAL",
+    "version": "3.1",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-94"
+   ],
+   "refs": [
+    "https://www.adobe.com/trust/security/products/campaign/apsb26-194.html"
+   ],
+   "in_kev": false,
+   "priority": 15
+  },
+  {
+   "cve": "CVE-2026-123723",
+   "published": "2026-11-24",
+   "status": "Awaiting Analysis",
+   "desc": "Adobe Campaign Classic (ACC) is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execution in the context of the current user. A low-privileged attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
+   "cvss": {
+    "score": 9.9,
+    "severity": "CRITICAL",
+    "version": "3.1",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-94"
+   ],
+   "refs": [
+    "https://www.adobe.com/trust/security/products/campaign/apsb26-194.html"
+   ],
+   "in_kev": false,
+   "priority": 15
+  },
+  {
+   "cve": "CVE-2026-123986",
+   "published": "2026-11-24",
+   "status": "Awaiting Analysis",
+   "desc": "Adobe Campaign Classic (ACC) is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execution in the context of the current user. A low-privileged attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
+   "cvss": {
+    "score": 9.9,
+    "severity": "CRITICAL",
+    "version": "3.1",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-94"
+   ],
+   "refs": [
+    "https://www.adobe.com/trust/security/products/campaign/apsb26-194.html"
+   ],
+   "in_kev": false,
+   "priority": 15
+  },
+  {
+   "cve": "CVE-2026-123987",
+   "published": "2026-11-24",
+   "status": "Awaiting Analysis",
+   "desc": "Adobe Campaign Classic (ACC) is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execution in the context of the current user. A low-privileged attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
+   "cvss": {
+    "score": 9.9,
+    "severity": "CRITICAL",
+    "version": "3.1",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-94"
+   ],
+   "refs": [
+    "https://www.adobe.com/trust/security/products/campaign/apsb26-194.html"
+   ],
+   "in_kev": false,
+   "priority": 15
+  },
+  {
+   "cve": "CVE-2026-135792",
+   "published": "2026-11-24",
+   "status": "Deferred",
+   "desc": "A vulnerability has been found in Panabit Smart Application Gateway TANGr7p10. This issue affects the function send_email_authcode of the file user.cgi of the component Email Auth Code Sender. Such manipulation of the argument Username leads to os command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early abo",
+   "cvss": {
+    "score": 9.3,
+    "severity": "CRITICAL",
+    "version": "4.0",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-77",
+    "CWE-78"
+   ],
+   "refs": [
+    "https://github.com/nenghun/IoT/blob/main/Panabit/rce3/Unauthenticated%20OS%20Command%20Injection.md",
+    "https://vuldb.com/cve/CVE-2026-135792",
+    "https://vuldb.com/submit/1055813"
+   ],
+   "in_kev": false,
+   "priority": 15
+  },
+  {
+   "cve": "CVE-2026-135797",
+   "published": "2026-11-24",
+   "status": "Deferred",
+   "desc": "A vulnerability was identified in Volans NGFW Next-Generation Firewall r5.1. Impacted is the function exec of the file sslvpn/sslvpn_client.php of the component SSLVPN Client. Such manipulation of the argument img leads to os command injection. The attack can be executed remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not ",
+   "cvss": {
+    "score": 9.3,
+    "severity": "CRITICAL",
+    "version": "4.0",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-77",
+    "CWE-78"
+   ],
+   "refs": [
+    "https://github.com/nenghun/IoT/blob/main/Volans%20NGFW%20(nf51)/Root_RCE/Volans%20NGFW%20(nf51)_rce.md",
+    "https://vuldb.com/cve/CVE-2026-135797",
+    "https://vuldb.com/submit/1055817"
+   ],
+   "in_kev": false,
+   "priority": 15
+  },
+  {
+   "cve": "CVE-2026-136404",
+   "published": "2026-11-24",
+   "status": "Received",
+   "desc": "ntop n2n supernode 3.0 through 3.1.1 contains a stack-based buffer overflow vulnerability that allows remote unauthenticated attackers to leak memory and execute code by sending an untrusted 16-bit auth token_size in REGISTER_SUPER_NAK datagrams. Attackers can register an edge in a chosen community, then send an oversized token_size to leak stack canaries and pointers, overwrite the return address",
+   "cvss": {
+    "score": 9.3,
+    "severity": "CRITICAL",
+    "version": "4.0",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-121"
+   ],
+   "refs": [
+    "https://github.com/ntop/n2n/blob/a6f94564f2d6aaad925254590329c274058a53e5/src/sn_utils.c#L2309-L2344",
+    "https://github.com/ntop/n2n/blob/a6f94564f2d6aaad925254590329c274058a53e5/src/wire.c#L649-L679",
+    "https://github.com/ntop/n2n/commit/854fbbe01bbf131bf4cb88f8450d7084267668e1"
+   ],
+   "in_kev": false,
+   "priority": 15
+  },
+  {
+   "cve": "CVE-2026-136549",
+   "published": "2026-11-25",
+   "status": "Deferred",
+   "desc": "A security flaw has been discovered in Tenda RX3 16.03.13.11_multi. The impacted element is the function formSetSafeWanWebMan of the file /goform/SetRemoteWebCfg. The manipulation of the argument remoteIp results in command injection. The attack can be executed remotely. The exploit has been released to the public and may be used for attacks.",
+   "cvss": {
+    "score": 9.3,
+    "severity": "CRITICAL",
+    "version": "4.0",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-74",
+    "CWE-77"
+   ],
+   "refs": [
+    "https://github.com/Zeyfrost/tenda-rx3-vulns/blob/master/cmd_injection_remoteIp/detail.md",
+    "https://vuldb.com/cve/CVE-2026-136549",
+    "https://vuldb.com/submit/1057767"
    ],
    "in_kev": false,
    "priority": 15
@@ -310,153 +382,25 @@
    "priority": 14
   },
   {
-   "cve": "CVE-2026-109480",
-   "published": "2026-11-23",
-   "status": "Awaiting Analysis",
-   "desc": "Server-side request forgery in Profile Data Roaming Service (PDRS) allows an authorized attacker to elevate privileges over a network.",
+   "cve": "CVE-2026-135736",
+   "published": "2026-11-24",
+   "status": "Analyzed",
+   "desc": "FFmpeg 4.4 before 9.1 contains a heap out-of-bounds read and write vulnerability in libavfilter/vf_deband.c that allows attackers to corrupt heap memory by sending a runtime coupling command. Attackers can send a 'deband coupling 1' command via sendcmd or an unauthenticated zmq filter, making chroma planes be processed at luma dimensions to crash the process or potentially execute code.",
    "cvss": {
-    "score": 9.6,
+    "score": 9.2,
     "severity": "CRITICAL",
-    "version": "3.1",
-    "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N"
+    "version": "4.0",
+    "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
    },
-   "vendor": "",
-   "product": "",
-   "cwe": [],
-   "refs": [
-    "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109480"
-   ],
-   "in_kev": false,
-   "priority": 14
-  },
-  {
-   "cve": "CVE-2026-109490",
-   "published": "2026-11-23",
-   "status": "Awaiting Analysis",
-   "desc": "Improper neutralization of input during web page generation ('cross-site scripting') in Authentication Methods Portal Extension allows an unauthorized attacker to elevate privileges over a network.",
-   "cvss": {
-    "score": 9.3,
-    "severity": "CRITICAL",
-    "version": "3.1",
-    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N"
-   },
-   "vendor": "",
-   "product": "",
+   "vendor": "ffmpeg",
+   "product": "ffmpeg",
    "cwe": [
-    "CWE-79"
+    "CWE-787"
    ],
    "refs": [
-    "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109490"
-   ],
-   "in_kev": false,
-   "priority": 14
-  },
-  {
-   "cve": "CVE-2026-113824",
-   "published": "2026-11-23",
-   "status": "Awaiting Analysis",
-   "desc": "Authorization bypass through user-controlled key in Microsoft Clarity allows an unauthorized attacker to elevate privileges over a network.",
-   "cvss": {
-    "score": 9.1,
-    "severity": "CRITICAL",
-    "version": "3.1",
-    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
-   },
-   "vendor": "",
-   "product": "",
-   "cwe": [
-    "CWE-639"
-   ],
-   "refs": [
-    "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-113824"
-   ],
-   "in_kev": false,
-   "priority": 14
-  },
-  {
-   "cve": "CVE-2026-118285",
-   "published": "2026-11-23",
-   "status": "Awaiting Analysis",
-   "desc": "Server-side request forgery in Azure Machine Learning allows an authorized attacker to elevate privileges over a network.",
-   "cvss": {
-    "score": 9.6,
-    "severity": "CRITICAL",
-    "version": "3.1",
-    "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N"
-   },
-   "vendor": "",
-   "product": "",
-   "cwe": [
-    "CWE-918"
-   ],
-   "refs": [
-    "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118285"
-   ],
-   "in_kev": false,
-   "priority": 14
-  },
-  {
-   "cve": "CVE-2026-118286",
-   "published": "2026-11-23",
-   "status": "Awaiting Analysis",
-   "desc": "Improper access control in Azure Site Recovery allows an unauthorized attacker to elevate privileges over a network.",
-   "cvss": {
-    "score": 9.1,
-    "severity": "CRITICAL",
-    "version": "3.1",
-    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
-   },
-   "vendor": "",
-   "product": "",
-   "cwe": [
-    "CWE-284"
-   ],
-   "refs": [
-    "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118286"
-   ],
-   "in_kev": false,
-   "priority": 14
-  },
-  {
-   "cve": "CVE-2026-69899",
-   "published": "2026-11-23",
-   "status": "Awaiting Analysis",
-   "desc": "Authentication bypass by spoofing in Azure DevTest Labs allows an unauthorized attacker to perform spoofing over a network.",
-   "cvss": {
-    "score": 9.1,
-    "severity": "CRITICAL",
-    "version": "3.1",
-    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
-   },
-   "vendor": "",
-   "product": "",
-   "cwe": [
-    "CWE-290"
-   ],
-   "refs": [
-    "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69899"
-   ],
-   "in_kev": false,
-   "priority": 14
-  },
-  {
-   "cve": "CVE-2026-70305",
-   "published": "2026-11-23",
-   "status": "Awaiting Analysis",
-   "desc": "Improper neutralization of input during web page generation ('cross-site scripting') in Azure Portal allows an unauthorized attacker to perform spoofing over a network.",
-   "cvss": {
-    "score": 9.6,
-    "severity": "CRITICAL",
-    "version": "3.1",
-    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
-   },
-   "vendor": "",
-   "product": "",
-   "cwe": [
-    "CWE-79"
-   ],
-   "refs": [
-    "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70305"
+    "https://code.ffmpeg.org/FFmpeg/FFmpeg/pulls/26081",
+    "https://github.com/FFmpeg/FFmpeg",
+    "https://github.com/FFmpeg/FFmpeg/blob/n9.0.2/libavfilter/vf_deband.c#L212"
    ],
    "in_kev": false,
    "priority": 14
@@ -464,7 +408,7 @@
   {
    "cve": "CVE-2026-117593",
    "published": "2026-11-24",
-   "status": "Received",
+   "status": "Deferred",
    "desc": "Weak Password Recovery Mechanism for Forgotten Password vulnerability in ITG Bilgisayar Teknoloji Grubu Tic. Ltd. \u015eti. VSRM allows Password Recovery Exploitation.\n\nThis issue affects vSRM: from v14.08.3 before v14.08.5.",
    "cvss": {
     "score": 9.1,
@@ -482,133 +426,593 @@
    ],
    "in_kev": false,
    "priority": 14
+  },
+  {
+   "cve": "CVE-2026-135789",
+   "published": "2026-11-24",
+   "status": "Deferred",
+   "desc": "A security vulnerability has been detected in D-Link R95 101B06. Affected by this issue is the function GetBluetoothAdapterSettings/GetBluetoothBloodPressure/GetBluetoothDeviceList/GetBluetoothScanDeviceList/SetBluetoothAdapterSettings/SetBluetoothUnpairDevice/SetTriggerBluetoothScan/SetBluetoothPairDevice of the file /bin/ssi of the component DHMAPI SOAP Handler. The manipulation of the argument ",
+   "cvss": {
+    "score": 8.5,
+    "severity": "HIGH",
+    "version": "4.0",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-77",
+    "CWE-78"
+   ],
+   "refs": [
+    "https://github.com/nenghun/IoT/blob/main/D-link%20R95/rce.md",
+    "https://vuldb.com/cve/CVE-2026-135789",
+    "https://vuldb.com/submit/1055810"
+   ],
+   "in_kev": false,
+   "priority": 14
+  },
+  {
+   "cve": "CVE-2026-136184",
+   "published": "2026-11-24",
+   "status": "Received",
+   "desc": "compose-farm 0.19.0 before 1.22.0 contains a cross-site WebSocket hijacking and cross-site request forgery vulnerability because its unauthenticated web UI performs no Origin validation. Malicious websites visited by users can open /ws/shell/{host} or /ws/exec sockets, or abuse unquoted service parameters and PUT /api/console/file, to execute commands on all managed hosts.",
+   "cvss": {
+    "score": 9.4,
+    "severity": "CRITICAL",
+    "version": "4.0",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-1385"
+   ],
+   "refs": [
+    "https://github.com/basnijholt/compose-farm/blob/v1.21.5/src/compose_farm/web/ws.py#L250-L256",
+    "https://github.com/basnijholt/compose-farm/commit/244d56c022de61d2c6b3543b5c973ced97de6cc8",
+    "https://github.com/basnijholt/compose-farm/commit/d944a28f0aca4ef2bd20f397bc75c7869f1efe7c"
+   ],
+   "in_kev": false,
+   "priority": 14
+  },
+  {
+   "cve": "CVE-2026-125716",
+   "published": "2026-11-24",
+   "status": "Awaiting Analysis",
+   "desc": "Adobe Campaign Classic (ACC) is affected by a reflected Cross-Site Scripting (XSS) vulnerability. An attacker could exploit this vulnerability to inject malicious scripts into a web page, potentially gaining elevated access or control over the victim's account or session. Exploitation of this issue requires user interaction in that a victim must visit a maliciously crafted URL or interact with a c",
+   "cvss": {
+    "score": 9.3,
+    "severity": "CRITICAL",
+    "version": "3.1",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-79"
+   ],
+   "refs": [
+    "https://www.adobe.com/trust/security/products/campaign/apsb26-194.html"
+   ],
+   "in_kev": false,
+   "priority": 14
+  },
+  {
+   "cve": "CVE-2026-125717",
+   "published": "2026-11-24",
+   "status": "Awaiting Analysis",
+   "desc": "Adobe Campaign Classic (ACC) is affected by an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability that could result in privilege escalation. A low-privileged attacker could exploit this vulnerability to gain elevated access to sensitive data or functionality. Exploitation of this issue does not require user interaction. Scope is changed.",
+   "cvss": {
+    "score": 9.6,
+    "severity": "CRITICAL",
+    "version": "3.1",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-89"
+   ],
+   "refs": [
+    "https://www.adobe.com/trust/security/products/campaign/apsb26-194.html"
+   ],
+   "in_kev": false,
+   "priority": 14
+  },
+  {
+   "cve": "CVE-2026-125718",
+   "published": "2026-11-24",
+   "status": "Awaiting Analysis",
+   "desc": "Adobe Campaign Classic (ACC) is affected by an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability that could result in a Security feature bypass. A low-privileged attacker could leverage this vulnerability to bypass security measures and gain unauthorized read and limited write access. Exploitation of this issue does not require user interaction. Sco",
+   "cvss": {
+    "score": 9.1,
+    "severity": "CRITICAL",
+    "version": "3.1",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:L/A:L"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-89"
+   ],
+   "refs": [
+    "https://www.adobe.com/trust/security/products/campaign/apsb26-194.html"
+   ],
+   "in_kev": false,
+   "priority": 14
+  },
+  {
+   "cve": "CVE-2026-135796",
+   "published": "2026-11-24",
+   "status": "Deferred",
+   "desc": "A vulnerability was determined in Volans NGFW Next-Generation Firewall r5.1. This issue affects the function exec/system of the file modules/assets/port_serve_scan.mds of the component Web Management UI. This manipulation of the argument task_name/where/path causes os command injection. Remote exploitation of the attack is possible. The exploit has been publicly disclosed and may be utilized. The ",
+   "cvss": {
+    "score": 8.6,
+    "severity": "HIGH",
+    "version": "4.0",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-77",
+    "CWE-78"
+   ],
+   "refs": [
+    "https://github.com/nenghun/IoT/blob/main/Volans%20NGFW%20(nf51)/RCE/RCE.md",
+    "https://vuldb.com/cve/CVE-2026-135796",
+    "https://vuldb.com/submit/1055816"
+   ],
+   "in_kev": false,
+   "priority": 14
+  },
+  {
+   "cve": "CVE-2026-136411",
+   "published": "2026-11-24",
+   "status": "Received",
+   "desc": "BusyBox through 1.38.0 contains an absolute path traversal vulnerability in tftpd that allows unauthenticated remote attackers to access files outside any intended directory when started without a DIR argument. Attackers can send RRQ or WRQ packets with file names beginning with '/' to read sensitive files like /etc/shadow or overwrite files, typically as root.",
+   "cvss": {
+    "score": 9.3,
+    "severity": "CRITICAL",
+    "version": "4.0",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-36"
+   ],
+   "refs": [
+    "https://github.com/mirror/busybox/blob/fc71374dfccd46448c62947269a35f1420d7ee28/networking/tftp.c#L946-L950",
+    "https://github.com/mirror/busybox/commit/b67f7b7d14ac98ca84491718d364b955d21a9cd5",
+    "https://lists.busybox.net/pipermail/busybox-cvs/2026-November/042587.html"
+   ],
+   "in_kev": false,
+   "priority": 14
+  },
+  {
+   "cve": "CVE-2026-136136",
+   "published": "2026-11-25",
+   "status": "Deferred",
+   "desc": "A vulnerability was identified in Netis WF2409E up to 20261026. Affected by this issue is some unknown functionality of the file /cgi-bin/skk_set.cgi of the component CGI Interface. The manipulation of the argument app/password/new_pwd_confirm/passwd_set/mode_name/wl_link leads to improper authentication. The attack may be initiated remotely. The exploit is publicly available and might be used. Th",
+   "cvss": {
+    "score": 9.3,
+    "severity": "CRITICAL",
+    "version": "4.0",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-287"
+   ],
+   "refs": [
+    "https://vuldb.com/cve/CVE-2026-136136",
+    "https://vuldb.com/submit/1056731",
+    "https://vuldb.com/vuln/442884"
+   ],
+   "in_kev": false,
+   "priority": 14
+  },
+  {
+   "cve": "CVE-2026-136548",
+   "published": "2026-11-25",
+   "status": "Deferred",
+   "desc": "A vulnerability was identified in Tenda RX3 16.03.13.11. The affected element is an unknown function of the file /bin/auto_discover of the component GBK-to-UTF-8 Conversion. The manipulation of the argument Hostname leads to stack-based buffer overflow. Remote exploitation of the attack is possible. The exploit is publicly available and might be used.",
+   "cvss": {
+    "score": 9.3,
+    "severity": "CRITICAL",
+    "version": "4.0",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-119",
+    "CWE-121"
+   ],
+   "refs": [
+    "https://github.com/Zeyfrost/tenda-rx3-vulns/blob/master/dhcp_gbk_overflow/detail.md",
+    "https://vuldb.com/cve/CVE-2026-136548",
+    "https://vuldb.com/submit/1057714"
+   ],
+   "in_kev": false,
+   "priority": 14
+  },
+  {
+   "cve": "CVE-2026-136550",
+   "published": "2026-11-25",
+   "status": "Deferred",
+   "desc": "A weakness has been identified in Tenda RX3 16.03.13.11_multi. This affects the function fromAdvSetMacMtuWan of the file /goform/AdvSetMacMtuWan. This manipulation of the argument mac causes command injection. The attack is possible to be carried out remotely. The exploit has been made available to the public and could be used for attacks.",
+   "cvss": {
+    "score": 8.5,
+    "severity": "HIGH",
+    "version": "4.0",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-74",
+    "CWE-77"
+   ],
+   "refs": [
+    "https://github.com/Zeyfrost/tenda-rx3-vulns/blob/master/cmd_injection_mac/detail.md",
+    "https://vuldb.com/cve/CVE-2026-136550",
+    "https://vuldb.com/submit/1057768"
+   ],
+   "in_kev": false,
+   "priority": 14
+  },
+  {
+   "cve": "CVE-2026-136553",
+   "published": "2026-11-25",
+   "status": "Deferred",
+   "desc": "A vulnerability was detected in Tenda RX3 16.03.13.11_multi. Affected is an unknown function of the file /goform/fast_setting_wifi_set. Performing a manipulation of the argument loginPwd results in improper authentication. It is possible to initiate the attack remotely. The exploit is now public and may be used.",
+   "cvss": {
+    "score": 9.3,
+    "severity": "CRITICAL",
+    "version": "4.0",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-287"
+   ],
+   "refs": [
+    "https://github.com/Zeyfrost/tenda-rx3-vulns/blob/master/password_change_no_verify/detail.md",
+    "https://vuldb.com/cve/CVE-2026-136553",
+    "https://vuldb.com/submit/1057770"
+   ],
+   "in_kev": false,
+   "priority": 14
+  },
+  {
+   "cve": "CVE-2026-135788",
+   "published": "2026-11-24",
+   "status": "Deferred",
+   "desc": "A weakness has been identified in D-Link DIR-X1860 4.5.2. Affected by this vulnerability is an unknown functionality of the file /usr/sbin/anweb. Executing a manipulation can lead to os command injection. It is possible to launch the attack remotely. The exploit has been made available to the public and could be used for attacks.",
+   "cvss": {
+    "score": 8.6,
+    "severity": "HIGH",
+    "version": "4.0",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-77",
+    "CWE-78"
+   ],
+   "refs": [
+    "https://github.com/nenghun/IoT/blob/main/D-Link%20DIR%20X1860/D-Link%20DIR-X1860%204.5.2%20rce.md",
+    "https://vuldb.com/cve/CVE-2026-135788",
+    "https://vuldb.com/submit/1055809"
+   ],
+   "in_kev": false,
+   "priority": 13
+  },
+  {
+   "cve": "CVE-2026-135790",
+   "published": "2026-11-24",
+   "status": "Deferred",
+   "desc": "A vulnerability was detected in Panabit Smart Application Gateway TANGr7p10. This affects an unknown part of the file /cgi-bin/dashboard/ajax_chart_dump. The manipulation of the argument isntmeye results in os command injection. The attack can be launched remotely. The exploit is now public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+   "cvss": {
+    "score": 8.6,
+    "severity": "HIGH",
+    "version": "4.0",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-77",
+    "CWE-78"
+   ],
+   "refs": [
+    "https://github.com/nenghun/IoT/blob/main/Panabit/rce1/RCE1.md",
+    "https://vuldb.com/cve/CVE-2026-135790",
+    "https://vuldb.com/submit/1055811"
+   ],
+   "in_kev": false,
+   "priority": 13
+  },
+  {
+   "cve": "CVE-2026-135791",
+   "published": "2026-11-24",
+   "status": "Deferred",
+   "desc": "A flaw has been found in Panabit Smart Application Gateway TANGr7p10. This vulnerability affects the function edit_data_pie of the file /cgi-bin/flowcontrol/ajax_data_pie. This manipulation of the argument Name causes os command injection. The attack may be initiated remotely. The exploit has been published and may be used. The vendor was contacted early about this disclosure but did not respond i",
+   "cvss": {
+    "score": 8.6,
+    "severity": "HIGH",
+    "version": "4.0",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-77",
+    "CWE-78"
+   ],
+   "refs": [
+    "https://github.com/nenghun/IoT/blob/main/Panabit/rce2/RCE2.md",
+    "https://vuldb.com/cve/CVE-2026-135791",
+    "https://vuldb.com/submit/1055812"
+   ],
+   "in_kev": false,
+   "priority": 13
+  },
+  {
+   "cve": "CVE-2026-135794",
+   "published": "2026-11-24",
+   "status": "Deferred",
+   "desc": "A vulnerability was determined in Panabit Smart Application Gateway TANGr7p10. The affected element is the function add_crontab of the file admin/cgi-bin/sac/ajax_sac_crontab of the component SAC. Executing a manipulation of the argument cmd can lead to code injection. The attack can be executed remotely. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early a",
+   "cvss": {
+    "score": 8.6,
+    "severity": "HIGH",
+    "version": "4.0",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-74",
+    "CWE-94"
+   ],
+   "refs": [
+    "https://github.com/nenghun/IoT/blob/main/Panabit/rce5/Post-authentication%20second-order%20(stored)%20code%20injection_rce.md",
+    "https://vuldb.com/cve/CVE-2026-135794",
+    "https://vuldb.com/submit/1055815"
+   ],
+   "in_kev": false,
+   "priority": 13
+  },
+  {
+   "cve": "CVE-2026-136522",
+   "published": "2026-11-24",
+   "status": "Received",
+   "desc": "CubeWP Forms before 1.1.13 contains an unauthenticated stored cross-site scripting vulnerability that allows attackers to inject malicious JavaScript by submitting unregistered field names through the public REST route cubewp-custom-form/v1/submit/, which bypasses its own nonce check and saves unsanitized values due to a missing default case in the sanitizer, later rendered unescaped on the admin ",
+   "cvss": {
+    "score": 8.7,
+    "severity": "HIGH",
+    "version": "4.0",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:L/SI:L/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-79"
+   ],
+   "refs": [
+    "https://wordpress.org/plugins/cubewp-forms/#developers",
+    "https://www.vulncheck.com/advisories/cubewp-forms-before-1.1.13-unauthenticated-stored-xss-via-submit-rest-route"
+   ],
+   "in_kev": false,
+   "priority": 13
   }
  ],
  "epss": {
   "CVE-2026-90817": {
-   "epss": 0.34335,
-   "percentile": 0.98433,
-   "date": "2026-11-24"
+   "epss": 0.18881,
+   "percentile": 0.97862,
+   "date": "2026-11-25"
   },
   "CVE-2026-90436": {
-   "epss": 0.05874,
-   "percentile": 0.93317,
-   "date": "2026-11-24"
+   "epss": 0.02695,
+   "percentile": 0.86635,
+   "date": "2026-11-25"
   },
   "CVE-2026-76466": {
-   "epss": 0.02187,
-   "percentile": 0.82762,
-   "date": "2026-11-24"
-  },
-  "CVE-2026-70305": {
-   "epss": 0.00882,
-   "percentile": 0.59904,
-   "date": "2026-11-24"
-  },
-  "CVE-2026-70193": {
-   "epss": 0.01023,
-   "percentile": 0.64208,
-   "date": "2026-11-24"
-  },
-  "CVE-2026-69899": {
-   "epss": 0.00815,
-   "percentile": 0.57834,
-   "date": "2026-11-24"
-  },
-  "CVE-2026-62841": {
-   "epss": 0.00921,
-   "percentile": 0.61035,
-   "date": "2026-11-24"
-  },
-  "CVE-2026-50691": {
-   "epss": 0.00795,
-   "percentile": 0.5719,
-   "date": "2026-11-24"
+   "epss": 0.01116,
+   "percentile": 0.65685,
+   "date": "2026-11-25"
   },
   "CVE-2026-40217": {
-   "epss": 0.82799,
-   "percentile": 0.99674,
-   "date": "2026-11-24"
+   "epss": 0.20215,
+   "percentile": 0.98011,
+   "date": "2026-11-25"
+  },
+  "CVE-2026-136553": {
+   "epss": 0.01052,
+   "percentile": 0.6369,
+   "date": "2026-11-25"
+  },
+  "CVE-2026-136550": {
+   "epss": 0.03022,
+   "percentile": 0.8818,
+   "date": "2026-11-25"
+  },
+  "CVE-2026-136549": {
+   "epss": 0.02206,
+   "percentile": 0.8326,
+   "date": "2026-11-25"
+  },
+  "CVE-2026-136548": {
+   "epss": 0.00864,
+   "percentile": 0.56164,
+   "date": "2026-11-25"
+  },
+  "CVE-2026-136522": {
+   "epss": 0.00525,
+   "percentile": 0.37912,
+   "date": "2026-11-25"
+  },
+  "CVE-2026-136411": {
+   "epss": 0.01507,
+   "percentile": 0.74627,
+   "date": "2026-11-25"
+  },
+  "CVE-2026-136404": {
+   "epss": 0.02001,
+   "percentile": 0.81381,
+   "date": "2026-11-25"
+  },
+  "CVE-2026-136184": {
+   "epss": 0.00333,
+   "percentile": 0.1904,
+   "date": "2026-11-25"
+  },
+  "CVE-2026-136136": {
+   "epss": 0.00885,
+   "percentile": 0.57018,
+   "date": "2026-11-25"
+  },
+  "CVE-2026-135797": {
+   "epss": 0.02337,
+   "percentile": 0.84302,
+   "date": "2026-11-25"
+  },
+  "CVE-2026-135796": {
+   "epss": 0.02545,
+   "percentile": 0.85721,
+   "date": "2026-11-25"
+  },
+  "CVE-2026-135794": {
+   "epss": 0.00629,
+   "percentile": 0.44553,
+   "date": "2026-11-25"
+  },
+  "CVE-2026-135792": {
+   "epss": 0.02337,
+   "percentile": 0.84301,
+   "date": "2026-11-25"
+  },
+  "CVE-2026-135791": {
+   "epss": 0.01942,
+   "percentile": 0.80759,
+   "date": "2026-11-25"
+  },
+  "CVE-2026-135790": {
+   "epss": 0.01942,
+   "percentile": 0.80759,
+   "date": "2026-11-25"
+  },
+  "CVE-2026-135789": {
+   "epss": 0.03561,
+   "percentile": 0.90097,
+   "date": "2026-11-25"
+  },
+  "CVE-2026-135788": {
+   "epss": 0.01836,
+   "percentile": 0.7945,
+   "date": "2026-11-25"
+  },
+  "CVE-2026-135736": {
+   "epss": 0.00941,
+   "percentile": 0.59392,
+   "date": "2026-11-25"
   },
   "CVE-2026-135208": {
    "epss": 0.00558,
-   "percentile": 0.47122,
-   "date": "2026-11-24"
-  },
-  "CVE-2026-135202": {
-   "epss": 0.00594,
-   "percentile": 0.49086,
-   "date": "2026-11-24"
-  },
-  "CVE-2026-134882": {
-   "epss": 0.02524,
-   "percentile": 0.85166,
-   "date": "2026-11-24"
+   "percentile": 0.40153,
+   "date": "2026-11-25"
   },
   "CVE-2026-134624": {
-   "epss": 0.00617,
-   "percentile": 0.50289,
-   "date": "2026-11-24"
+   "epss": 0.01793,
+   "percentile": 0.78889,
+   "date": "2026-11-25"
   },
   "CVE-2026-133968": {
-   "epss": 0.49795,
-   "percentile": 0.98916,
-   "date": "2026-11-24"
+   "epss": 0.27157,
+   "percentile": 0.98495,
+   "date": "2026-11-25"
+  },
+  "CVE-2026-132224": {
+   "epss": 0.00784,
+   "percentile": 0.52543,
+   "date": "2026-11-25"
+  },
+  "CVE-2026-131914": {
+   "epss": 0.04292,
+   "percentile": 0.9189,
+   "date": "2026-11-25"
   },
   "CVE-2026-129448": {
-   "epss": 0.40069,
-   "percentile": 0.98654,
-   "date": "2026-11-24"
+   "epss": 0.24159,
+   "percentile": 0.98332,
+   "date": "2026-11-25"
+  },
+  "CVE-2026-125718": {
+   "epss": 0.00456,
+   "percentile": 0.31548,
+   "date": "2026-11-25"
+  },
+  "CVE-2026-125717": {
+   "epss": 0.00587,
+   "percentile": 0.4203,
+   "date": "2026-11-25"
+  },
+  "CVE-2026-125716": {
+   "epss": 0.00963,
+   "percentile": 0.60287,
+   "date": "2026-11-25"
+  },
+  "CVE-2026-123987": {
+   "epss": 0.00886,
+   "percentile": 0.57064,
+   "date": "2026-11-25"
+  },
+  "CVE-2026-123986": {
+   "epss": 0.00886,
+   "percentile": 0.57064,
+   "date": "2026-11-25"
   },
   "CVE-2026-123890": {
-   "epss": 0.03526,
-   "percentile": 0.89444,
-   "date": "2026-11-24"
+   "epss": 0.05009,
+   "percentile": 0.93012,
+   "date": "2026-11-25"
   },
-  "CVE-2026-120382": {
-   "epss": 0.01214,
-   "percentile": 0.69145,
-   "date": "2026-11-24"
+  "CVE-2026-123723": {
+   "epss": 0.00886,
+   "percentile": 0.57065,
+   "date": "2026-11-25"
   },
-  "CVE-2026-118286": {
-   "epss": 0.00815,
-   "percentile": 0.57835,
-   "date": "2026-11-24"
+  "CVE-2026-123342": {
+   "epss": 0.00886,
+   "percentile": 0.57065,
+   "date": "2026-11-25"
   },
-  "CVE-2026-118285": {
-   "epss": 0.00704,
-   "percentile": 0.54041,
-   "date": "2026-11-24"
+  "CVE-2026-119582": {
+   "epss": 0.00572,
+   "percentile": 0.41173,
+   "date": "2026-11-25"
   },
-  "CVE-2026-115731": {
-   "epss": 0.12839,
-   "percentile": 0.96365,
-   "date": "2026-11-24"
-  },
-  "CVE-2026-113824": {
-   "epss": 0.00815,
-   "percentile": 0.57835,
-   "date": "2026-11-24"
-  },
-  "CVE-2026-109490": {
-   "epss": 0.00773,
-   "percentile": 0.56452,
-   "date": "2026-11-24"
-  },
-  "CVE-2026-109480": {
-   "epss": 0.00789,
-   "percentile": 0.56991,
-   "date": "2026-11-24"
+  "CVE-2026-117593": {
+   "epss": 0.00341,
+   "percentile": 0.2007,
+   "date": "2026-11-25"
   },
   "CVE-2025-42884": {
-   "epss": 0.00902,
-   "percentile": 0.60474,
-   "date": "2026-11-24"
+   "epss": 0.01102,
+   "percentile": 0.65286,
+   "date": "2026-11-25"
   },
   "CVE-2024-10441": {
-   "epss": 0.03129,
-   "percentile": 0.88097,
-   "date": "2026-11-24"
+   "epss": 0.0276,
+   "percentile": 0.86985,
+   "date": "2026-11-25"
   }
  },
  "news": [
@@ -628,20 +1032,6 @@
    "cves": [
     "CVE-2026-123903"
    ]
-  },
-  {
-   "title": "VMware vCenter Zero-Day: CVSS 9.8, Hit Since September",
-   "source": "shattered.io",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNWEhGbUd1T1cyZHdCWjdRMi13bmxPWE1WZHd3UElHeURvU09TaEhNTFJGNnlGcUFITUlTOWxubk9lVXB4TFZtX0RHY0pfbzNZNGpwczlldE8tNF8teDlILWVObDcxS1pTc2ZsYVV5UTMwWFlNdGJiS0RQTUVlckEtV3h2SkFQLVVRSkFlR0tnQXpZaDlXR0VQMnJYRQ?oc=5",
-   "published": "2026-11-23T04:39:26+00:00",
-   "tags": [
-    "Exploited",
-    "South Africa"
-   ],
-   "vendors": [
-    "VMware"
-   ],
-   "cves": []
   },
   {
    "title": "New Shirudo tool uses AI to shield unpatched Linux systems from exploits",
@@ -670,31 +1060,77 @@
    "cves": []
   },
   {
-   "title": "\u26a1 Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble",
-   "source": "The Hacker News",
-   "link": "https://thehackernews.com/2026/11/weekly-recap-vmware-0-day-java4shell.html",
-   "published": "2026-11-23T20:40:48+05:30",
+   "title": "Travelstart Confirms Customer Data Breach",
+   "source": "Wisevoter",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNTHVQd2k1ZFVOMXNRM29zRU9LanpxeHJ2Q3pmNldFSS1ySlpLOTh6R2NlNVhaZkZSbHF4MzRPUTBsRkRrcUZXVTgxTlJMa2FxRWtqOWRiSEE3UUo3ZFdNR0JOazlUTWRyYW5GcjQ5a2tIYnJSSTZwUnh3c29kTHFCWFowWWhLc1FsVWs1WA?oc=5",
+   "published": "2026-11-25T11:52:21+00:00",
    "tags": [
-    "Exploited",
-    "Advisory"
+    "Breach",
+    "South Africa"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "Microsoft outage: Code Red declared after 24-hour failure",
+   "source": "DNE Africa",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9od1lxVHN0SzBVUFNqa21lYkZFbGdvMElQdzJ5OWNtUTZjSkVIU0dsSHV3ZG5yOHZWa3ZJZEswOWozWnJXZWlqZ19LUVRVU1JLcjctczgzcUZBc2xCMHlhTXpxTEg0dno2ejktcw?oc=5",
+   "published": "2026-11-25T11:33:00+00:00",
+   "tags": [
+    "South Africa"
    ],
    "vendors": [
-    "VMware"
+    "Microsoft"
    ],
    "cves": []
   },
   {
-   "title": "CISA flags critical Cisco RCE flaw as actively exploited in attacks",
-   "source": "BleepingComputer",
-   "link": "https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/",
-   "published": "2026-11-23T02:44:19-05:00",
+   "title": "SA Home Loans hit by data breach",
+   "source": "TechCentral",
+   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE0xNm0xeVZ2SnRfTGEwdGQ4eGE4TXR2TFIzb1I0bl9lak5ybFB4QW9hVkJIRlFiQVoxMzBFT1FCeF8wRThqUUFBYWUxTFBYTHpRNkxTVHRwX1JITnBReXdnSndqZW8yNS1udXp3?oc=5",
+   "published": "2026-11-25T09:30:09+00:00",
    "tags": [
-    "Exploited",
-    "Advisory"
+    "Breach",
+    "South Africa"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "South African home loans giant hit by second data breach in 3 months with customer bank account details exposed",
+   "source": "MyBroadband",
+   "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNZFUzdTMtYXZPLUhNWkhqc1RlX21CU1ZpVm9kMHk0Y3kxbG5mVURib0gxTEJiek9SMGtXYnlCQTB3TWY4T1JVekJ2WmFUTXhPUGt4MVNpQWJTTEE3bVIyMWU0UEw4TXFuZXlFNWlzbXB6c2Q0WWhEcUc4NEVFc21qTkVOaUFGMm0yc1E4Q2ljUU1Cb2tPSWxsb1pNaWRoRjlPTHhaOWlQR1luVF9Cbkx6WGU4bFhDNTNERmFDa3U1N0c5dHdWdU1UQVdkQ1prY3RSMmdBUzBFVFZGQUVObno4ZTZ0MHpxdzNKSTBzeHVoa2d1RnUycGc?oc=5",
+   "published": "2026-11-25T07:42:44+00:00",
+   "tags": [
+    "Breach",
+    "South Africa"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "Com-Affiliated Hackers Hijack Cloud Accounts via Vishing for Data Theft and Extortion",
+   "source": "The Hacker News",
+   "link": "https://thehackernews.com/2026/11/com-affiliated-hackers-hijack-cloud.html",
+   "published": "2026-11-25T12:07:06+05:30",
+   "tags": [
+    "Ransomware"
    ],
    "vendors": [
-    "Cisco"
+    "Palo Alto Networks"
    ],
+   "cves": []
+  },
+  {
+   "title": "ShinyHunters claims to return after FBI arrests, uses old PGP keys as proof",
+   "source": "BleepingComputer",
+   "link": "https://www.bleepingcomputer.com/news/security/shinyhunters-resurfaces-after-fbi-arrests-uses-old-pgp-keys-as-proof/",
+   "published": "2026-11-24T11:30:19-05:00",
+   "tags": [
+    "Ransomware",
+    "Breach"
+   ],
+   "vendors": [],
    "cves": []
   },
   {
@@ -710,10 +1146,23 @@
    "cves": []
   },
   {
+   "title": "Ramaphosa visits Palo Alto Networks to explore cybersecurity and digital technology cooperation",
+   "source": "Tech Review Africa",
+   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNM19sXzRIdTJ1MVVpY2JhOWdJQ0JNRS1sMTFFUXYtM3lLaEtMcjk4OUE4SHpMZmZOamdTY2lQVV9tbmlSTlVtNDNFb1J6TDVrZXZiSkp1THdLbFFPRlZTRm5HaVBxVk51T1VWVzE1a3VwaEZwU2RJQ1Nnc2tjLTZuNERqVUNmSXAxbHBYa2JlMExVVVAxVzFtSk5vZWktWlpFZFFTQmxKYVJDUWphX2ZkRC1Ma09rNUlCMWtVVUNRUUNTRnR2STdudHhLYlNOWWc?oc=5",
+   "published": "2026-11-24T11:11:46+00:00",
+   "tags": [
+    "South Africa"
+   ],
+   "vendors": [
+    "Palo Alto Networks"
+   ],
+   "cves": []
+  },
+  {
    "title": "Google outlines support for South Africa\u2019s AI ambitions following Ramaphosa\u2019s Silicon Valley visit",
    "source": "Tech Review Africa",
    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPVXlmSkVfd1FvbFNzUkZUNUxNNHhwSkdyZThBd0E4YTEtQm9jS1hmdGJXdDZzeElPR1M1clM0WFplMzF3d0IwVmdCY0VLcHFSMXpXdWFwdzI1UEM0d3Yzdl9LU0NPajFyRG8tRUdJOHpJcmw0eFNRb0s2WUE1M3VKWjZKdE4zcFFIOW10S3NSWEZtaXc2ejRSQVZUaDJfS3czeDRVOXloY19sUThIRWNfd3l4UkYxZFVWM1gzNGdBd3d5NGFUSi1fOVJTOFUzTHIt?oc=5",
-   "published": "2026-11-24T11:02:17+00:00",
+   "published": "2026-11-24T11:06:46+00:00",
    "tags": [
     "South Africa"
    ],
@@ -723,12 +1172,38 @@
    "cves": []
   },
   {
-   "title": "Ramaphosa visits Palo Alto Networks to explore cybersecurity and digital technology cooperation",
-   "source": "Tech Review Africa",
-   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNM19sXzRIdTJ1MVVpY2JhOWdJQ0JNRS1sMTFFUXYtM3lLaEtMcjk4OUE4SHpMZmZOamdTY2lQVV9tbmlSTlVtNDNFb1J6TDVrZXZiSkp1THdLbFFPRlZTRm5HaVBxVk51T1VWVzE1a3VwaEZwU2RJQ1Nnc2tjLTZuNERqVUNmSXAxbHBYa2JlMExVVVAxVzFtSk5vZWktWlpFZFFTQmxKYVJDUWphX2ZkRC1Ma09rNUlCMWtVVUNRUUNTRnR2STdudHhLYlNOWWc?oc=5",
-   "published": "2026-11-24T10:58:27+00:00",
+   "title": "Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation",
+   "source": "The Hacker News",
+   "link": "https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html",
+   "published": "2026-11-25T16:53:26+05:30",
    "tags": [
-    "South Africa"
+    "Exploited",
+    "Advisory"
+   ],
+   "vendors": [],
+   "cves": [
+    "CVE-2026-132165"
+   ]
+  },
+  {
+   "title": "Hackers now exploit critical Drupal RCE flaw to hijack sites",
+   "source": "BleepingComputer",
+   "link": "https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/",
+   "published": "2026-11-25T05:10:20-05:00",
+   "tags": [
+    "Exploited",
+    "Advisory"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "Palo Alto Networks Patches Fragnesia Flaw Used to Root Firewalls",
+   "source": "SecurityWeek",
+   "link": "https://www.securityweek.com/palo-alto-networks-patches-fragnesia-flaw-used-to-root-firewalls/",
+   "published": "2026-11-25T08:12:24+00:00",
+   "tags": [
+    "Nation-state"
    ],
    "vendors": [
     "Palo Alto Networks"
@@ -736,53 +1211,15 @@
    "cves": []
   },
   {
-   "title": "Travelstart Confirms Customer Data Breach",
-   "source": "Wisevoter",
-   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOelRnSWxpSG9KZktQV19lNmJsa0oxaGlIZ1R6M3Y5T3MtbzR3UldFamJselJZOGdxbVI4UDVoMzdLRTUwU1VaaURiamg5YjBBOW8tTmtMQWw3MUF5Vkp3NXV1cjFZWldhQWV3S2R2bXotZU8yektnRlhxY2VkMTRldUI1UEtXMlZhT0J3?oc=5",
-   "published": "2026-11-24T06:13:53+00:00",
+   "title": "Drupal Flaw Found by Anthropic Scanner Exploited in Attacks",
+   "source": "SecurityWeek",
+   "link": "https://www.securityweek.com/drupal-flaw-found-by-anthropic-scanner-exploited-in-attacks/",
+   "published": "2026-11-25T08:01:06+00:00",
    "tags": [
-    "Breach",
-    "South Africa"
+    "Exploited",
+    "Advisory"
    ],
    "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "Ramaphosa visits Cisco campus to explore digital infrastructure and cybersecurity opportunities",
-   "source": "Tech Review Africa",
-   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPdGZQYkpNT1YxcVpZYjN2cXlqMkZEaTA2NVpLUFEyRi1fRUpDWUt4dk9UV240alRjQ1VQQ0V4V2h3ZGhvS2lwZVJkTVdtNnhRdFcxcEZmdXMtV19ndHByajdOOER2WDUxVXFtZy05Zk9tZ09aenBRdGhiOVotN3JFWXA3dko2SHBQdjQ2U0RBb3FnTEw2elZ4MTNDRldNQ3F6M2tJMUkzVUM2R2RubXNib2ZLLTN3Q04zWFByTkt2NC13RERndHF6VzIycEZ5Vjg?oc=5",
-   "published": "2026-11-23T15:11:14+00:00",
-   "tags": [
-    "South Africa"
-   ],
-   "vendors": [
-    "Cisco"
-   ],
-   "cves": []
-  },
-  {
-   "title": "Next reports data breach following cyber attack with 'investigations ongoing'",
-   "source": "South Wales Argus",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNZUpsbGcxUDlsel8zV2ZYOEFWX091Mm1TOVQ1dHJETGhZaExDdldRUGxmbWVrY2dsVGE1UUNMcFRWSGloX0RXXzJlak1FZHVwQVZmY3BPMUZ1MjZ3SlowY3ZlV0g3cjduNk0wTlNVa0JSZ214d2hKckdFUWRpU2dwMlowN0FwTkk4OGUySkRfV3h1SnVyMlJadGdudjl5NW9TMU1PT0c0dTFfaVJrUVpXcVlocEZfYmd1bXkzUG9n?oc=5",
-   "published": "2026-11-23T12:02:31+00:00",
-   "tags": [
-    "Breach",
-    "South Africa"
-   ],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "PANW Stock Rises Overnight: \u2018Cybersecurity, AI Tailwinds\u2019 Prompt Analyst To See 22% Upside In Palo Alto Networks",
-   "source": "TradingView",
-   "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxObTlKUHBydVJhcXdvNGsweVZ3cDhrdFFUUnM4cTNLMTJPcmthcEtEQUJoUGZMbUEtM2drQWVybk5UQzFxTlIxM1AwR1E5WEVzQXQ5ZmhnWTNyenYzZ3o1a2tfbHVlY1ozTG4wTDlGQl9xTzBBYkphdE9HcG5JOFQyTmxfTDV1ZU5WYnJBaXhWYmJhQ3pFS1J0U2ZoWDROSmM5a2dTNDk2M04zdDI5TEc3SDlWVWN0N1NCNE8xb0JLeWxEaDBBcXJhbmdWcURlMXRndHlqWW5kMjgxNGt5REtHUDN3VVZONFpfdkJDSlBMMld3VWZlZEpjd2NPQ2g?oc=5",
-   "published": "2026-11-23T07:52:00+00:00",
-   "tags": [
-    "South Africa"
-   ],
-   "vendors": [
-    "Palo Alto Networks"
-   ],
    "cves": []
   },
   {
@@ -800,6 +1237,50 @@
    ]
   },
   {
+   "title": "CISA Adds Three Known Exploited Vulnerabilities to Catalog",
+   "source": "CISA",
+   "link": "https://www.cisa.gov/news-events/alerts/2026/11/24/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+   "published": "2026-11-24T12:00:00+00:00",
+   "tags": [
+    "Exploited",
+    "Advisory"
+   ],
+   "vendors": [],
+   "cves": [
+    "CVE-2026-131914",
+    "CVE-2026-132165",
+    "CVE-2026-132224"
+   ]
+  },
+  {
+   "title": "Danfoss AK-SM 8xxA Series",
+   "source": "CISA",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-03",
+   "published": "2026-11-24T12:00:00+00:00",
+   "tags": [
+    "Exploited",
+    "Advisory"
+   ],
+   "vendors": [],
+   "cves": [
+    "CVE-2026-129713"
+   ]
+  },
+  {
+   "title": "AutomationDirect C-More EA9 Programming Software",
+   "source": "CISA",
+   "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-01",
+   "published": "2026-11-24T12:00:00+00:00",
+   "tags": [
+    "Exploited",
+    "Advisory"
+   ],
+   "vendors": [],
+   "cves": [
+    "CVE-2026-127280"
+   ]
+  },
+  {
    "title": "Hackers Exploit N-able MailAssure Flaw While AI Agents Exploit MONAI Label Zero-Day",
    "source": "The Hacker News",
    "link": "https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html",
@@ -814,51 +1295,10 @@
    ]
   },
   {
-   "title": "Webworm Suspected of Modifying SoftEther VPN to Evade Detection and Hide Remote Access",
-   "source": "The Hacker News",
-   "link": "https://thehackernews.com/2026/11/webworm-suspected-of-modifying.html",
-   "published": "2026-11-23T23:15:15+05:30",
-   "tags": [
-    "Breach",
-    "Nation-state"
-   ],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-   "source": "CISA",
-   "link": "https://www.cisa.gov/news-events/alerts/2026/11/23/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-   "published": "2026-11-23T12:00:00+00:00",
-   "tags": [
-    "Exploited",
-    "Advisory"
-   ],
-   "vendors": [],
-   "cves": [
-    "CVE-2026-133968",
-    "CVE-2026-134624"
-   ]
-  },
-  {
-   "title": "Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE",
-   "source": "The Hacker News",
-   "link": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html",
-   "published": "2026-11-23T14:41:56+05:30",
-   "tags": [
-    "Exploited",
-    "Advisory"
-   ],
-   "vendors": [],
-   "cves": [
-    "CVE-2026-131914"
-   ]
-  },
-  {
-   "title": "All Set For CIO100 Symposium And Awards 2026",
-   "source": "CIO Africa",
-   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFA5VlZESmt5Q3BPQW0zTXVSNmxOWERiWHZjTERPZURsVVVXa3FxWl83X1U5QVNmQnJNR3kxc3BTZGlwRy1Td2hTTUd2T3MzcEVBc3VvaHYyRFN3SzJRZGZHcnd5VHpBM0JJanRyZHBaam1nX2Rr?oc=5",
-   "published": "2026-11-24T14:58:10+00:00",
+   "title": "Retailers face rising AI cyberattack risk before Black Friday",
+   "source": "Business Day",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQbjNVbE5hd1Y4cG1UQ3BsbnZuNFFtOWVzMGY0UW1BSENPYnQyVlNZcjBBcHlfaklCMkdxUHBxMHF1RU96ZDNEZVR0eGIzY0pDTWwwWmI3ZFlLZFNRZTFyZk9BSVBsb1hSSnU4NGIzSE94VUhOdDZ3U2VJUzJqeW9ZUGZKVkJIRnNyRTFzb1oxLXJSSjlPMElYZnU4ZTZPcGFLcXNEUDk5OGZZS3RmUE4wVmQ1NEpwSFhlbGpCSVlsZEJxZ2luTGlrMTRpc3Fpdw?oc=5",
+   "published": "2026-11-25T13:14:08+00:00",
    "tags": [
     "South Africa"
    ],
@@ -866,111 +1306,10 @@
    "cves": []
   },
   {
-   "title": "How Nigerian-born innovator Chukwudera Anunagba is advancing enterprise data governance and cybersecurity in the U.S.",
-   "source": "TechCabal",
-   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNemNQWTVKQjJ3b0pXZXZ0TWlLRDFEZ0twekhpdEJrR2JSNklEYXZrVW4tcTFmT3drZ2FfZVJrM2Y0T3AxQnFTUS12VTVWaWp3UUhUdzZZdGlaTlpXOVg0SF9SOElBUmlOY1FnS2FlQzBhaWJZUjRaV1lXUVRvQ1ZoOFlTUktmX1U5d2lhckVYV3E5WEVuaGlHYjFjWWhrUnF2c2lUSVp3MkJ5Und4RjYyMlFwWU81cHJoeWxrZXE2LWVVdXZxX2FxMm5yRW0tZkpQZkVpXzV3c09OM2M0N2diQzZEREM?oc=5",
-   "published": "2026-11-24T12:00:46+00:00",
-   "tags": [
-    "South Africa"
-   ],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "Artificial intelligence and the evolution of phishing",
-   "source": "Cliffe Dekker Hofmeyr",
-   "link": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxPelBaTHNwVXhvZUE0anB2QUkxU042UHd3ZVZtcEczWkw3MDRvMGVhVENpSWdyT01ROGdlQnE4Q29GQjFQdFV6RDNZdjE4Y2E2dGdwaC1pTFZaVlNWRmZDbThFaldoRzVYbm5IVzFpeW0yR3RwX0pMYUJkYko1YUU2Y2hEdkgzNU4xRktIdExxc0ZiaXRQMU5tNHZxN0xCNzF3YmYyQVozNE9oc1pqOUFqYVVMRUZ2VU5RT3JueGNDZ2xNa0JISFJwTXZHdTdDdjFTeGt3U1NrZGZ2aFhOTWd6VXktU09hZzhKRi01dkRWT1h4U2tYc080dHdFdjRNZnBGdTMtdDFyTlk1WEhvajk5TE1VNTJCMWl4TWptcTNsbS1Vd0pIY2ZLSDREWmRMVG1wU2hZWlVwMVgwZldiYTJDazFmdmo3ak82dkRhV05fMmQ?oc=5",
-   "published": "2026-11-24T11:51:33+00:00",
-   "tags": [
-    "South Africa"
-   ],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "Microsoft Fixes Azure API Management Classic Flaw as Actor Targets Customer Secrets",
-   "source": "The Hacker News",
-   "link": "https://thehackernews.com/2026/11/microsoft-fixes-azure-api-management.html",
-   "published": "2026-11-24T16:14:49+05:30",
-   "tags": [
-    "Advisory"
-   ],
-   "vendors": [
-    "Microsoft"
-   ],
-   "cves": []
-  },
-  {
-   "title": "Air Tanzania fortifies airport networks",
-   "source": "ITWeb Africa",
-   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNMHlwOUNDWXF3cnZVVTlJUTNyS2s3LVJLcC1QTFoySmJUTVhDWDRDdjZoeXVac0lRUldnY0pHOWkzZU1ncjRINURlZ1o3SkRTVndaSnBJM1gtUTJSVXVpaUZnUDJfcTk3MG9HYnA5T0xXVlhmWUdiTk5MM2x5MGRvOFNzajc0eGtRZzkwRHFR?oc=5",
-   "published": "2026-11-24T09:52:15+00:00",
-   "tags": [
-    "South Africa"
-   ],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "10 Free Online Courses That Can Help You Improve Your CV",
-   "source": "Youth Village",
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQRjh6VEtvRWtveVVTSU1CYy12WU9wV2diOU9Xclcwak9ud1d3VENld0RsQVBhbUJOQUwtbzBBc3pJZkpkeURsc2FCSEpRXzBBcnM4Tjh3LVpCUVM2RjQxek5PVEdiaHh3YWgzd0JmUm5mUkZrbGg1Y2E5dGVEUHZLRU9ncmpXMWVjUzhYZDEwbk01eHd1cEJv?oc=5",
-   "published": "2026-11-24T09:39:46+00:00",
-   "tags": [
-    "South Africa"
-   ],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "Acronis Expands Partnership with Climb Channel Solutions to Support MSPs and VARs in the UK and Ireland",
-   "source": "The Manila Times",
-   "link": "https://news.google.com/rss/articles/CBMijgJBVV95cUxQWVJhR3N6YUJUaVk4cHlBNlpjb01GbHhfb1ljNUtPS0tFZnIxWW8wVkx6MGlZcmNfZU9qTl8xRlMzbzVZV1ZiVWRZS0VCenVTaTh4U2tLclpQXzJzY2ZleVBYNFRsRnBnczIxR0doQXRBRGtsbDFDTUl6UldZT3h2ZS1GZW5VRXI5dlVVV2twT2ZycHJwNkVMeVFMOXkzblRfN28xWWI0aTRhQ1JMQ3YyWFp4OG1XWnpCZThnTjI1VGJnN0ozRElZWWR5aTBmZmFxQnczbkdpRDNnNUtBNXBTRHFIUTVuMWFqMEJ1Mkc4VnpKZVRzbEhqdDVEMkg0OGpPN0YxdmVSVVRoVGxibGfSAY4CQVVfeXFMUFlSYUdzemFCVGlZOHB5QTZaY29NRmx4X29ZYzVLT0tLRWZyMVlvMFZMejBpWXJjX2VPak5fMUZTM281WVdWYlVkWUtFQnp1U2k4eFNrS3JaUF8yc2NmZXlQWDRUbEZwZ3MyMUdHaEF0QURrbGwxQ01JelJXWU94dmUtRmVuVUVyOXZVVVdrcE9mcnBycDZFTHlRTDl5M25UXzdvMVliNGk0YUNSTEN2MlhaeDhtV1p6QmU4Z04yNVRiZzdKM0RJWVlkeWkwZmZhcUJ3M25HaUQzZzVLQTVwU0RxSFE1bjFhajBCdTJHOFZ6SmVUc2xIanQ1RDJINDhqTzdGMXZlUlVUaFRsYmxn?oc=5",
-   "published": "2026-11-24T09:17:00+00:00",
-   "tags": [
-    "South Africa"
-   ],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "Rising threats expose African SMMEs",
-   "source": "ITWeb Africa",
-   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxObXA2U0VfZGItVmJUZUgtUWVPRzJINzRia3A5dVJSZ1Z3SWlXZkxMSEtEWk1HeTNSU05aNU5iNDVSUnltZEJ6RWpTdTF3QTRKd09BbklPVUFiYUVwaDVDRzk3N3lsRkdIYl8wcjZ1MS1CSWw3VEI4SHhXYXZraUtYaWJSbjNOZ0wt?oc=5",
-   "published": "2026-11-24T08:11:03+00:00",
-   "tags": [
-    "South Africa"
-   ],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "Pepkor Lifts Earnings 9.7% on Discount Gains",
-   "source": "Wisevoter",
-   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPVnVCRDFPSkdlUWlFYURzMUVpZXJ4bFRjSEQtSzNhanBmNVB5d3RVcVI0YV85c2JhU3BoejRQWExWWGJJalFUZjVkRkZqakdzczIyczNzRFlsMlIxUWF4MkhlU05jaENSUDdqbjQ4RFZRN3pEcEFLT3g3aU80TlMxbm13ckNSV0l5X2ppUg?oc=5",
-   "published": "2026-11-24T07:56:02+00:00",
-   "tags": [
-    "South Africa"
-   ],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "FlySafair Warns of Fake Black Friday Flight Deals",
-   "source": "Wisevoter",
-   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOR2lvX0lkQmhnVWY5RXF0TWFHMVZORmxWOFRJZ1Zsbk1hZE5fZGV1LVh2aS1zYkJyaEhfaFBfcTh6Ylc0Yy1sd2dyQmd0TkZBbktsUXNRRV9WVmE4cGlET2VpbFN3TC0zS3dHNmowaTRsdUtUOTQtMEhIaTlpcnNtemI0d2dxQ0tMWUFsWHpsU09ZUQ?oc=5",
-   "published": "2026-11-24T07:03:50+00:00",
-   "tags": [
-    "South Africa"
-   ],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "Microsoft Azure flaw exploited to steal customers' API credentials",
+   "title": "Microsoft fixes Microsoft 365 bug blocking access to Office apps",
    "source": "BleepingComputer",
-   "link": "https://www.bleepingcomputer.com/news/security/microsoft-azure-flaw-exploited-to-steal-customers-api-credentials/",
-   "published": "2026-11-23T14:42:20-05:00",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-blank-dialog-that-made-microsoft-365-office-apps-unusable/",
+   "published": "2026-11-25T06:16:32-05:00",
    "tags": [
     "Advisory"
    ],
@@ -980,10 +1319,78 @@
    "cves": []
   },
   {
-   "title": "CrowdStrike stock falls after agreeing to buy Zscaler for $43.9B",
-   "source": "Invezz",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPX0NOaHA0WktZY1ZUckFDS1hqdjBmZ2dSNlhPd1p5MG0zN0o3SFZoeVVvZEhNczB3OGI2TFc5Njc5VnlVdEd3NGdrVnhpcTk1TU9sRHI4blpVTGJQcDF6cFBEdjczRWoxOE1tR1BsVnFYb2d6ZnYtRmc1YXVJNkJTekVFV3lXTGx6UnhxZmJUV2VpTXZxclhzNGIwRVg5MUtacERGbmh2TW9GUTA?oc=5",
-   "published": "2026-11-23T18:25:37+00:00",
+   "title": "Black October a wake-up call for business cybersecurity",
+   "source": "TechCentral",
+   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOUzA1aFI0Q1B3Q2NKUVNNQzVjZmU3dFl1OUlVdGYyX1VYMEwwMmtzVW8wMkhBR0ZFOEpqdUJkU2dtdC0xdDZZZVhWaDBKb1c4b01zcG9FdFNoTkRYUTNBYUhMbEFuVDYtb0V0c3VHcDlpSFF5b1MyS3E2MTFQX0NFbW9n?oc=5",
+   "published": "2026-11-25T11:13:27+00:00",
+   "tags": [
+    "South Africa"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "Nigerian cybersecurity startup Aeon extends pre-seed round to $2 million",
+   "source": "TechCabal",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9PaXNpWVZSclNSVUJHa3hyUjFWdGt5Q3k2UFRuMHB4VlJiUHBzazBVemltR3hHYjZUalpnNzdqTUZVaXVBRTM2d2lWNHFQbjMwQlpxeXZjQl9QdlRfM2s0ZndtcEtqRkJWbHRuZ3lubl9VczVQcU1TVi02MnVSdzQ?oc=5",
+   "published": "2026-11-25T09:58:29+00:00",
+   "tags": [
+    "South Africa"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "Travelstart Gets Hit By Cyberattack",
+   "source": "2oceansvibe News",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPZ1E0S2FJcnoxYllGZDhTMjJxTXkwbHlwNU1sTWx5eHBuQzFHampxV3JQRDdVWnJOMDBubFJEazhUczNkc2VKVFMwTXBYdGE5WXctYUpwLTFqYWdiSDduOElyLUNyQWZiTW1RSjg0THBHbDlGUHotUlNDQWkwbFV5ZEdjZUJVbGNYSDRjQlJKdlNMTEJWa0sxUnY4NUx3QmNDWkhzWlJFOA?oc=5",
+   "published": "2026-11-25T09:04:24+00:00",
+   "tags": [
+    "South Africa"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "Microsoft confirms authentication issues after November updates",
+   "source": "BleepingComputer",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-authentication-issues-after-november-updates/",
+   "published": "2026-11-25T04:02:57-05:00",
+   "tags": [
+    "Advisory"
+   ],
+   "vendors": [
+    "Microsoft"
+   ],
+   "cves": []
+  },
+  {
+   "title": "Nigerian start-up Aeon raises $2m",
+   "source": "ITWeb Africa",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOUHdueFM1QWRiOGtWcVpsbU14X2tWQmtDWEVUQ0JXbGY0M2dTcm1uZlpscnl0cVZlNnlnQWRmZ09MeW1aWFB3M0hnWTNDODZfN3BtZS0zWFd3TmFCNnNReHRlUWlTRjFpaDJTQWJhV1hjS2hITVd1YzhPVnBYeWw0SWk0TDQ?oc=5",
+   "published": "2026-11-25T08:53:44+00:00",
+   "tags": [
+    "South Africa"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "Praavin Chavda Appointed Vice President \u2013 Information Technology at Intas Pharmaceuticals",
+   "source": "https://hrtoday.in/",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPckpCRFhzT25jMzkxSVotamNEQWNkNVFZbnh6MEJyRmJpLVljcFNtZkpuRnBOZEotSC0zUFB1ZHFIZVZGQ0FUYzB0bFJqU1FXazZuaTdVal9TLVpOZ3YyTmprcU81NGpkRENaQWE5UjNfRlBlaHBYb3Foc0FQTTNiektFOXlNNllSOUVtSFFwSHIzX2V4cndKSXJUVkJYYjFoemdCN2txVE5zbFU?oc=5",
+   "published": "2026-11-25T08:29:25+00:00",
+   "tags": [
+    "South Africa"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "Travelstart confirms cyberattack, warns customers of fake calls and emails",
+   "source": "Joburg ETC",
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9JQVJLNmt1aE1aYnEyNTdyLTdaTm5WNjQxbXR1VEpLU0p3NnJFOEtORHMzdTZ3RDlPaGd5dEVmY1AzR0Z0aF9QTE5rbkdISmEweGF1MEN4ZXBCR0tldGxTeFB3aWpoUUhtbm5ZYlZ4VXNrYU5DS3ZfSEpXVUU?oc=5",
+   "published": "2026-11-25T06:38:25+00:00",
    "tags": [
     "South Africa"
    ],
@@ -992,34 +1399,29 @@
   }
  ],
  "ai": {
-  "headline": "VMware vCenter zero\u2011day authentication bypass actively exploited, targeting critical infrastructure worldwide",
+  "headline": "VMware vCenter critical auth bypass actively exploited",
   "patch_first": [
    {
-    "cve": "CVE-2026-40217",
-    "why": "BerriAI LiteLLM unprotected channel allows remote code execution; high EPSS indicates likely exploitation"
+    "cve": "CVE-2026-123890",
+    "why": "Active exploitation; attackers can bypass vCenter authentication"
    },
    {
-    "cve": "CVE-2026-133968",
-    "why": "Project MONAI Label path traversal can lead to file read/write; medium EPSS suggests active interest"
-   },
-   {
-    "cve": "CVE-2026-129448",
-    "why": "Apache Roller deserialization of untrusted data may enable remote code execution; notable EPSS"
+    "cve": "CVE-2026-132165",
+    "why": "Drupal Core RCE actively exploited; remote code execution"
    }
   ],
   "threats": [
-   "VMware vCenter zero\u2011day auth bypass is being weaponized in the wild, threatening virtualized environments.",
-   "Cisco Expressway Series hard\u2011coded credentials flaw is actively exploited, giving attackers persistent access.",
-   "Hackers are leveraging N\u2011able MailAssure SSRF vulnerability alongside AI tools to bypass defenses."
+   "VMware vCenter flaw is being weaponized in the wild, enabling unauthorized access to virtual infrastructure",
+   "Drupal Core remote code execution is actively exploited, allowing attackers to take over web sites",
+   "Cybercriminals are using vishing to hijack cloud accounts for data theft and extortion"
   ],
   "sa_angle": [
-   "SJP suffered a ransomware attack affecting operations in South Africa.",
-   "Travelstart confirmed a customer data breach impacting South African users.",
-   "Next reported a data breach after a cyber\u2011attack, investigations ongoing in South Africa."
+   "Travelstart confirmed a customer data breach affecting South African users",
+   "SA Home Loans suffered a second breach in three months, exposing bank account details"
   ],
-  "exec_note": "Prioritize patching the listed high\u2011risk vulnerabilities and review incident response plans for ransomware and data\u2011breach scenarios.",
-  "fact_check_removed": 0
+  "exec_note": "Prioritize patching VMware vCenter, Drupal, and Synology DSM and review breach response plans for local incidents.",
+  "fact_check_removed": 1
  },
  "errors": [],
- "digest_html": "\ud83d\udee1 <b>Cyber Watch \u00b7 Tue 24 Nov 2026</b>\n<b>VMware vCenter zero\u2011day authentication bypass actively exploited, targeting critical infrastructure worldwide</b>\n\n<b>\ud83d\udd27 Patch first</b>\n1. <code>CVE-2026-40217</code> BerriAI LiteLLM \u00b7 on KEV \u00b7 EPSS 83%\n   BerriAI LiteLLM unprotected channel allows remote code execution; high EPSS indicates likely exploitation\n2. <code>CVE-2026-133968</code> Project MONAI MONAI Label \u00b7 on KEV \u00b7 EPSS 50%\n   Project MONAI Label path traversal can lead to file read/write; medium EPSS suggests active interest\n3. <code>CVE-2026-129448</code> Apache Roller \u00b7 on KEV \u00b7 EPSS 40%\n   Apache Roller deserialization of untrusted data may enable remote code execution; notable EPSS\n\n<b>\ud83d\udea8 New on CISA KEV (7 days): 11</b>\n\u2022 <code>CVE-2026-40217</code> BerriAI LiteLLM \u00b7 added 18 Nov\n\u2022 <code>CVE-2026-133968</code> Project MONAI MONAI Label \u00b7 added 23 Nov\n\u2022 <code>CVE-2026-123890</code> Broadcom VMware vCenter \u00b7 added 20 Nov \u2b50\n\u2022 <code>CVE-2026-76466</code> Cisco Expressway Series \u00b7 added 20 Nov \u2b50\n\u2022 <code>CVE-2026-129448</code> Apache Roller \u00b7 added 20 Nov\n  \u2026and 6 more (/kev)\n\n<b>\ud83c\udd95 New critical CVEs (48h): 16</b>\n\u2022 <code>CVE-2026-134882</code> A weakness has been identified in TOTOLINK A7100RU\u2026 \u00b7 CVSS 10.0 \u00b7 EPSS 3%\n\u2022 <code>CVE-2026-120382</code> An improper neutralization of argument delimiters in a command\u2026 \u00b7 CVSS 9.8 \u00b7 EPSS 1%\n\u2022 <code>CVE-2026-50691</code> Improper authorization in M365 Copilot allows an authorized attacker\u2026 \u00b7 CVSS 9.9 \u00b7 EPSS <1%\n\n<b>\ud83d\udcf0 Threat picture</b>\n\u2022 VMware vCenter zero\u2011day auth bypass is being weaponized in the wild, threatening virtualized environments.\n\u2022 Cisco Expressway Series hard\u2011coded credentials flaw is actively exploited, giving attackers persistent access.\n\u2022 Hackers are leveraging N\u2011able MailAssure SSRF vulnerability alongside AI tools to bypass defenses.\n\n<b>\ud83d\udd17 Read</b>\n\u2022 <a href=\"https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html\">VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation</a> (The Hacker News)\n\u2022 <a href=\"https://www.bleepingcomputer.com/news/security/new-shirudo-tool-uses-ai-to-shield-unpatched-linux-systems-from-exploits/\">New Shirudo tool uses AI to shield unpatched Linux systems from exploits</a> (BleepingComputer)\n\u2022 <a href=\"https://thehackernews.com/2026/11/weekly-recap-vmware-0-day-java4shell.html\">\u26a1 Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble</a> (The Hacker News)\n\u2022 <a href=\"https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/\">CISA flags critical Cisco RCE flaw as actively exploited in attacks</a> (BleepingComputer)\n\n<b>\ud83c\uddff\ud83c\udde6 South Africa</b>\n\u2022 SJP suffered a ransomware attack affecting operations in South Africa.\n\u2022 Travelstart confirmed a customer data breach impacting South African users.\n\u2022 Next reported a data breach after a cyber\u2011attack, investigations ongoing in South Africa.\n\u2022 <a href=\"https://news.google.com/rss/articles/CBMimwFBVV95cUxNWEhGbUd1T1cyZHdCWjdRMi13bmxPWE1WZHd3UElHeURvU09TaEhNTFJGNnlGcUFITUlTOWxubk9lVXB4TFZtX0RHY0pfbzNZNGpwczlldE8tNF8teDlILWVObDcxS1pTc2ZsYVV5UTMwWFlNdGJiS0RQTUVlckEtV3h2SkFQLVVRSkFlR0tnQXpZaDlXR0VQMnJYRQ?oc=5\">VMware vCenter Zero-Day: CVSS 9.8, Hit Since September</a> (shattered.io)\n\u2022 <a href=\"https://news.google.com/rss/articles/CBMimwFBVV95cUxQaTI5V0llVGVhWGJUbnNnRWsxMEJLQUFLM3BRckFqLWV1ZDZZQXA5ZWU1TEo5NWhZTVZLXzEwOG5oYUhLM3IyemNjTF9zZHJIUy0yZVliYUk1Q1UyU1FYaVZMMW90LUkwMVExZEp2OEhpU3FDSzJkenBYUVFTMTRBTWczNFd6UFlUQXNiRzRTazNqYlRvX09WdWVsUQ?oc=5\">Revealed: SJP hit by ransomware cyberattack</a> (Citywire)\n\u2022 <a href=\"https://news.google.com/rss/articles/CBMiiwFBVV95cUxOelRnSWxpSG9KZktQV19lNmJsa0oxaGlIZ1R6M3Y5T3MtbzR3UldFamJselJZOGdxbVI4UDVoMzdLRTUwU1VaaURiamg5YjBBOW8tTmtMQWw3MUF5Vkp3NXV1cjFZWldhQWV3S2R2bXotZU8yektnRlhxY2VkMTRldUI1UEtXMlZhT0J3?oc=5\">Travelstart Confirms Customer Data Breach</a> (Wisevoter)\n\n<i>For leadership:</i> Prioritize patching the listed high\u2011risk vulnerabilities and review incident response plans for ransomware and data\u2011breach scenarios.\n\n<i>AI summary fact-checked against the data. Sources: CISA KEV v2026.11.23, NVD, FIRST EPSS, security news. \u2b50 = on your vendor watchlist.</i>\nAsk me: /cve CVE-ID \u00b7 /vendor fortinet \u00b7 /kev \u00b7 /news, or any question."
+ "digest_html": "\ud83d\udee1 <b>Cyber Watch \u00b7 Wed 25 Nov 2026</b>\n<b>VMware vCenter critical auth bypass actively exploited</b>\n\n<b>\ud83d\udd27 Patch first</b>\n1. <code>CVE-2026-123890</code> Broadcom VMware vCenter \u00b7 on KEV \u00b7 EPSS 5%\n   Active exploitation; attackers can bypass vCenter authentication\n2. <code>CVE-2026-132165</code> Drupal Core \u00b7 on KEV\n   Drupal Core RCE actively exploited; remote code execution\n\n<b>\ud83d\udea8 New on CISA KEV (7 days): 13</b>\n\u2022 <code>CVE-2026-123890</code> Broadcom VMware vCenter \u00b7 added 20 Nov \u2b50\n\u2022 <code>CVE-2025-42884</code> SAP NetWeaver \u00b7 added 20 Nov \u2b50\n\u2022 <code>CVE-2026-76466</code> Cisco Expressway Series \u00b7 added 20 Nov \u2b50\n\u2022 <code>CVE-2026-133968</code> Project MONAI MONAI Label \u00b7 added 23 Nov\n\u2022 <code>CVE-2024-10441</code> Synology DiskStation Manager (DSM) \u00b7 added 18 Nov \u26a0\ufe0f ransomware\n  \u2026and 8 more (/kev)\n\n<b>\ud83c\udd95 New critical CVEs (48h): 28</b>\n\u2022 <code>CVE-2026-119582</code> Improper neutralization of special elements used in an SQL command\u2026 \u00b7 CVSS 9.8 \u00b7 EPSS <1%\n\u2022 <code>CVE-2026-123342</code> Adobe Campaign Classic (ACC) is affected by an Improper Control of\u2026 \u00b7 CVSS 9.9 \u00b7 EPSS <1%\n\u2022 <code>CVE-2026-123723</code> Adobe Campaign Classic (ACC) is affected by an Improper Control of\u2026 \u00b7 CVSS 9.9 \u00b7 EPSS <1%\n\n<b>\ud83d\udcf0 Threat picture</b>\n\u2022 VMware vCenter flaw is being weaponized in the wild, enabling unauthorized access to virtual infrastructure\n\u2022 Drupal Core remote code execution is actively exploited, allowing attackers to take over web sites\n\u2022 Cybercriminals are using vishing to hijack cloud accounts for data theft and extortion\n\n<b>\ud83d\udd17 Read</b>\n\u2022 <a href=\"https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html\">VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation</a> (The Hacker News)\n\u2022 <a href=\"https://www.bleepingcomputer.com/news/security/new-shirudo-tool-uses-ai-to-shield-unpatched-linux-systems-from-exploits/\">New Shirudo tool uses AI to shield unpatched Linux systems from exploits</a> (BleepingComputer)\n\u2022 <a href=\"https://thehackernews.com/2026/11/com-affiliated-hackers-hijack-cloud.html\">Com-Affiliated Hackers Hijack Cloud Accounts via Vishing for Data Theft and Extortion</a> (The Hacker News)\n\u2022 <a href=\"https://www.bleepingcomputer.com/news/security/shinyhunters-resurfaces-after-fbi-arrests-uses-old-pgp-keys-as-proof/\">ShinyHunters claims to return after FBI arrests, uses old PGP keys as proof</a> (BleepingComputer)\n\n<b>\ud83c\uddff\ud83c\udde6 South Africa</b>\n\u2022 Travelstart confirmed a customer data breach affecting South African users\n\u2022 SA Home Loans suffered a second breach in three months, exposing bank account details\n\u2022 <a href=\"https://news.google.com/rss/articles/CBMimwFBVV95cUxQaTI5V0llVGVhWGJUbnNnRWsxMEJLQUFLM3BRckFqLWV1ZDZZQXA5ZWU1TEo5NWhZTVZLXzEwOG5oYUhLM3IyemNjTF9zZHJIUy0yZVliYUk1Q1UyU1FYaVZMMW90LUkwMVExZEp2OEhpU3FDSzJkenBYUVFTMTRBTWczNFd6UFlUQXNiRzRTazNqYlRvX09WdWVsUQ?oc=5\">Revealed: SJP hit by ransomware cyberattack</a> (Citywire)\n\u2022 <a href=\"https://news.google.com/rss/articles/CBMijAFBVV95cUxNTHVQd2k1ZFVOMXNRM29zRU9LanpxeHJ2Q3pmNldFSS1ySlpLOTh6R2NlNVhaZkZSbHF4MzRPUTBsRkRrcUZXVTgxTlJMa2FxRWtqOWRiSEE3UUo3ZFdNR0JOazlUTWRyYW5GcjQ5a2tIYnJSSTZwUnh3c29kTHFCWFowWWhLc1FsVWs1WA?oc=5\">Travelstart Confirms Customer Data Breach</a> (Wisevoter)\n\u2022 <a href=\"https://news.google.com/rss/articles/CBMia0FVX3lxTE0xNm0xeVZ2SnRfTGEwdGQ4eGE4TXR2TFIzb1I0bl9lak5ybFB4QW9hVkJIRlFiQVoxMzBFT1FCeF8wRThqUUFBYWUxTFBYTHpRNkxTVHRwX1JITnBReXdnSndqZW8yNS1udXp3?oc=5\">SA Home Loans hit by data breach</a> (TechCentral)\n\n<i>For leadership:</i> Prioritize patching VMware vCenter, Drupal, and Synology DSM and review breach response plans for local incidents.\n\n<i>AI summary fact-checked against the data (1 unsupported line(s) removed). Sources: CISA KEV v2026.11.24, NVD, FIRST EPSS, security news. \u2b50 = on your vendor watchlist.</i>\nAsk me: /cve CVE-ID \u00b7 /vendor fortinet \u00b7 /kev \u00b7 /news, or any question."
 }

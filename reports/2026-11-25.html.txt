@@ -1,0 +1,44 @@
+🛡 <b>Cyber Watch · Wed 25 Nov 2026</b>
+<b>VMware vCenter critical auth bypass actively exploited</b>
+
+<b>🔧 Patch first</b>
+1. <code>CVE-2026-123890</code> Broadcom VMware vCenter · on KEV · EPSS 5%
+   Active exploitation; attackers can bypass vCenter authentication
+2. <code>CVE-2026-132165</code> Drupal Core · on KEV
+   Drupal Core RCE actively exploited; remote code execution
+
+<b>🚨 New on CISA KEV (7 days): 13</b>
+• <code>CVE-2026-123890</code> Broadcom VMware vCenter · added 20 Nov ⭐
+• <code>CVE-2025-42884</code> SAP NetWeaver · added 20 Nov ⭐
+• <code>CVE-2026-76466</code> Cisco Expressway Series · added 20 Nov ⭐
+• <code>CVE-2026-133968</code> Project MONAI MONAI Label · added 23 Nov
+• <code>CVE-2024-10441</code> Synology DiskStation Manager (DSM) · added 18 Nov ⚠️ ransomware
+  …and 8 more (/kev)
+
+<b>🆕 New critical CVEs (48h): 28</b>
+• <code>CVE-2026-119582</code> Improper neutralization of special elements used in an SQL command… · CVSS 9.8 · EPSS <1%
+• <code>CVE-2026-123342</code> Adobe Campaign Classic (ACC) is affected by an Improper Control of… · CVSS 9.9 · EPSS <1%
+• <code>CVE-2026-123723</code> Adobe Campaign Classic (ACC) is affected by an Improper Control of… · CVSS 9.9 · EPSS <1%
+
+<b>📰 Threat picture</b>
+• VMware vCenter flaw is being weaponized in the wild, enabling unauthorized access to virtual infrastructure
+• Drupal Core remote code execution is actively exploited, allowing attackers to take over web sites
+• Cybercriminals are using vishing to hijack cloud accounts for data theft and extortion
+
+<b>🔗 Read</b>
+• <a href="https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html">VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation</a> (The Hacker News)
+• <a href="https://www.bleepingcomputer.com/news/security/new-shirudo-tool-uses-ai-to-shield-unpatched-linux-systems-from-exploits/">New Shirudo tool uses AI to shield unpatched Linux systems from exploits</a> (BleepingComputer)
+• <a href="https://thehackernews.com/2026/11/com-affiliated-hackers-hijack-cloud.html">Com-Affiliated Hackers Hijack Cloud Accounts via Vishing for Data Theft and Extortion</a> (The Hacker News)
+• <a href="https://www.bleepingcomputer.com/news/security/shinyhunters-resurfaces-after-fbi-arrests-uses-old-pgp-keys-as-proof/">ShinyHunters claims to return after FBI arrests, uses old PGP keys as proof</a> (BleepingComputer)
+
+<b>🇿🇦 South Africa</b>
+• Travelstart confirmed a customer data breach affecting South African users
+• SA Home Loans suffered a second breach in three months, exposing bank account details
+• <a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxQaTI5V0llVGVhWGJUbnNnRWsxMEJLQUFLM3BRckFqLWV1ZDZZQXA5ZWU1TEo5NWhZTVZLXzEwOG5oYUhLM3IyemNjTF9zZHJIUy0yZVliYUk1Q1UyU1FYaVZMMW90LUkwMVExZEp2OEhpU3FDSzJkenBYUVFTMTRBTWczNFd6UFlUQXNiRzRTazNqYlRvX09WdWVsUQ?oc=5">Revealed: SJP hit by ransomware cyberattack</a> (Citywire)
+• <a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxNTHVQd2k1ZFVOMXNRM29zRU9LanpxeHJ2Q3pmNldFSS1ySlpLOTh6R2NlNVhaZkZSbHF4MzRPUTBsRkRrcUZXVTgxTlJMa2FxRWtqOWRiSEE3UUo3ZFdNR0JOazlUTWRyYW5GcjQ5a2tIYnJSSTZwUnh3c29kTHFCWFowWWhLc1FsVWs1WA?oc=5">Travelstart Confirms Customer Data Breach</a> (Wisevoter)
+• <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE0xNm0xeVZ2SnRfTGEwdGQ4eGE4TXR2TFIzb1I0bl9lak5ybFB4QW9hVkJIRlFiQVoxMzBFT1FCeF8wRThqUUFBYWUxTFBYTHpRNkxTVHRwX1JITnBReXdnSndqZW8yNS1udXp3?oc=5">SA Home Loans hit by data breach</a> (TechCentral)
+
+<i>For leadership:</i> Prioritize patching VMware vCenter, Drupal, and Synology DSM and review breach response plans for local incidents.
+
+<i>AI summary fact-checked against the data (1 unsupported line(s) removed). Sources: CISA KEV v2026.11.24, NVD, FIRST EPSS, security news. ⭐ = on your vendor watchlist.</i>
+Ask me: /cve CVE-ID · /vendor fortinet · /kev · /news, or any question.
