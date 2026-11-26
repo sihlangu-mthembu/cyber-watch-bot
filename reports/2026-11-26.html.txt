@@ -1,0 +1,46 @@
+🛡 <b>Cyber Watch · Thu 26 Nov 2026</b>
+<b>Hackers Exploit 10 Vulnerabilities Across Mitel, Juniper, Vates, and Danfoss Products</b>
+
+<b>🔧 Patch first</b>
+1. <code>CVE-2026-132165</code> Drupal Core · on KEV
+   Drupal Core Remote Code Execution actively exploited; critical site takeover risk
+2. <code>CVE-2026-133323</code> Mitel MiCollab · on KEV · EPSS 3%
+   Mitel MiCollab OS Command Injection exploited in AI‑assisted attacks
+3. <code>CVE-2026-76466</code> Cisco Expressway Series · on KEV · EPSS 1%
+   Cisco Expressway hard‑coded credentials allow unauthorized access
+
+<b>🚨 New on CISA KEV (7 days): 19</b>
+• <code>CVE-2026-123890</code> Broadcom VMware vCenter · added 20 Nov ⭐
+• <code>CVE-2025-42884</code> SAP NetWeaver · added 20 Nov ⭐
+• <code>CVE-2026-76466</code> Cisco Expressway Series · added 20 Nov ⭐
+• <code>CVE-2026-103406</code> Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router · added 25 Nov ⭐
+• <code>CVE-2026-133968</code> Project MONAI MONAI Label · added 23 Nov
+  …and 14 more (/kev)
+
+<b>🆕 New critical CVEs (48h): 26</b>
+• <code>CVE-2026-123342</code> Adobe Campaign Classic (ACC) is affected by an Improper Control of… · CVSS 9.9 · EPSS <1%
+• <code>CVE-2026-123986</code> Adobe Campaign Classic (ACC) is affected by an Improper Control of… · CVSS 9.9 · EPSS <1%
+• <code>CVE-2026-123987</code> Adobe Campaign Classic (ACC) is affected by an Improper Control of… · CVSS 9.9 · EPSS <1%
+
+<b>📰 Threat picture</b>
+• Ransomware attacks in Africa could cost businesses over $368,000 per incident, highlighting rising financial risk.
+• South African home‑loan providers suffer multiple data breaches exposing customer banking details.
+• Drupal vulnerabilities are being actively exploited to hijack websites worldwide.
+
+<b>🔗 Read</b>
+• <a href="https://thehackernews.com/2026/11/hackers-exploit-10-vulnerabilities.html">Hackers Exploit 10 Vulnerabilities Across Mitel, Juniper, Vates, and Danfoss Products</a> (The Hacker News)
+• <a href="https://thehackernews.com/2026/11/com-affiliated-hackers-hijack-cloud.html">Com-Affiliated Hackers Hijack Cloud Accounts via Vishing for Data Theft and Extortion</a> (The Hacker News)
+• <a href="https://www.securityweek.com/mitel-micollab-zero-days-exploited-in-suspected-ai-assisted-attacks/">Mitel MiCollab Zero-Days Exploited in Suspected AI-Assisted Attacks</a> (SecurityWeek)
+• <a href="https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html">Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation</a> (The Hacker News)
+
+<b>🇿🇦 South Africa</b>
+• Home Loans giant hit by repeated data breaches exposing banking information.
+• Ransomware incidents in South Africa projected to cost up to US$1.4 million per attack.
+• <a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxPZDY2eS1IdVNaVFI4OFNXZFZnR2xnOXBSQWtacFpoMzVreUpWNzUwWVdEbTl3VzY0NVBXQWZKcjQxMWNSQWdHaGptdTBKc1d4RnpuZTR2ZFZ2clU5ZmppRDktUjVJVWViaG03RndGbDRibDBNbHRCaGVSemVxQjBIZDdlRG9fZmNJT1E?oc=5">Ransomware Attacks in Africa Could Cost Businesses Over $368,000 Per Incident</a> (FF News)
+• <a href="https://news.google.com/rss/articles/CBMigAJBVV95cUxONXRuSmdLbklWd2Z4ZjJ3NGlWUEtvYzltUFpSVTh6Wnh3LVpUaHJ2a2RKQ2liZWFROGtRYTRWWTEwV3pScVpwcVVaTWVLR1ZBRUtzWTdpTmNjYUI2T1Z6Ql91Q1JsSVBDLUxGSWFnbjdhQzVhUlZ3b1RhVk9jTWpvcld5SWR6SnVSQ1JBMXJsU3QzblFfQTE5UmVUZ2prUXQxWXo0bUphYlZRWklZN0JmVVV2eElnZHYxb2hKeW9sYkhuQkxzOFllSGl6RXlaNnlXNHJ6eFhpb3pVZERlUmctTnpTV19fVndFWEg1RERkYk5hTVB1bWs0OHFacUFWeENM?oc=5">Kaspersky and VDC Strategy: Ransomware incidents could cost each affected company in Africa over $368,000</a> (Zawya)
+• <a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxORzdMaTlyTGxVZWZwUkhGOFhtV1o2MkVSTzRvcGVJWlFpSWo4dUo1d255NFh2emZfeU1XanZUa0xmYVdXdTU5eFhpNWtjSV9WVF9HQVczekpwMVZuMi0xOEhubzgxeGJQdUJLWkJrdy1yNHluU2xFUllGcUwxTk9WMVppR2xvb051TzNhcHBlT2VzeFJwZ3NpMVhDREdzZzduNm96TGY1QlpGbzA?oc=5">Ransomware recovery costing SA firms up to US$1.4m per attack</a> (Africa Business Communities)
+
+<i>For leadership:</i> Prioritize patching Drupal, Mitel MiCollab, and Cisco Expressway systems and review incident response plans immediately.
+
+<i>AI summary fact-checked against the data. Sources: CISA KEV v2026.11.25, NVD, FIRST EPSS, security news. ⭐ = on your vendor watchlist.</i>
+Ask me: /cve CVE-ID · /vendor fortinet · /kev · /news, or any question.
