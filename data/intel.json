@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-26T16:10:43+02:00",
+ "generated": "2026-11-27T16:08:22+02:00",
  "kev_version": "2026.11.25",
  "kev_count": 1805,
  "kev_recent": [
@@ -48,6 +48,17 @@
    "priority": 60
   },
   {
+   "cve": "CVE-2026-133469",
+   "vendor": "Vates",
+   "product": "Xen Orchestra",
+   "name": "Vates Xen Orchestra Improper Validation of Specified Type of Input Vulnerability",
+   "added": "2026-11-25",
+   "due": "2026-11-28",
+   "ransomware": false,
+   "desc": "Vates Xen Orchestra contains an improper validation of specified type of input vulnerability that could allow an unauthenticated attacker to bypass authentication and perform actions with administrative privileges via a specially crafted au",
+   "priority": 58
+  },
+  {
    "cve": "CVE-2026-133968",
    "vendor": "Project MONAI",
    "product": "MONAI Label",
@@ -70,6 +81,17 @@
    "priority": 56
   },
   {
+   "cve": "CVE-2026-132165",
+   "vendor": "Drupal",
+   "product": "Core",
+   "name": "Drupal Core Remote Code Execution Vulnerability",
+   "added": "2026-11-24",
+   "due": "2026-11-27",
+   "ransomware": false,
+   "desc": "Drupal Core contains a not failing securely vulnerability that could allow an unauthenticated attacker to take over an existing site or execute arbitrary code via the Drupal installer. Under specific conditions, the attacker can use install",
+   "priority": 53
+  },
+  {
    "cve": "CVE-2026-131914",
    "vendor": "Idunno",
    "product": "AntiCsrf",
@@ -78,6 +100,28 @@
    "due": "2026-11-27",
    "ransomware": false,
    "desc": "Idunno AntiCsrf contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via object injection. The impacted product(s) could be end-of-life (EoL) and/or end-of-servi",
+   "priority": 51
+  },
+  {
+   "cve": "CVE-2025-41450",
+   "vendor": "Danfoss",
+   "product": "AK-SM 800A Series",
+   "name": "Danfoss AK-SM 800A Series Improper Authentication Vulnerability",
+   "added": "2026-11-25",
+   "due": "2026-12-09",
+   "ransomware": false,
+   "desc": "Danfoss AK-SM 800A Series contains an improper authentication vulnerability that could allow an attacker to generate a web report exposing sensitive information, including internal IP addresses, usernames, and store names.",
+   "priority": 51
+  },
+  {
+   "cve": "CVE-2023-25915",
+   "vendor": "Danfoss",
+   "product": "AK-SM 800A Series",
+   "name": "Danfoss AK-SM 800A Series Improper Input Validation Vulnerability",
+   "added": "2026-11-25",
+   "due": "2026-11-28",
+   "ransomware": false,
+   "desc": "Danfoss AK-SM 800A Series contains an improper input validation vulnerability that could allow a remote attacker to run arbitrary commands on the affected system.",
    "priority": 51
   },
   {
@@ -114,39 +158,6 @@
    "priority": 50
   },
   {
-   "cve": "CVE-2026-132165",
-   "vendor": "Drupal",
-   "product": "Core",
-   "name": "Drupal Core Remote Code Execution Vulnerability",
-   "added": "2026-11-24",
-   "due": "2026-11-27",
-   "ransomware": false,
-   "desc": "Drupal Core contains a not failing securely vulnerability that could allow an unauthenticated attacker to take over an existing site or execute arbitrary code via the Drupal installer. Under specific conditions, the attacker can use install",
-   "priority": 50
-  },
-  {
-   "cve": "CVE-2026-133469",
-   "vendor": "Vates",
-   "product": "Xen Orchestra",
-   "name": "Vates Xen Orchestra Improper Validation of Specified Type of Input Vulnerability",
-   "added": "2026-11-25",
-   "due": "2026-11-28",
-   "ransomware": false,
-   "desc": "Vates Xen Orchestra contains an improper validation of specified type of input vulnerability that could allow an unauthenticated attacker to bypass authentication and perform actions with administrative privileges via a specially crafted au",
-   "priority": 50
-  },
-  {
-   "cve": "CVE-2025-41450",
-   "vendor": "Danfoss",
-   "product": "AK-SM 800A Series",
-   "name": "Danfoss AK-SM 800A Series Improper Authentication Vulnerability",
-   "added": "2026-11-25",
-   "due": "2026-12-09",
-   "ransomware": false,
-   "desc": "Danfoss AK-SM 800A Series contains an improper authentication vulnerability that could allow an attacker to generate a web report exposing sensitive information, including internal IP addresses, usernames, and store names.",
-   "priority": 50
-  },
-  {
    "cve": "CVE-2023-25914",
    "vendor": "Danfoss",
    "product": "AK-SM 800A Series",
@@ -155,17 +166,6 @@
    "due": "2026-11-28",
    "ransomware": false,
    "desc": "Danfoss AK-SM 800A Series contains a path traversal vulnerability that could allow an attacker to access and read underlying server system files via the XML interface.",
-   "priority": 50
-  },
-  {
-   "cve": "CVE-2023-25915",
-   "vendor": "Danfoss",
-   "product": "AK-SM 800A Series",
-   "name": "Danfoss AK-SM 800A Series Improper Input Validation Vulnerability",
-   "added": "2026-11-25",
-   "due": "2026-11-28",
-   "ransomware": false,
-   "desc": "Danfoss AK-SM 800A Series contains an improper input validation vulnerability that could allow a remote attacker to run arbitrary commands on the affected system.",
    "priority": 50
   },
   {
@@ -215,408 +215,26 @@
  ],
  "critical": [
   {
-   "cve": "CVE-2026-123342",
-   "published": "2026-11-24",
-   "status": "Awaiting Analysis",
-   "desc": "Adobe Campaign Classic (ACC) is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execution in the context of the current user. A low-privileged attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
+   "cve": "CVE-2026-132165",
+   "published": "2026-11-26",
+   "status": "Analyzed",
+   "desc": "Missing Authentication for Critical Function vulnerability in Drupal Drupal core allows Exploiting Incorrectly Configured Access Control Security Levels. This issue affects Drupal core versions: from 0.0.0 to 10.6.22, from 11.0.0 to 11.3.22, from 11.4.0 to 11.4.13.",
    "cvss": {
-    "score": 9.9,
+    "score": 9.8,
     "severity": "CRITICAL",
     "version": "3.1",
-    "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
    },
-   "vendor": "",
-   "product": "",
+   "vendor": "drupal",
+   "product": "drupal",
    "cwe": [
-    "CWE-94"
+    "CWE-306"
    ],
    "refs": [
-    "https://www.adobe.com/trust/security/products/campaign/apsb26-194.html"
+    "https://www.drupal.org/sa-core-2026-017"
    ],
-   "in_kev": false,
-   "priority": 15
-  },
-  {
-   "cve": "CVE-2026-123986",
-   "published": "2026-11-24",
-   "status": "Awaiting Analysis",
-   "desc": "Adobe Campaign Classic (ACC) is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execution in the context of the current user. A low-privileged attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
-   "cvss": {
-    "score": 9.9,
-    "severity": "CRITICAL",
-    "version": "3.1",
-    "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
-   },
-   "vendor": "",
-   "product": "",
-   "cwe": [
-    "CWE-94"
-   ],
-   "refs": [
-    "https://www.adobe.com/trust/security/products/campaign/apsb26-194.html"
-   ],
-   "in_kev": false,
-   "priority": 15
-  },
-  {
-   "cve": "CVE-2026-123987",
-   "published": "2026-11-24",
-   "status": "Awaiting Analysis",
-   "desc": "Adobe Campaign Classic (ACC) is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execution in the context of the current user. A low-privileged attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
-   "cvss": {
-    "score": 9.9,
-    "severity": "CRITICAL",
-    "version": "3.1",
-    "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
-   },
-   "vendor": "",
-   "product": "",
-   "cwe": [
-    "CWE-94"
-   ],
-   "refs": [
-    "https://www.adobe.com/trust/security/products/campaign/apsb26-194.html"
-   ],
-   "in_kev": false,
-   "priority": 15
-  },
-  {
-   "cve": "CVE-2026-135792",
-   "published": "2026-11-24",
-   "status": "Deferred",
-   "desc": "A vulnerability has been found in Panabit Smart Application Gateway TANGr7p10. This issue affects the function send_email_authcode of the file user.cgi of the component Email Auth Code Sender. Such manipulation of the argument Username leads to os command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early abo",
-   "cvss": {
-    "score": 9.3,
-    "severity": "CRITICAL",
-    "version": "4.0",
-    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
-   },
-   "vendor": "",
-   "product": "",
-   "cwe": [
-    "CWE-77",
-    "CWE-78"
-   ],
-   "refs": [
-    "https://github.com/nenghun/IoT/blob/main/Panabit/rce3/Unauthenticated%20OS%20Command%20Injection.md",
-    "https://vuldb.com/cve/CVE-2026-135792",
-    "https://vuldb.com/submit/1055813"
-   ],
-   "in_kev": false,
-   "priority": 15
-  },
-  {
-   "cve": "CVE-2026-135797",
-   "published": "2026-11-24",
-   "status": "Deferred",
-   "desc": "A vulnerability was identified in Volans NGFW Next-Generation Firewall r5.1. Impacted is the function exec of the file sslvpn/sslvpn_client.php of the component SSLVPN Client. Such manipulation of the argument img leads to os command injection. The attack can be executed remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not ",
-   "cvss": {
-    "score": 9.3,
-    "severity": "CRITICAL",
-    "version": "4.0",
-    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
-   },
-   "vendor": "",
-   "product": "",
-   "cwe": [
-    "CWE-77",
-    "CWE-78"
-   ],
-   "refs": [
-    "https://github.com/nenghun/IoT/blob/main/Volans%20NGFW%20(nf51)/Root_RCE/Volans%20NGFW%20(nf51)_rce.md",
-    "https://vuldb.com/cve/CVE-2026-135797",
-    "https://vuldb.com/submit/1055817"
-   ],
-   "in_kev": false,
-   "priority": 15
-  },
-  {
-   "cve": "CVE-2026-136549",
-   "published": "2026-11-25",
-   "status": "Deferred",
-   "desc": "A security flaw has been discovered in Tenda RX3 16.03.13.11_multi. The impacted element is the function formSetSafeWanWebMan of the file /goform/SetRemoteWebCfg. The manipulation of the argument remoteIp results in command injection. The attack can be executed remotely. The exploit has been released to the public and may be used for attacks.",
-   "cvss": {
-    "score": 9.3,
-    "severity": "CRITICAL",
-    "version": "4.0",
-    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
-   },
-   "vendor": "",
-   "product": "",
-   "cwe": [
-    "CWE-74",
-    "CWE-77"
-   ],
-   "refs": [
-    "https://github.com/Zeyfrost/tenda-rx3-vulns/blob/master/cmd_injection_remoteIp/detail.md",
-    "https://vuldb.com/cve/CVE-2026-136549",
-    "https://vuldb.com/submit/1057767"
-   ],
-   "in_kev": false,
-   "priority": 15
-  },
-  {
-   "cve": "CVE-2026-135789",
-   "published": "2026-11-24",
-   "status": "Deferred",
-   "desc": "A security vulnerability has been detected in D-Link R95 101B06. Affected by this issue is the function GetBluetoothAdapterSettings/GetBluetoothBloodPressure/GetBluetoothDeviceList/GetBluetoothScanDeviceList/SetBluetoothAdapterSettings/SetBluetoothUnpairDevice/SetTriggerBluetoothScan/SetBluetoothPairDevice of the file /bin/ssi of the component DHMAPI SOAP Handler. The manipulation of the argument ",
-   "cvss": {
-    "score": 8.5,
-    "severity": "HIGH",
-    "version": "4.0",
-    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
-   },
-   "vendor": "",
-   "product": "",
-   "cwe": [
-    "CWE-77",
-    "CWE-78"
-   ],
-   "refs": [
-    "https://github.com/nenghun/IoT/blob/main/D-link%20R95/rce.md",
-    "https://vuldb.com/cve/CVE-2026-135789",
-    "https://vuldb.com/submit/1055810"
-   ],
-   "in_kev": false,
-   "priority": 14
-  },
-  {
-   "cve": "CVE-2026-136184",
-   "published": "2026-11-24",
-   "status": "Received",
-   "desc": "compose-farm 0.19.0 before 1.22.0 contains a cross-site WebSocket hijacking and cross-site request forgery vulnerability because its unauthenticated web UI performs no Origin validation. Malicious websites visited by users can open /ws/shell/{host} or /ws/exec sockets, or abuse unquoted service parameters and PUT /api/console/file, to execute commands on all managed hosts.",
-   "cvss": {
-    "score": 9.4,
-    "severity": "CRITICAL",
-    "version": "4.0",
-    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
-   },
-   "vendor": "",
-   "product": "",
-   "cwe": [
-    "CWE-1385"
-   ],
-   "refs": [
-    "https://github.com/basnijholt/compose-farm/blob/v1.21.5/src/compose_farm/web/ws.py#L250-L256",
-    "https://github.com/basnijholt/compose-farm/commit/244d56c022de61d2c6b3543b5c973ced97de6cc8",
-    "https://github.com/basnijholt/compose-farm/commit/d944a28f0aca4ef2bd20f397bc75c7869f1efe7c"
-   ],
-   "in_kev": false,
-   "priority": 14
-  },
-  {
-   "cve": "CVE-2026-125717",
-   "published": "2026-11-24",
-   "status": "Awaiting Analysis",
-   "desc": "Adobe Campaign Classic (ACC) is affected by an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability that could result in privilege escalation. A low-privileged attacker could exploit this vulnerability to gain elevated access to sensitive data or functionality. Exploitation of this issue does not require user interaction. Scope is changed.",
-   "cvss": {
-    "score": 9.6,
-    "severity": "CRITICAL",
-    "version": "3.1",
-    "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N"
-   },
-   "vendor": "",
-   "product": "",
-   "cwe": [
-    "CWE-89"
-   ],
-   "refs": [
-    "https://www.adobe.com/trust/security/products/campaign/apsb26-194.html"
-   ],
-   "in_kev": false,
-   "priority": 14
-  },
-  {
-   "cve": "CVE-2026-125718",
-   "published": "2026-11-24",
-   "status": "Awaiting Analysis",
-   "desc": "Adobe Campaign Classic (ACC) is affected by an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability that could result in a Security feature bypass. A low-privileged attacker could leverage this vulnerability to bypass security measures and gain unauthorized read and limited write access. Exploitation of this issue does not require user interaction. Sco",
-   "cvss": {
-    "score": 9.1,
-    "severity": "CRITICAL",
-    "version": "3.1",
-    "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:L/A:L"
-   },
-   "vendor": "",
-   "product": "",
-   "cwe": [
-    "CWE-89"
-   ],
-   "refs": [
-    "https://www.adobe.com/trust/security/products/campaign/apsb26-194.html"
-   ],
-   "in_kev": false,
-   "priority": 14
-  },
-  {
-   "cve": "CVE-2026-135796",
-   "published": "2026-11-24",
-   "status": "Deferred",
-   "desc": "A vulnerability was determined in Volans NGFW Next-Generation Firewall r5.1. This issue affects the function exec/system of the file modules/assets/port_serve_scan.mds of the component Web Management UI. This manipulation of the argument task_name/where/path causes os command injection. Remote exploitation of the attack is possible. The exploit has been publicly disclosed and may be utilized. The ",
-   "cvss": {
-    "score": 8.6,
-    "severity": "HIGH",
-    "version": "4.0",
-    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
-   },
-   "vendor": "",
-   "product": "",
-   "cwe": [
-    "CWE-77",
-    "CWE-78"
-   ],
-   "refs": [
-    "https://github.com/nenghun/IoT/blob/main/Volans%20NGFW%20(nf51)/RCE/RCE.md",
-    "https://vuldb.com/cve/CVE-2026-135796",
-    "https://vuldb.com/submit/1055816"
-   ],
-   "in_kev": false,
-   "priority": 14
-  },
-  {
-   "cve": "CVE-2026-136411",
-   "published": "2026-11-24",
-   "status": "Received",
-   "desc": "BusyBox through 1.38.0 contains an absolute path traversal vulnerability in tftpd that allows unauthenticated remote attackers to access files outside any intended directory when started without a DIR argument. Attackers can send RRQ or WRQ packets with file names beginning with '/' to read sensitive files like /etc/shadow or overwrite files, typically as root.",
-   "cvss": {
-    "score": 9.3,
-    "severity": "CRITICAL",
-    "version": "4.0",
-    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
-   },
-   "vendor": "",
-   "product": "",
-   "cwe": [
-    "CWE-36"
-   ],
-   "refs": [
-    "https://github.com/mirror/busybox/blob/fc71374dfccd46448c62947269a35f1420d7ee28/networking/tftp.c#L946-L950",
-    "https://github.com/mirror/busybox/commit/b67f7b7d14ac98ca84491718d364b955d21a9cd5",
-    "https://lists.busybox.net/pipermail/busybox-cvs/2026-November/042587.html"
-   ],
-   "in_kev": false,
-   "priority": 14
-  },
-  {
-   "cve": "CVE-2026-136136",
-   "published": "2026-11-25",
-   "status": "Deferred",
-   "desc": "A vulnerability was identified in Netis WF2409E up to 20261026. Affected by this issue is some unknown functionality of the file /cgi-bin/skk_set.cgi of the component CGI Interface. The manipulation of the argument app/password/new_pwd_confirm/passwd_set/mode_name/wl_link leads to improper authentication. The attack may be initiated remotely. The exploit is publicly available and might be used. Th",
-   "cvss": {
-    "score": 9.3,
-    "severity": "CRITICAL",
-    "version": "4.0",
-    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
-   },
-   "vendor": "",
-   "product": "",
-   "cwe": [
-    "CWE-287"
-   ],
-   "refs": [
-    "https://vuldb.com/cve/CVE-2026-136136",
-    "https://vuldb.com/submit/1056731",
-    "https://vuldb.com/vuln/442884"
-   ],
-   "in_kev": false,
-   "priority": 14
-  },
-  {
-   "cve": "CVE-2026-136548",
-   "published": "2026-11-25",
-   "status": "Deferred",
-   "desc": "A vulnerability was identified in Tenda RX3 16.03.13.11. The affected element is an unknown function of the file /bin/auto_discover of the component GBK-to-UTF-8 Conversion. The manipulation of the argument Hostname leads to stack-based buffer overflow. Remote exploitation of the attack is possible. The exploit is publicly available and might be used.",
-   "cvss": {
-    "score": 9.3,
-    "severity": "CRITICAL",
-    "version": "4.0",
-    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
-   },
-   "vendor": "",
-   "product": "",
-   "cwe": [
-    "CWE-119",
-    "CWE-121"
-   ],
-   "refs": [
-    "https://github.com/Zeyfrost/tenda-rx3-vulns/blob/master/dhcp_gbk_overflow/detail.md",
-    "https://vuldb.com/cve/CVE-2026-136548",
-    "https://vuldb.com/submit/1057714"
-   ],
-   "in_kev": false,
-   "priority": 14
-  },
-  {
-   "cve": "CVE-2026-136550",
-   "published": "2026-11-25",
-   "status": "Deferred",
-   "desc": "A weakness has been identified in Tenda RX3 16.03.13.11_multi. This affects the function fromAdvSetMacMtuWan of the file /goform/AdvSetMacMtuWan. This manipulation of the argument mac causes command injection. The attack is possible to be carried out remotely. The exploit has been made available to the public and could be used for attacks.",
-   "cvss": {
-    "score": 8.5,
-    "severity": "HIGH",
-    "version": "4.0",
-    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
-   },
-   "vendor": "",
-   "product": "",
-   "cwe": [
-    "CWE-74",
-    "CWE-77"
-   ],
-   "refs": [
-    "https://github.com/Zeyfrost/tenda-rx3-vulns/blob/master/cmd_injection_mac/detail.md",
-    "https://vuldb.com/cve/CVE-2026-136550",
-    "https://vuldb.com/submit/1057768"
-   ],
-   "in_kev": false,
-   "priority": 14
-  },
-  {
-   "cve": "CVE-2026-136553",
-   "published": "2026-11-25",
-   "status": "Deferred",
-   "desc": "A vulnerability was detected in Tenda RX3 16.03.13.11_multi. Affected is an unknown function of the file /goform/fast_setting_wifi_set. Performing a manipulation of the argument loginPwd results in improper authentication. It is possible to initiate the attack remotely. The exploit is now public and may be used.",
-   "cvss": {
-    "score": 9.3,
-    "severity": "CRITICAL",
-    "version": "4.0",
-    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
-   },
-   "vendor": "",
-   "product": "",
-   "cwe": [
-    "CWE-287"
-   ],
-   "refs": [
-    "https://github.com/Zeyfrost/tenda-rx3-vulns/blob/master/password_change_no_verify/detail.md",
-    "https://vuldb.com/cve/CVE-2026-136553",
-    "https://vuldb.com/submit/1057770"
-   ],
-   "in_kev": false,
-   "priority": 14
-  },
-  {
-   "cve": "CVE-2026-82489",
-   "published": "2026-11-25",
-   "status": "Deferred",
-   "desc": "openIMIS before 2026-10 contains an unauthenticated remote code execution vulnerability in the report module (openimis-be-report_py) where the /api/report/reportbro/preview endpoint evaluates printIf expressions server-side using simpleeval with an insufficient name-prefix blocklist. An attacker can craft an expression that reaches sys.modules['os'] via datetime.sys to execute arbitrary operating-",
-   "cvss": {
-    "score": 9.3,
-    "severity": "CRITICAL",
-    "version": "4.0",
-    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
-   },
-   "vendor": "",
-   "product": "",
-   "cwe": [
-    "CWE-94"
-   ],
-   "refs": [
-    "https://openimis.atlassian.net/wiki/spaces/OP/pages/5166989313/Release+2026-10",
-    "https://www.vulncheck.com/advisories/openimis-2026-10-report-module-unauthenticated-rce-via-reportbro-preview"
-   ],
-   "in_kev": false,
-   "priority": 14
+   "in_kev": true,
+   "priority": 68
   },
   {
    "cve": "CVE-2026-137090",
@@ -640,7 +258,7 @@
     "https://github.com/emanuelmoraes-dev/build-git-clone/pull/1"
    ],
    "in_kev": false,
-   "priority": 14
+   "priority": 15
   },
   {
    "cve": "CVE-2026-136823",
@@ -663,6 +281,124 @@
     "https://github.com/Zzzhangxxx/cve/blob/main/D-Link_R32_A1_1.10B02_flupl_self_fpath_OS_Command_Injection.md",
     "https://vuldb.com/cve/CVE-2026-136823",
     "https://vuldb.com/submit/1059269"
+   ],
+   "in_kev": false,
+   "priority": 15
+  },
+  {
+   "cve": "CVE-2026-104998",
+   "published": "2026-11-26",
+   "status": "Deferred",
+   "desc": "The Product Input Fields for WooCommerce plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 2.1.0 via the process_file_input_field function. This is due to missing file type validation in the process_file_input_field function, which accepts the client-supplied multipart Content-Type header as the sole type gate and writes the uploaded file to the unpr",
+   "cvss": {
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "version": "3.1",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-434"
+   ],
+   "refs": [
+    "https://plugins.trac.wordpress.org/browser/product-input-fields-for-woocommerce/tags/2.1.0/includes/class-pif-cart.php#L205",
+    "https://plugins.trac.wordpress.org/browser/product-input-fields-for-woocommerce/tags/2.1.0/includes/class-pif-cart.php#L295",
+    "https://plugins.trac.wordpress.org/browser/product-input-fields-for-woocommerce/tags/2.1.0/includes/class-pif-cart.php#L342"
+   ],
+   "in_kev": false,
+   "priority": 15
+  },
+  {
+   "cve": "CVE-2026-137498",
+   "published": "2026-11-26",
+   "status": "Received",
+   "desc": "Budibase Server from 3.39.18 before 4.0.0 contains a prototype pollution vulnerability that allows unauthenticated attackers to erase MongoDB query filters by supplying __proto__ as a dynamic JSON key in PUBLIC queries. Attackers can send a single request to the query execution endpoint, reducing the filter to {} to read, update, or delete every document in the collection.",
+   "cvss": {
+    "score": 9.9,
+    "severity": "CRITICAL",
+    "version": "4.0",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:H/SI:H/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-943"
+   ],
+   "refs": [
+    "https://github.com/Budibase/budibase/security/advisories/GHSA-x4w8-596q-fmh7",
+    "https://www.vulncheck.com/advisories/budibase-server-3.39.18-before-4.0.0-mongodb-filter-erasure-via-proto-keys"
+   ],
+   "in_kev": false,
+   "priority": 15
+  },
+  {
+   "cve": "CVE-2026-106125",
+   "published": "2026-11-27",
+   "status": "Deferred",
+   "desc": "The Sneeit Framework plugin for WordPress is vulnerable to Remote Code Execution in versions up to, and including, 8.7 via the 'callback' parameter of the sneeit_compact_menu_mega_content AJAX action. The handler sneeit_compact_menu_mega_content_callback() is registered on the wp_ajax_nopriv_ hook and passes the attacker-supplied 'callback' value directly into call_user_func() after only a functio",
+   "cvss": {
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "version": "3.1",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-94"
+   ],
+   "refs": [
+    "https://github.com/tiennguyenvan/sneeit-framework/blob/main/includes/lib/lib-utilities.php#L2-L12",
+    "https://github.com/tiennguyenvan/sneeit-framework/blob/main/includes/menus/menus-compact.php#L141-L142",
+    "https://github.com/tiennguyenvan/sneeit-framework/blob/main/includes/menus/menus-compact.php#L487-L497"
+   ],
+   "in_kev": false,
+   "priority": 15
+  },
+  {
+   "cve": "CVE-2026-115867",
+   "published": "2026-11-27",
+   "status": "Deferred",
+   "desc": "The Database for Contact Form 7, WPforms, Elementor forms plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 1.5.5 via the copy_files function. This is due to missing file extension validation in the copy_files function, which accepts attacker-controlled stream wrapper URIs as the file source and derives the destination filename without restricting ex",
+   "cvss": {
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "version": "3.1",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-434"
+   ],
+   "refs": [
+    "https://plugins.trac.wordpress.org/browser/contact-form-entries/tags/1.5.5/contact-form-entries.php#L108",
+    "https://plugins.trac.wordpress.org/browser/contact-form-entries/tags/1.5.5/contact-form-entries.php#L1383",
+    "https://plugins.trac.wordpress.org/browser/contact-form-entries/tags/1.5.5/contact-form-entries.php#L810"
+   ],
+   "in_kev": false,
+   "priority": 15
+  },
+  {
+   "cve": "CVE-2026-82489",
+   "published": "2026-11-25",
+   "status": "Deferred",
+   "desc": "openIMIS before 2026-10 contains an unauthenticated remote code execution vulnerability in the report module (openimis-be-report_py) where the /api/report/reportbro/preview endpoint evaluates printIf expressions server-side using simpleeval with an insufficient name-prefix blocklist. An attacker can craft an expression that reaches sys.modules['os'] via datetime.sys to execute arbitrary operating-",
+   "cvss": {
+    "score": 9.3,
+    "severity": "CRITICAL",
+    "version": "4.0",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-94"
+   ],
+   "refs": [
+    "https://openimis.atlassian.net/wiki/spaces/OP/pages/5166989313/Release+2026-10",
+    "https://www.vulncheck.com/advisories/openimis-2026-10-report-module-unauthenticated-rce-via-reportbro-preview"
    ],
    "in_kev": false,
    "priority": 14
@@ -693,104 +429,240 @@
    "priority": 14
   },
   {
-   "cve": "CVE-2026-135788",
-   "published": "2026-11-24",
-   "status": "Deferred",
-   "desc": "A weakness has been identified in D-Link DIR-X1860 4.5.2. Affected by this vulnerability is an unknown functionality of the file /usr/sbin/anweb. Executing a manipulation can lead to os command injection. It is possible to launch the attack remotely. The exploit has been made available to the public and could be used for attacks.",
+   "cve": "CVE-2026-137567",
+   "published": "2026-11-26",
+   "status": "Awaiting Analysis",
+   "desc": "llama.cpp b11450 before b12658 contains an out-of-bounds write vulnerability in the ggml RPC server that allows unauthenticated attackers to write to arbitrary heap addresses via zero-element destination tensors. Attackers can learn buffer bases with BUFFER_GET_BASE, then send RPC_CMD_COPY_TENSOR with a destination pointer below the buffer base to crash the server or execute code.",
    "cvss": {
-    "score": 8.6,
-    "severity": "HIGH",
+    "score": 9.3,
+    "severity": "CRITICAL",
     "version": "4.0",
-    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
    },
    "vendor": "",
    "product": "",
    "cwe": [
-    "CWE-77",
-    "CWE-78"
+    "CWE-787"
    ],
    "refs": [
-    "https://github.com/nenghun/IoT/blob/main/D-Link%20DIR%20X1860/D-Link%20DIR-X1860%204.5.2%20rce.md",
-    "https://vuldb.com/cve/CVE-2026-135788",
-    "https://vuldb.com/submit/1055809"
+    "https://github.com/ggml-org/llama.cpp/blob/46f4da217419ecac95708600e0f6ebc4bdb91cfd/ggml/src/ggml-rpc/ggml-rpc.cpp#L2083-L2122",
+    "https://github.com/ggml-org/llama.cpp/commit/03813c56e47f6cd7a9b9bc2ad8edcebed88ce342",
+    "https://github.com/ggml-org/llama.cpp/pull/32651"
    ],
    "in_kev": false,
-   "priority": 13
+   "priority": 14
   },
   {
-   "cve": "CVE-2026-135790",
-   "published": "2026-11-24",
+   "cve": "CVE-2026-133951",
+   "published": "2026-11-26",
    "status": "Deferred",
-   "desc": "A vulnerability was detected in Panabit Smart Application Gateway TANGr7p10. This affects an unknown part of the file /cgi-bin/dashboard/ajax_chart_dump. The manipulation of the argument isntmeye results in os command injection. The attack can be launched remotely. The exploit is now public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+   "desc": "The Simple Membership plugin for WordPress is vulnerable to Privilege Escalation in versions up to, and including, 4.8.9 This is due to the site-wide signing secret `swpm_private_key_one` being generated at install time with PHP's non-cryptographic `uniqid('', true)` function in `SwpmInstallation::installer()`, whose timestamp-derived keyspace (~10^15 candidates / ~50 bits) can be constrained via ",
    "cvss": {
-    "score": 8.6,
-    "severity": "HIGH",
-    "version": "4.0",
-    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+    "score": 9.1,
+    "severity": "CRITICAL",
+    "version": "3.1",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
    },
    "vendor": "",
    "product": "",
    "cwe": [
-    "CWE-77",
-    "CWE-78"
+    "CWE-269"
    ],
    "refs": [
-    "https://github.com/nenghun/IoT/blob/main/Panabit/rce1/RCE1.md",
-    "https://vuldb.com/cve/CVE-2026-135790",
-    "https://vuldb.com/submit/1055811"
+    "https://downloads.wordpress.org/plugin/simple-membership.4.9.0.zip",
+    "https://plugins.trac.wordpress.org/browser/simple-membership/tags/4.8.9/classes/class.swpm-front-registration.php#L187",
+    "https://plugins.trac.wordpress.org/browser/simple-membership/tags/4.8.9/classes/class.swpm-front-registration.php#L445"
    ],
    "in_kev": false,
-   "priority": 13
+   "priority": 14
   },
   {
-   "cve": "CVE-2026-135791",
-   "published": "2026-11-24",
+   "cve": "CVE-2026-134173",
+   "published": "2026-11-26",
    "status": "Deferred",
-   "desc": "A flaw has been found in Panabit Smart Application Gateway TANGr7p10. This vulnerability affects the function edit_data_pie of the file /cgi-bin/flowcontrol/ajax_data_pie. This manipulation of the argument Name causes os command injection. The attack may be initiated remotely. The exploit has been published and may be used. The vendor was contacted early about this disclosure but did not respond i",
+   "desc": "The WordPress File Upload plugin for WordPress is vulnerable to Arbitrary File Deletion in versions up to, and including, 5.3.1 via the 'wfu_ajax_action_handshake' and 'wfu_ajax_action_send_email_notification' AJAX Actions. This is due to the unauthenticated handshake accepting a 'sid' parameter sanitized only with sanitize_text_field(), which does not strip '[', ']', '{', or '}', allowing the sid",
    "cvss": {
-    "score": 8.6,
-    "severity": "HIGH",
-    "version": "4.0",
-    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+    "score": 9.1,
+    "severity": "CRITICAL",
+    "version": "3.1",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H"
    },
    "vendor": "",
    "product": "",
    "cwe": [
-    "CWE-77",
-    "CWE-78"
+    "CWE-22"
    ],
    "refs": [
-    "https://github.com/nenghun/IoT/blob/main/Panabit/rce2/RCE2.md",
-    "https://vuldb.com/cve/CVE-2026-135791",
-    "https://vuldb.com/submit/1055812"
+    "https://plugins.trac.wordpress.org/browser/wp-file-upload/tags/5.3.0/lib/wfu_ajaxactions.php#L199",
+    "https://plugins.trac.wordpress.org/browser/wp-file-upload/tags/5.3.0/lib/wfu_ajaxactions.php#L82",
+    "https://plugins.trac.wordpress.org/browser/wp-file-upload/tags/5.3.0/lib/wfu_functions.php#L3706"
    ],
    "in_kev": false,
-   "priority": 13
+   "priority": 14
   },
   {
-   "cve": "CVE-2026-135794",
-   "published": "2026-11-24",
+   "cve": "CVE-2026-135641",
+   "published": "2026-11-26",
    "status": "Deferred",
-   "desc": "A vulnerability was determined in Panabit Smart Application Gateway TANGr7p10. The affected element is the function add_crontab of the file admin/cgi-bin/sac/ajax_sac_crontab of the component SAC. Executing a manipulation of the argument cmd can lead to code injection. The attack can be executed remotely. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early a",
+   "desc": "The WP Job Portal \u2013 AI-Powered Recruitment System for Company or Job Board website plugin for WordPress is vulnerable to Authentication Bypass leading to Account Takeover in all versions up to, and including, 2.7.2 This is due to a flaw in `WPJOBPORTALuser::__construct()` where the non-empty guard on the `wpjobportal-socialid` cookie is evaluated against the raw cookie value before `sanitize_key()",
    "cvss": {
-    "score": 8.6,
-    "severity": "HIGH",
-    "version": "4.0",
-    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+    "score": 9.1,
+    "severity": "CRITICAL",
+    "version": "3.1",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
    },
    "vendor": "",
    "product": "",
    "cwe": [
-    "CWE-74",
-    "CWE-94"
+    "CWE-269"
    ],
    "refs": [
-    "https://github.com/nenghun/IoT/blob/main/Panabit/rce5/Post-authentication%20second-order%20(stored)%20code%20injection_rce.md",
-    "https://vuldb.com/cve/CVE-2026-135794",
-    "https://vuldb.com/submit/1055815"
+    "https://plugins.trac.wordpress.org/browser/wp-job-portal/tags/2.7.2/includes/classes/user.php#L19",
+    "https://plugins.trac.wordpress.org/browser/wp-job-portal/tags/2.7.2/includes/classes/user.php#L21",
+    "https://plugins.trac.wordpress.org/browser/wp-job-portal/tags/2.7.2/includes/classes/user.php#L22"
    ],
    "in_kev": false,
-   "priority": 13
+   "priority": 14
+  },
+  {
+   "cve": "CVE-2026-136240",
+   "published": "2026-11-26",
+   "status": "Deferred",
+   "desc": "The PDF Invoice for WooCommerce + Drag and Drop Template Builder plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 7.2.0 via deserialization of untrusted input . This makes it possible for unauthenticated attackers to inject a PHP Object. No known POP chain is present in the vulnerable software, which means this vulnerability has no impact unless anot",
+   "cvss": {
+    "score": 9.1,
+    "severity": "CRITICAL",
+    "version": "3.1",
+    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-502"
+   ],
+   "refs": [
+    "https://downloads.wordpress.org/plugin/pdf-for-woocommerce.7.2.1.zip",
+    "https://plugins.trac.wordpress.org/browser/pdf-for-woocommerce/tags/7.2.0/libs/HtmlDocument.php#L300",
+    "https://plugins.trac.wordpress.org/browser/pdf-for-woocommerce/tags/7.2.0/libs/HtmlNode.php#L280"
+   ],
+   "in_kev": false,
+   "priority": 14
+  },
+  {
+   "cve": "CVE-2026-137499",
+   "published": "2026-11-26",
+   "status": "Received",
+   "desc": "Budibase from 3.41.0 before 4.0.0 contains an authentication bypass vulnerability that allows unauthenticated attackers to take over password-less global Builder accounts via unverified-email OIDC/SSO account linking. Attackers can assert a victim's email with email_verified=false at a trusted IdP, bypassing the isAccountLinkable allowlist to control all apps, datasources, and automations.",
+   "cvss": {
+    "score": 9.3,
+    "severity": "CRITICAL",
+    "version": "4.0",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-287"
+   ],
+   "refs": [
+    "https://github.com/Budibase/budibase/security/advisories/GHSA-jm85-crv2-88px",
+    "https://www.vulncheck.com/advisories/budibase-3.41.0-before-4.0.0-account-takeover-via-unverified-email-oidc-linking"
+   ],
+   "in_kev": false,
+   "priority": 14
+  },
+  {
+   "cve": "CVE-2026-137536",
+   "published": "2026-11-26",
+   "status": "Awaiting Analysis",
+   "desc": "ToolJet before 3.21.94-beta contains an authentication bypass in its server OAuth SSO sign-in module, which resolves Google and Git SSO logins solely by the provider-asserted email without checking email_verified or binding the SSO subject. Unauthenticated attackers can submit a trusted-issuer token carrying a victim's unverified email to the SSO callback to obtain the victim's session, including ",
+   "cvss": {
+    "score": 9.3,
+    "severity": "CRITICAL",
+    "version": "4.0",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-290"
+   ],
+   "refs": [
+    "https://github.com/ToolJet/ToolJet/security/advisories/GHSA-7g4q-wmw6-7r36",
+    "https://www.vulncheck.com/advisories/tooljet-before-3.21.94-beta-account-takeover-via-sso-email-based-account-linking"
+   ],
+   "in_kev": false,
+   "priority": 14
+  },
+  {
+   "cve": "CVE-2026-137544",
+   "published": "2026-11-26",
+   "status": "Deferred",
+   "desc": "LaraDashboard before 1.5.0 contains a path traversal vulnerability in module.json providers and composer.json psr-4 namespace parsing that derives destination folder names without excluding traversal characters. Attackers with module.create permission can upload a crafted module ZIP to write PHP files into the public directory, achieving unauthenticated remote code execution.",
+   "cvss": {
+    "score": 9.4,
+    "severity": "CRITICAL",
+    "version": "4.0",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-22"
+   ],
+   "refs": [
+    "https://github.com/laradashboard/laradashboard/commit/44ddc4a6b2d64c4fb6f801b2de2008be455d980a",
+    "https://github.com/laradashboard/laradashboard/security/advisories/GHSA-75q6-qrv2-96rx",
+    "https://www.vulncheck.com/advisories/laradashboard-before-1.5.0-path-traversal-rce-via-module-json-namespace-parsing"
+   ],
+   "in_kev": false,
+   "priority": 14
+  },
+  {
+   "cve": "CVE-2026-137550",
+   "published": "2026-11-26",
+   "status": "Deferred",
+   "desc": "Frappe Framework before 15.122.0 and 16.x before 16.50.0 contains a missing authorization vulnerability in Document.update() that fails to validate whether the caller is permitted to submit or modify the target document. Attackers can invoke document update operations to submit or alter documents they are not authorized to change.",
+   "cvss": {
+    "score": 9.3,
+    "severity": "CRITICAL",
+    "version": "4.0",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-862"
+   ],
+   "refs": [
+    "https://github.com/frappe/frappe/security/advisories/GHSA-37jh-f235-72qp",
+    "https://www.vulncheck.com/advisories/frappe-framework-before-15.122.0-authorization-bypass-via-document-update"
+   ],
+   "in_kev": false,
+   "priority": 14
+  },
+  {
+   "cve": "CVE-2026-137706",
+   "published": "2026-11-27",
+   "status": "Received",
+   "desc": "Smart Portal developed by Direk Tech has a Missing Authorization vulnerability. Authenticated remote attackers can add a specified account to the Active Directory Domain Admins group, thereby obtaining domain administrator privileges.",
+   "cvss": {
+    "score": 9.4,
+    "severity": "CRITICAL",
+    "version": "4.0",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-862"
+   ],
+   "refs": [
+    "https://www.twcert.org.tw/en/cp-139-11443-c40ea-2.html",
+    "https://www.twcert.org.tw/tw/cp-132-11442-02619-1.html"
+   ],
+   "in_kev": false,
+   "priority": 14
   },
   {
    "cve": "CVE-2026-136821",
@@ -841,218 +713,187 @@
    ],
    "in_kev": false,
    "priority": 13
+  },
+  {
+   "cve": "CVE-2026-137494",
+   "published": "2026-11-26",
+   "status": "Received",
+   "desc": "Budibase before 4.0.0 contains a broken object-level authorization vulnerability that allows authenticated users with table write access to reference other tenants' files by supplying arbitrary attachment keys on row save. Attackers can inject a victim app's attachment key into a row, then update or delete the row to delete that object from the shared APPS bucket or read it via presigned URLs.",
+   "cvss": {
+    "score": 8.5,
+    "severity": "HIGH",
+    "version": "4.0",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:H/VA:H/SC:L/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-639"
+   ],
+   "refs": [
+    "https://github.com/Budibase/budibase/security/advisories/GHSA-wr7j-r9v4-6rjh",
+    "https://www.vulncheck.com/advisories/budibase-before-4.0.0-cross-tenant-file-deletion-via-attachment-key"
+   ],
+   "in_kev": false,
+   "priority": 13
+  },
+  {
+   "cve": "CVE-2026-137481",
+   "published": "2026-11-26",
+   "status": "Awaiting Analysis",
+   "desc": "Traefik before 2.11.62, 3.x before 3.7.18, and 3.8.0-rc.1 contain an authorization bypass because the sanitizePath entry point option leaves dot-segments carrying path parameters, such as /..;x/, unresolved when matching routers and applying middlewares. Unauthenticated attackers can send requests like /public/..;x/admin to a parameter-stripping backend shared with a protected router, bypassing au",
+   "cvss": {
+    "score": 7.8,
+    "severity": "HIGH",
+    "version": "4.0",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:H/SI:L/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-22"
+   ],
+   "refs": [
+    "https://github.com/traefik/traefik/security/advisories/GHSA-cp28-5662-543f",
+    "https://www.vulncheck.com/advisories/traefik-before-2.11.62-authorization-bypass-via-sanitizepath-path-parameter-dot-segments"
+   ],
+   "in_kev": false,
+   "priority": 12
   }
  ],
  "epss": {
+  "CVE-2026-82489": {
+   "epss": 0.01116,
+   "percentile": 0.6573,
+   "date": "2026-11-26"
+  },
   "CVE-2026-76466": {
    "epss": 0.01116,
-   "percentile": 0.65685,
-   "date": "2026-11-25"
+   "percentile": 0.6571,
+   "date": "2026-11-26"
   },
-  "CVE-2026-136553": {
-   "epss": 0.01052,
-   "percentile": 0.6369,
-   "date": "2026-11-25"
+  "CVE-2026-137090": {
+   "epss": 0.02309,
+   "percentile": 0.84086,
+   "date": "2026-11-26"
   },
-  "CVE-2026-136550": {
-   "epss": 0.03022,
-   "percentile": 0.8818,
-   "date": "2026-11-25"
+  "CVE-2026-137043": {
+   "epss": 0.00794,
+   "percentile": 0.53037,
+   "date": "2026-11-26"
   },
-  "CVE-2026-136549": {
-   "epss": 0.02206,
-   "percentile": 0.8326,
-   "date": "2026-11-25"
+  "CVE-2026-136823": {
+   "epss": 0.02466,
+   "percentile": 0.85199,
+   "date": "2026-11-26"
   },
-  "CVE-2026-136548": {
-   "epss": 0.00864,
-   "percentile": 0.56164,
-   "date": "2026-11-25"
+  "CVE-2026-136822": {
+   "epss": 0.01801,
+   "percentile": 0.79019,
+   "date": "2026-11-26"
   },
-  "CVE-2026-136411": {
-   "epss": 0.01507,
-   "percentile": 0.74627,
-   "date": "2026-11-25"
-  },
-  "CVE-2026-136184": {
-   "epss": 0.00333,
-   "percentile": 0.1904,
-   "date": "2026-11-25"
-  },
-  "CVE-2026-136136": {
-   "epss": 0.00885,
-   "percentile": 0.57018,
-   "date": "2026-11-25"
-  },
-  "CVE-2026-135797": {
-   "epss": 0.02337,
-   "percentile": 0.84302,
-   "date": "2026-11-25"
-  },
-  "CVE-2026-135796": {
-   "epss": 0.02545,
-   "percentile": 0.85721,
-   "date": "2026-11-25"
-  },
-  "CVE-2026-135794": {
-   "epss": 0.00629,
-   "percentile": 0.44553,
-   "date": "2026-11-25"
-  },
-  "CVE-2026-135792": {
-   "epss": 0.02337,
-   "percentile": 0.84301,
-   "date": "2026-11-25"
-  },
-  "CVE-2026-135791": {
-   "epss": 0.01942,
-   "percentile": 0.80759,
-   "date": "2026-11-25"
-  },
-  "CVE-2026-135790": {
-   "epss": 0.01942,
-   "percentile": 0.80759,
-   "date": "2026-11-25"
-  },
-  "CVE-2026-135789": {
-   "epss": 0.03561,
-   "percentile": 0.90097,
-   "date": "2026-11-25"
-  },
-  "CVE-2026-135788": {
-   "epss": 0.01836,
-   "percentile": 0.7945,
-   "date": "2026-11-25"
+  "CVE-2026-136821": {
+   "epss": 0.01801,
+   "percentile": 0.79019,
+   "date": "2026-11-26"
   },
   "CVE-2026-134624": {
    "epss": 0.01793,
-   "percentile": 0.78889,
-   "date": "2026-11-25"
+   "percentile": 0.78906,
+   "date": "2026-11-26"
   },
   "CVE-2026-133968": {
    "epss": 0.27157,
-   "percentile": 0.98495,
-   "date": "2026-11-25"
+   "percentile": 0.98498,
+   "date": "2026-11-26"
   },
   "CVE-2026-133469": {
-   "epss": 0.01101,
-   "percentile": 0.65258,
-   "date": "2026-11-25"
+   "epss": 0.31768,
+   "percentile": 0.987,
+   "date": "2026-11-26"
   },
   "CVE-2026-133324": {
-   "epss": 0.00414,
-   "percentile": 0.273,
-   "date": "2026-11-25"
+   "epss": 0.00832,
+   "percentile": 0.54808,
+   "date": "2026-11-26"
   },
   "CVE-2026-133323": {
-   "epss": 0.02546,
-   "percentile": 0.85725,
-   "date": "2026-11-25"
+   "epss": 0.05628,
+   "percentile": 0.93713,
+   "date": "2026-11-26"
   },
   "CVE-2026-133311": {
-   "epss": 0.00396,
-   "percentile": 0.2537,
-   "date": "2026-11-25"
+   "epss": 0.00985,
+   "percentile": 0.61187,
+   "date": "2026-11-26"
   },
   "CVE-2026-133303": {
-   "epss": 0.00515,
-   "percentile": 0.37111,
-   "date": "2026-11-25"
+   "epss": 0.01326,
+   "percentile": 0.71078,
+   "date": "2026-11-26"
   },
   "CVE-2026-133275": {
-   "epss": 0.00315,
-   "percentile": 0.1686,
-   "date": "2026-11-25"
+   "epss": 0.00771,
+   "percentile": 0.52058,
+   "date": "2026-11-26"
   },
   "CVE-2026-132224": {
-   "epss": 0.00784,
-   "percentile": 0.52543,
-   "date": "2026-11-25"
+   "epss": 0.01055,
+   "percentile": 0.63822,
+   "date": "2026-11-26"
+  },
+  "CVE-2026-132165": {
+   "epss": 0.11053,
+   "percentile": 0.96627,
+   "date": "2026-11-26"
   },
   "CVE-2026-131914": {
    "epss": 0.04292,
-   "percentile": 0.9189,
-   "date": "2026-11-25"
+   "percentile": 0.91897,
+   "date": "2026-11-26"
   },
   "CVE-2026-129448": {
    "epss": 0.24159,
    "percentile": 0.98332,
-   "date": "2026-11-25"
-  },
-  "CVE-2026-125718": {
-   "epss": 0.00456,
-   "percentile": 0.31548,
-   "date": "2026-11-25"
-  },
-  "CVE-2026-125717": {
-   "epss": 0.00587,
-   "percentile": 0.4203,
-   "date": "2026-11-25"
-  },
-  "CVE-2026-123987": {
-   "epss": 0.00886,
-   "percentile": 0.57064,
-   "date": "2026-11-25"
-  },
-  "CVE-2026-123986": {
-   "epss": 0.00886,
-   "percentile": 0.57064,
-   "date": "2026-11-25"
+   "date": "2026-11-26"
   },
   "CVE-2026-123890": {
    "epss": 0.05009,
-   "percentile": 0.93012,
-   "date": "2026-11-25"
-  },
-  "CVE-2026-123342": {
-   "epss": 0.00886,
-   "percentile": 0.57065,
-   "date": "2026-11-25"
+   "percentile": 0.93017,
+   "date": "2026-11-26"
   },
   "CVE-2026-103406": {
-   "epss": 0.0086,
-   "percentile": 0.56019,
-   "date": "2026-11-25"
+   "epss": 0.01535,
+   "percentile": 0.75157,
+   "date": "2026-11-26"
   },
   "CVE-2025-42884": {
    "epss": 0.01102,
-   "percentile": 0.65286,
-   "date": "2026-11-25"
+   "percentile": 0.65308,
+   "date": "2026-11-26"
   },
   "CVE-2025-41450": {
-   "epss": 0.00513,
-   "percentile": 0.37031,
-   "date": "2026-11-25"
+   "epss": 0.04271,
+   "percentile": 0.91857,
+   "date": "2026-11-26"
   },
   "CVE-2023-25915": {
-   "epss": 0.01431,
-   "percentile": 0.73235,
-   "date": "2026-11-25"
+   "epss": 0.02485,
+   "percentile": 0.85331,
+   "date": "2026-11-26"
   },
   "CVE-2023-25914": {
-   "epss": 0.01078,
-   "percentile": 0.64585,
-   "date": "2026-11-25"
+   "epss": 0.01845,
+   "percentile": 0.79569,
+   "date": "2026-11-26"
   }
  },
  "news": [
   {
-   "title": "Ransomware Attacks in Africa Could Cost Businesses Over $368,000 Per Incident",
-   "source": "FF News",
-   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPZDY2eS1IdVNaVFI4OFNXZFZnR2xnOXBSQWtacFpoMzVreUpWNzUwWVdEbTl3VzY0NVBXQWZKcjQxMWNSQWdHaGptdTBKc1d4RnpuZTR2ZFZ2clU5ZmppRDktUjVJVWViaG03RndGbDRibDBNbHRCaGVSemVxQjBIZDdlRG9fZmNJT1E?oc=5",
-   "published": "2026-11-26T13:28:06+00:00",
-   "tags": [
-    "Ransomware",
-    "South Africa"
-   ],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "Kaspersky and VDC Strategy: Ransomware incidents could cost each affected company in Africa over $368,000",
-   "source": "Zawya",
-   "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxONXRuSmdLbklWd2Z4ZjJ3NGlWUEtvYzltUFpSVTh6Wnh3LVpUaHJ2a2RKQ2liZWFROGtRYTRWWTEwV3pScVpwcVVaTWVLR1ZBRUtzWTdpTmNjYUI2T1Z6Ql91Q1JsSVBDLUxGSWFnbjdhQzVhUlZ3b1RhVk9jTWpvcld5SWR6SnVSQ1JBMXJsU3QzblFfQTE5UmVUZ2prUXQxWXo0bUphYlZRWklZN0JmVVV2eElnZHYxb2hKeW9sYkhuQkxzOFllSGl6RXlaNnlXNHJ6eFhpb3pVZERlUmctTnpTV19fVndFWEg1RERkYk5hTVB1bWs0OHFacUFWeENM?oc=5",
-   "published": "2026-11-26T12:41:00+00:00",
+   "title": "Africa ransomware cost averages $368,000 per company, Kaspersky says",
+   "source": "DNE Africa",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBXWjdkOW9SbXNsUkhTVHNlVnpnNldSM29pMkVpX0lIYkFUejhYNjBrODgxQmIyS0NaNG9lbTBPSnRjUV9TX1U5Rml0aENnalh3bTBjM0F1d0cwNktfNlYzalE1aW1aQ2Q3?oc=5",
+   "published": "2026-11-26T22:16:00+00:00",
    "tags": [
     "Ransomware",
     "South Africa"
@@ -1086,6 +927,43 @@
     "South Africa"
    ],
    "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "Flight Centre Data Breach Puts Millions Of Customer Records At Risk",
+   "source": "ChannelNews.com.au",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOMHYxajVOcE5XelE1RDFnYUw2aWlNQU5mRjZyclJ0ZjFYdExGSndvQ1lRQ2xqTDhxUXpLdWl5bU1mNlE3eUtmNktfTk45bldWX1FMdlB3NmlMdmhfVjdva2xxOVJZeFJKdkk1dmNrR0trOFVtNkJBLWpuMDh6eTEwWHpvRkc4Y0pxdGZub0NaNTI4TkFVTnMyWVdZQnVOMnNC?oc=5",
+   "published": "2026-11-27T02:07:46+00:00",
+   "tags": [
+    "Breach",
+    "South Africa"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "One KYC vendor\u2019s breach now spans six South African firms",
+   "source": "Innovation Village",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOMnNaMi1vU29Vd3QwWHI0ZXo3Nnh3eFBPbTd2R25FdHV2RmRYY05rTms3OU9naHNYUVlUWTBBT2cxY2pQZE1FWVR0WUNqdHdYUjFHNjByemdmUy1GMkU5dWtiRHUzSFpzQUJjREw4UnRkZ1p5MkdqSHRoUnVVU2R2c2c1VEM1bzFXQUVsNTZvMkF5dw?oc=5",
+   "published": "2026-11-26T22:16:19+00:00",
+   "tags": [
+    "Breach",
+    "South Africa"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "Remus malware steals Gmail messages via fake Google Sheets extension",
+   "source": "BleepingComputer",
+   "link": "https://www.bleepingcomputer.com/news/security/remus-malware-steals-gmail-messages-via-fake-google-sheets-extension/",
+   "published": "2026-11-26T10:23:28-05:00",
+   "tags": [
+    "Exploited"
+   ],
+   "vendors": [
+    "Google"
+   ],
    "cves": []
   },
   {
@@ -1125,53 +1003,40 @@
    "cves": []
   },
   {
-   "title": "Microsoft outage: Code Red declared after 24-hour failure",
-   "source": "DNE Africa",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9od1lxVHN0SzBVUFNqa21lYkZFbGdvMElQdzJ5OWNtUTZjSkVIU0dsSHV3ZG5yOHZWa3ZJZEswOWozWnJXZWlqZ19LUVRVU1JLcjctczgzcUZBc2xCMHlhTXpxTEg0dno2ejktcw?oc=5",
-   "published": "2026-11-25T11:12:00+00:00",
+   "title": "SAP Confirms Cyberattack, Source Code Reportedly Compromised",
+   "source": "SecurityWeek",
+   "link": "https://www.securityweek.com/sap-confirms-cyberattack-source-code-reportedly-compromised/",
+   "published": "2026-11-27T07:36:14+00:00",
    "tags": [
-    "South Africa"
+    "Breach"
    ],
    "vendors": [
-    "Microsoft"
+    "SAP"
    ],
    "cves": []
   },
   {
-   "title": "SA Home Loans hit by data breach",
-   "source": "TechCentral",
-   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE0xNm0xeVZ2SnRfTGEwdGQ4eGE4TXR2TFIzb1I0bl9lak5ybFB4QW9hVkJIRlFiQVoxMzBFT1FCeF8wRThqUUFBYWUxTFBYTHpRNkxTVHRwX1JITnBReXdnSndqZW8yNS1udXp3?oc=5",
-   "published": "2026-11-25T09:30:09+00:00",
-   "tags": [
-    "Breach",
-    "South Africa"
-   ],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "South African home loans giant hit by second data breach in 3 months with customer bank account details exposed",
-   "source": "MyBroadband",
-   "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNZFUzdTMtYXZPLUhNWkhqc1RlX21CU1ZpVm9kMHk0Y3kxbG5mVURib0gxTEJiek9SMGtXYnlCQTB3TWY4T1JVekJ2WmFUTXhPUGt4MVNpQWJTTEE3bVIyMWU0UEw4TXFuZXlFNWlzbXB6c2Q0WWhEcUc4NEVFc21qTkVOaUFGMm0yc1E4Q2ljUU1Cb2tPSWxsb1pNaWRoRjlPTHhaOWlQR1luVF9Cbkx6WGU4bFhDNTNERmFDa3U1N0c5dHdWdU1UQVdkQ1prY3RSMmdBUzBFVFZGQUVObno4ZTZ0MHpxdzNKSTBzeHVoa2d1RnUycGc?oc=5",
-   "published": "2026-11-25T07:42:44+00:00",
-   "tags": [
-    "Breach",
-    "South Africa"
-   ],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "Com-Affiliated Hackers Hijack Cloud Accounts via Vishing for Data Theft and Extortion",
+   "title": "Unpatched Cacti Zero-Day Enables RCE in Just Four HTTP Requests via Guest Access",
    "source": "The Hacker News",
-   "link": "https://thehackernews.com/2026/11/com-affiliated-hackers-hijack-cloud.html",
-   "published": "2026-11-25T12:07:06+05:30",
+   "link": "https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html",
+   "published": "2026-11-27T11:18:20+05:30",
    "tags": [
-    "Ransomware"
+    "Exploited",
+    "Advisory"
    ],
-   "vendors": [
-    "Palo Alto Networks"
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "North Korea-Linked PolinRider Poisons Over 7,600 GitHub Repositories to Spread Malware",
+   "source": "The Hacker News",
+   "link": "https://thehackernews.com/2026/11/north-korea-linked-polinrider-poisons.html",
+   "published": "2026-11-26T20:43:41+05:30",
+   "tags": [
+    "Breach",
+    "Nation-state"
    ],
+   "vendors": [],
    "cves": []
   },
   {
@@ -1202,59 +1067,80 @@
    ]
   },
   {
-   "title": "CISA Adds 10 Known Exploited Vulnerabilities to Catalog",
-   "source": "CISA",
-   "link": "https://www.cisa.gov/news-events/alerts/2026/11/25/cisa-adds-10-known-exploited-vulnerabilities-catalog",
-   "published": "2026-11-25T12:00:00+00:00",
+   "title": "EasyEquities suspends platform access after cybersecurity incident",
+   "source": "Moneyweb",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOWkVwTlA5RlhPZUlGLXM0Yy1LM28za3pMMTg5T2VkTkpFNmJtM1RfRFF6a3RjdjdZVWhuWjEzcTRJVGRMN1lxWVFRTWtUSTFBSFNDNzFDR0tPYURlaGMta2hDN0RZVGdpMlUxQk1BVUZ6Z1lsTzFqbC1LVWRuUUJhWGx4ajQydzd5NlhhalN3SzdEZHlLcFA3RXR3engyc2NoOGJiT1R4LUJKSlFLeTUxRDNCeThoN3RGUVFV?oc=5",
+   "published": "2026-11-27T12:05:00+00:00",
    "tags": [
-    "Exploited",
-    "Advisory"
+    "South Africa"
    ],
    "vendors": [],
-   "cves": [
-    "CVE-2023-25914",
-    "CVE-2023-25915",
-    "CVE-2025-41450",
-    "CVE-2026-103406",
-    "CVE-2026-133275",
-    "CVE-2026-133303",
-    "CVE-2026-133311",
-    "CVE-2026-133323",
-    "CVE-2026-133324",
-    "CVE-2026-133469"
-   ]
+   "cves": []
   },
   {
-   "title": "Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation",
-   "source": "The Hacker News",
-   "link": "https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html",
-   "published": "2026-11-25T16:53:26+05:30",
+   "title": "EasyEquities shuts down platform access after cybersecurity incident",
+   "source": "IOL",
+   "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9KdWNpMG5aLVVPZENPS2NnZVVaRUdhQ0N6NUNTVmZLdnVydlZBdnFvZHdqdXhFTHJjZ2F5dG1fNkE3X3IwU0I4VHpUY3ZFUC1hX081bHdTaw?oc=5",
+   "published": "2026-11-27T10:39:28+00:00",
    "tags": [
-    "Exploited",
-    "Advisory"
+    "South Africa"
    ],
    "vendors": [],
-   "cves": [
-    "CVE-2026-132165"
-   ]
+   "cves": []
   },
   {
-   "title": "Hackers now exploit critical Drupal RCE flaw to hijack sites",
+   "title": "Drupal warns of new site takeover flaw exploited in attacks",
    "source": "BleepingComputer",
-   "link": "https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/",
-   "published": "2026-11-25T05:10:20-05:00",
+   "link": "https://www.bleepingcomputer.com/news/security/drupal-warns-of-new-access-bypass-flaw-exploited-in-attacks/",
+   "published": "2026-11-27T05:10:15-05:00",
    "tags": [
-    "Exploited",
+    "Breach",
     "Advisory"
    ],
    "vendors": [],
    "cves": []
   },
   {
-   "title": "Pick n Pay opens ultra-luxury supermarket in one of South Africa\u2019s richest areas with a coffee shop, sushi restaurant, and biltong bar",
-   "source": "Daily Investor",
-   "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOdG5pLWVrN09PYU85clpoNV9EMnBUN2pHZUdtaXlEeFFaZHJmUFE4aXhwUWQ2cC05UEtkZ0FIcDR4WTJmQVh1RDgwcXI3ZFY4cU5rdUlxQ0pEZG1Pb2RwbnhsUWR6ekdzYmRTcFBsSkRXV0kwLUFLRTdrR1dneUt2ZUNaem5OY2JrU3pKZmhiYmVZcWxwaFlNWFAxankzWHJKcm02djFRMUVVLUp5VkxjVjljdTdBa3dvWF8xVkdaUTk0Q1F0WEtXT3ZtRDBzUUtWS2JZZGtDUE5TOUwzcWx6RzRxX2VFOVBONXcyZVM4WGxPZktRS0h2Rm9vZFhqcnJKUHc?oc=5",
-   "published": "2026-11-26T13:53:06+00:00",
+   "title": "Microsoft pushes emergency hotpatch to fix Windows Server crashes",
+   "source": "BleepingComputer",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/new-out-of-band-oob-emergency-hotpatch-fixes-windows-server-2025-crashes/",
+   "published": "2026-11-27T04:08:16-05:00",
+   "tags": [
+    "Advisory"
+   ],
+   "vendors": [
+    "Microsoft"
+   ],
+   "cves": []
+  },
+  {
+   "title": "Hex Package Manager Warns of Potential Data Breach",
+   "source": "SecurityWeek",
+   "link": "https://www.securityweek.com/hex-package-manager-warns-of-potential-data-breach/",
+   "published": "2026-11-27T07:44:49+00:00",
+   "tags": [
+    "Breach",
+    "Advisory"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "Investment platform EasyEquities shuts down user access after another 'security incident'",
+   "source": "EWN",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOZ1pjZFVxWFd3RVd2NXZDSlc2WnFBSXdyOXdpSnZZb3laMUNKN29JU1NlczJ3eUpXenVvUkNzb193MXJsclNTVjJFUkttWmVLNHUtWlRoQTlUckZ6Vy1TTUl3TGJGSjk1NlU2ek4tS1hlQzRPQmlKdzBfRWpmMWMydS1MS2MtNm9DRHphSVpTeUtQRGtUdHJxZmF3RllfZm5SVUJ0eW5jb3V1QkcxUzI4dlZOSXhxcDNwbi1IRg?oc=5",
+   "published": "2026-11-26T20:03:06+00:00",
+   "tags": [
+    "South Africa"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "FIFA targeted in cyberattack, hackers gain access to \u2018personal and business information\u2019",
+   "source": "\u0634\u0628\u0643\u0629 \u062a\u0648\u0627\u0635\u0644 \u0627\u0644\u0625\u062e\u0628\u0627\u0631\u064a\u0629",
+   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBtMjVpVkZLaHFuclBoUHdpWU5DZ2dCcWFzcndjaVBzZlZtSmh6dkhQZUFPa1M3VnI4ajg2YS1nV3lCYUNJT3U0ZzgxcHlmeTBERVc4?oc=5",
+   "published": "2026-11-26T15:38:57+00:00",
    "tags": [
     "South Africa"
    ],
@@ -1277,61 +1163,6 @@
    ]
   },
   {
-   "title": "Billionaire Patrice Motsepe set to take control of South Africa\u2019s biggest retirement fund manager worth R9.63 billion",
-   "source": "Daily Investor",
-   "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOTTNyblBrMUs5S0k2VUdkTUtOcWRZZ2lCaTVtRUJIekdkMmhMNmEwQzJsUUNUdUZaNmZ0WEdqbmtndjhnZWo1dHQ0QnM1cWZkbG1SX2FaakZDYnpUM1hRVEFOYlF4c0w1ZU1yMDZ4eDZoV25LcWVDVWFuT3dxQXJLcFpCYWtaTEU0ZTZZalpnT1JKbnVUSzRqMEJyU1BwZTBYNUM3dkpwQzBjZzBOR09OQ0taTWVFd1U4UjdxXzgySmdxR1hYWldEUy0xLWE3Wm1lUFpXQ3JYZFRpWjh1ZTNhSDBfSmwyZnc5MGpIMGh0SQ?oc=5",
-   "published": "2026-11-26T12:37:28+00:00",
-   "tags": [
-    "South Africa"
-   ],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "Western Cape leaving Gauteng in the dust",
-   "source": "Daily Investor",
-   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNcUg2VDhRTzNEVVVCdjFPNVl3TTNJelhYSVNQTG9BWW9rLUhpYzZ0dnZnMS0xREZFeEpuS0lKcXVadnlHX3NjTklsem9IcDBEWmNnSjNCLVFiN1JoZkhjLUhYNHRrZjFvRHdKbktVb2dSakVWOGEwRDk3WGgybkVfVUY5SUFwWmlHWWN3?oc=5",
-   "published": "2026-11-26T12:30:00+00:00",
-   "tags": [
-    "South Africa"
-   ],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "Benin\u2019s ASIN launches CISO guide to strengthen cybersecurity governance across Africa",
-   "source": "Tech Review Africa",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPZlVLek5WaXZvQ0drZUpCZGxJeUdtT3piZE5FakR3bzd1MHJlU3JlWnUwTld1RWdXTDJHcGhKMjA4UHg3TERBZktoZnRQcURsbnY3bXRCMGQtLVVjeGRPVTZRRk9fTV9OaDlUMDdrRUZQLTVBbThSazBrWU5HQlJaUWJIa2dPRU11NmtUdko1QnRvVzFYaGM5UDNobzA2WlRaQnpsZWtFbGVuZWx2YU5xd0o5OUoyc1hQYUxkeVZTM24?oc=5",
-   "published": "2026-11-26T12:14:12+00:00",
-   "tags": [
-    "South Africa"
-   ],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "Smart Money \u2013 Mark Koziel on the future of finance and business leadership in the AI era",
-   "source": "Daily Investor",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOLUFJakw5cTUya3JrNjBrN1FNYUc2TkNiRkJBc2hZdTVVWl9QQTA0VGNfV1piSHdsODA2NUVzb0k2Vkt3N1JZVGFNdUEteUlEcmxZMVRZelFieldILXVud3J2UDdIMi00WnJtZlFVVDFaZFZpWTh1N2JsRGZnejQ0ODNNZ2dweHF2T20ycm9jeEwtMWJCWnk1TUhQaFcxSFNqbFFsMUx4X3A0ejVoU2lEREVhZlRGZG40b3lvWVZjU2lRc0pKVHFv?oc=5",
-   "published": "2026-11-26T11:40:00+00:00",
-   "tags": [
-    "South Africa"
-   ],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "PrimeXBT Integrates with TradingView, Bringing Advanced Trading Tools to South African Traders",
-   "source": "Daily Investor",
-   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPcHZtc0phWE5STEs4V1JuT2FrVmduRHBtYS1hSVpJZWZ4MGxlN0RuUEd3UXcwR242YjM2Z2F2V09zRU1pLWZVaHByVUdkR1oxemNJZWhhRGdOT012UnpUSWZHelI4dlRvT3BwMmFNdV83NXpXWTNtbFlIdkhnUHMxd215YlpBa1pYMm5ZWHVZUXJfOGdtT1U0ajUzVFhYU2NJZlNyT0lmWnRiZ05iVXdFRUJwZHMxV185OWs3TzE5NFY4NUdJeWJNNWhuWDZiOUNKbHpGdmliLUo?oc=5",
-   "published": "2026-11-26T11:36:23+00:00",
-   "tags": [
-    "South Africa"
-   ],
-   "vendors": [],
-   "cves": []
-  },
-  {
    "title": "Nigerian cybersecurity startup Aeon doubles its pre-seed round to $2 million",
    "source": "Tech In Africa",
    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQekVJb1VlV1Y2dVNMVmJPWnc1X2xpLXZlbDBDOGIzb1R2aHNyRzI5RHNKNXBnSjBNOHRNN0ZocnZfRk1oc3lxTHJzc2puLUlaTDNlVHQtS3FaV2M4d2JLQmNsS0I5VkR4OGtZeEEyS0F2NDh3MnNXRlN1M21pdlUtWlhjVDM0bDJNeVF3ZjlaWGJQSWFLRFlqakZtbEN2dXdBdVdaMlhxeFk?oc=5",
@@ -1343,32 +1174,10 @@
    "cves": []
   },
   {
-   "title": "Why businesses need a more proactive approach to cybersecurity",
-   "source": "ITWeb Africa",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOanQzT2RLeHhKekJHbnpTaXF1bW54b0cwQlNFam1YczJrd09wa0s4VV9yU3I0VzVLWDNkaDhrbVNwbGJYVDZJSTAxejBTY2NPSkY1R3dnN0lZRW1fMVVFd0xjZU5HOHRfNFo1QUtXLVp0VVgyZ1IwMWQxWXYxQ3hRZ2Z6dlNNM2dkUzBIU1hnVzVwendlaWdwZThral9faTZ2d3J6d1BWa1FaRnZw?oc=5",
-   "published": "2026-11-26T11:28:31+00:00",
-   "tags": [
-    "South Africa"
-   ],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "Discovery repaired 250 potholes in 24 hours in South Africa\u2019s richest city",
-   "source": "Daily Investor",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQeVNUeGhSYlF0OHR4VmVETk1pTzZLaTJGLVo5RW1sTW9vY0pydlg5eFU4TmZ1ZUVEaWJGSUc3ZnNBcDZfRTZPNmN1bllXTm5IbDdOUDV2ZHFBYXdxdVp2X2ZKX2FDRTRBZ1dtZVVYODJmQWl1Qmo1X19DcFNyR3VxUDgxUVVWQjZ4SVpPOG1Scl84cVRIS3hjRW44Q1JnMUppak9fSEl4STZwVXhJdUh1VThlemVWbVk?oc=5",
-   "published": "2026-11-26T11:00:00+00:00",
-   "tags": [
-    "South Africa"
-   ],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "The digital employee nobody vetted",
-   "source": "IOL",
-   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPdkVMaFlfejVnbU5ibmdLbVVqTnE0dE9NTERSUGFwYk5PN1VQbXFtVVNQT1VMR0ZNQXFzMmdnTnFPX2IyX3lMemtzMWw0Y3J5RVA2MXpXeGVIM3NmRnBocXZYczloOWloM0Ywd1hqcWZTdldyem5TMS1Cb19rcnQtT3c1a2daSGdDdnlpTVhOTQ?oc=5",
-   "published": "2026-11-26T10:36:22+00:00",
+   "title": "Aeon-raises-pre-seed-round-to-2-million-to-build-cyber-defence-infrastructure-for-Africa-and-the-Global-South-1536x864",
+   "source": "Tech In Africa",
+   "link": "https://news.google.com/rss/articles/CBMixwJBVV95cUxQc1A1MERWaThUdmJCUXo0SmJiUDFTV04xRHlYVkpVNlk1ZzIwMlo2ZjNtbFhCTDdHb2tqalpIWC1DaG5CeEJQNEV4aW1VdDBJbWpOY25kTERYMmtCMUtOVFJhMl9VYXp5ZTktb2s1dGRINXZHbkFkYTRFeFo5cm1ZRE9EbmpIZktnaUJUZS0zNlViVmhWdTVmaE5YbGlhUl9TYk9Ra2p2d29oT1VSV0dzYzJHQ3JiZFdZcl8yNXpMakdRa2lVMnFuRjdFbXV5emN1QkdtY1ByZXhlcmxzWXZjY0hwRUJ2UENNOGIyODRNeF9pT2xaNERmd0VxUUdfOUFNa09FeGRjRzQ2dFJjVjdwMWlWbG5NV3hQaEhEc0RpYlpXZlplWmJlcWlaazdlTGoxREZnR2VXY3RpcjRhYWZJTGJTQndHODQ?oc=5",
+   "published": "2026-11-26T11:28:27+00:00",
    "tags": [
     "South Africa"
    ],
@@ -1387,6 +1196,17 @@
    "cves": []
   },
   {
+   "title": "EasyEquities security incident: second threat in 3 months",
+   "source": "DNE Africa",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE51aFN5N2FxMGN2a2xNWTl3b0Z0dEdXUUtibVNNUGx6aUdDV1k4TUtXbXYweEsxYVV2c1pFT0JGQzZ3TkxxNHlUNkZPaGNkMkd3dkRPOXpHNXgzNEVlSmVPYUVkX2hDRi1lcmQzeXdIelhzd3c?oc=5",
+   "published": "2026-11-26T10:21:00+00:00",
+   "tags": [
+    "South Africa"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
    "title": "Another cyberattack on South Africa\u2019s most popular share trading platform EasyEquities",
    "source": "Daily Investor",
    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQajRNeHdLRkRxYVllSDl5dlowWkJyTF84TDlVQ1hVRHNhUVBtb3poZlRPa25DWXhjMUxzUGc0Qjd4UVJuSjBDa1FLSGxDd0VLSjR4MHk2NWJTenVidVROQ3BaUUlPNzlFUjJyVFNOTUZORlR0MlRnbS1mYmdNNnBhZzFLNDNMTk4wS1ZrVFk4MC1lMWNfTFZ4UkhtbzVfWnFLSWU3SE9BMllOWmM1Wko0d09BTkJmSGlBZUx3ZzJnUm90OFM4Q0FmZw?oc=5",
@@ -1398,10 +1218,32 @@
    "cves": []
   },
   {
-   "title": "Namibia launches anti-scam command centre",
-   "source": "New Era",
-   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1hZjR5bHVOLTR6T2p0ZnJqZDliVzF0OHdEenM4N0JvVzJGZE1JNy01cnVITVZoZUtUZWk3VGswMS0zdi1jSkZiaU9HRjdVVFZwdlJ0UnpxV0xqaUp6cjU1SUs4TmQzdDFocW1VdmdNbjNGdw?oc=5",
-   "published": "2026-11-26T10:11:28+00:00",
+   "title": "EasyEquities Restricts Logins During Security Probe",
+   "source": "Wisevoter",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPeGtLaVBvWnVzdzFtNjVOS2NCYU1PNU4tVGpYNTJDcXh5X1AycldZcjNnRnZHblBkeXdsSmpsb0tUTzlDbEx4N3g0MHVDUEpoamsybjFlUnBDTzU1UjZPSXhxczhuNnBEem0tV1RwbmVqc3Q2bjVRaURvQThjeUlPbGQxR0Q5UGR4X0RJWDAtbk5QNjA?oc=5",
+   "published": "2026-11-26T08:48:33+00:00",
+   "tags": [
+    "South Africa"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "EasyEquities suspends platform access following cybersecurity incident",
+   "source": "Moneyweb",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNWFdER0lwdjV0eHpVSElyMThkYUhCOFJfOEcxWVViN3laVV9lUmt0M24tQ25peTZfa2NUa01xVnB5eHFjYWY0UGdUZ1UzVDFBak9OMFlWMDViZXM1ZnFWeUZvOGRsODdyR1JZTVZvTXY3T013eGlRUG9BLVJUYmlsWWVzZ3BrTGoxXzJoU1RtTjJaUi03UTVxanJQUER4XzN6YzRkVmxnSGlqZGVyQkkwWEhIb014Rjk3bVFQNWdGZHo?oc=5",
+   "published": "2026-11-26T08:42:15+00:00",
+   "tags": [
+    "South Africa"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "Navigating A Sea Change In The Corporate Crime Landscape",
+   "source": "Legal 500",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOemdUd2QxSmxOTXFpQTM3c2ZxNjlsMExycU0xRDdydklUckRJcFBQRWwwcVVJTTFNM0UwT3VZZkI4Z1MxR3pUTEVPV1ZibU5EYzZuR3hmdGFsMlEyMlpValpDYjI1a2g0NVZSRzRfdHpyWDdfQmZwOE50aXdaSk82MWpfY1hFamV6VGZ1NFdCTXBRZWlxcFEyMXNRcGs2OFRHZ3Z5Vlk3aG5ibDdSRjlqNmNMRU1YMW14aEI0aw?oc=5",
+   "published": "2026-11-26T08:23:08+00:00",
    "tags": [
     "South Africa"
    ],
@@ -1410,33 +1252,33 @@
   }
  ],
  "ai": {
-  "headline": "Hackers Exploit 10 Vulnerabilities Across Mitel, Juniper, Vates, and Danfoss Products",
+  "headline": "African ransomware attacks cost companies average $368,000 each, highlighting urgent need for stronger defenses",
   "patch_first": [
    {
-    "cve": "CVE-2026-132165",
-    "why": "Drupal Core Remote Code Execution actively exploited; critical site takeover risk"
+    "cve": "CVE-2026-133469",
+    "why": "High EPSS (0.318) Vates Xen Orchestra input validation flaw; active exploitation risk"
    },
    {
-    "cve": "CVE-2026-133323",
-    "why": "Mitel MiCollab OS Command Injection exploited in AI\u2011assisted attacks"
+    "cve": "CVE-2026-133968",
+    "why": "EPSS 0.272; Project MONAI path traversal actively exploited"
    },
    {
-    "cve": "CVE-2026-76466",
-    "why": "Cisco Expressway hard\u2011coded credentials allow unauthorized access"
+    "cve": "CVE-2026-129448",
+    "why": "EPSS 0.242; Apache Roller deserialization vulnerability on KEV list"
    }
   ],
   "threats": [
-   "Ransomware attacks in Africa could cost businesses over $368,000 per incident, highlighting rising financial risk.",
-   "South African home\u2011loan providers suffer multiple data breaches exposing customer banking details.",
-   "Drupal vulnerabilities are being actively exploited to hijack websites worldwide."
+   "Ransomware costs in Africa average $368k per firm, stressing financial impact.",
+   "Flight Centre breach exposes millions of customer records in South Africa.",
+   "Remus malware steals Gmail messages via fake Google Sheets extension."
   ],
   "sa_angle": [
-   "Home Loans giant hit by repeated data breaches exposing banking information.",
-   "Ransomware incidents in South Africa projected to cost up to US$1.4\u202fmillion per attack."
+   "Ransomware attacks in South Africa now average $368,000 per company, per Kaspersky report.",
+   "Flight Centre data breach puts millions of South African customers at risk."
   ],
-  "exec_note": "Prioritize patching Drupal, Mitel MiCollab, and Cisco Expressway systems and review incident response plans immediately.",
+  "exec_note": "Prioritize patching the three KEV-listed vulnerabilities and review ransomware response plans immediately.",
   "fact_check_removed": 0
  },
  "errors": [],
- "digest_html": "\ud83d\udee1 <b>Cyber Watch \u00b7 Thu 26 Nov 2026</b>\n<b>Hackers Exploit 10 Vulnerabilities Across Mitel, Juniper, Vates, and Danfoss Products</b>\n\n<b>\ud83d\udd27 Patch first</b>\n1. <code>CVE-2026-132165</code> Drupal Core \u00b7 on KEV\n   Drupal Core Remote Code Execution actively exploited; critical site takeover risk\n2. <code>CVE-2026-133323</code> Mitel MiCollab \u00b7 on KEV \u00b7 EPSS 3%\n   Mitel MiCollab OS Command Injection exploited in AI\u2011assisted attacks\n3. <code>CVE-2026-76466</code> Cisco Expressway Series \u00b7 on KEV \u00b7 EPSS 1%\n   Cisco Expressway hard\u2011coded credentials allow unauthorized access\n\n<b>\ud83d\udea8 New on CISA KEV (7 days): 19</b>\n\u2022 <code>CVE-2026-123890</code> Broadcom VMware vCenter \u00b7 added 20 Nov \u2b50\n\u2022 <code>CVE-2025-42884</code> SAP NetWeaver \u00b7 added 20 Nov \u2b50\n\u2022 <code>CVE-2026-76466</code> Cisco Expressway Series \u00b7 added 20 Nov \u2b50\n\u2022 <code>CVE-2026-103406</code> Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router \u00b7 added 25 Nov \u2b50\n\u2022 <code>CVE-2026-133968</code> Project MONAI MONAI Label \u00b7 added 23 Nov\n  \u2026and 14 more (/kev)\n\n<b>\ud83c\udd95 New critical CVEs (48h): 26</b>\n\u2022 <code>CVE-2026-123342</code> Adobe Campaign Classic (ACC) is affected by an Improper Control of\u2026 \u00b7 CVSS 9.9 \u00b7 EPSS <1%\n\u2022 <code>CVE-2026-123986</code> Adobe Campaign Classic (ACC) is affected by an Improper Control of\u2026 \u00b7 CVSS 9.9 \u00b7 EPSS <1%\n\u2022 <code>CVE-2026-123987</code> Adobe Campaign Classic (ACC) is affected by an Improper Control of\u2026 \u00b7 CVSS 9.9 \u00b7 EPSS <1%\n\n<b>\ud83d\udcf0 Threat picture</b>\n\u2022 Ransomware attacks in Africa could cost businesses over $368,000 per incident, highlighting rising financial risk.\n\u2022 South African home\u2011loan providers suffer multiple data breaches exposing customer banking details.\n\u2022 Drupal vulnerabilities are being actively exploited to hijack websites worldwide.\n\n<b>\ud83d\udd17 Read</b>\n\u2022 <a href=\"https://thehackernews.com/2026/11/hackers-exploit-10-vulnerabilities.html\">Hackers Exploit 10 Vulnerabilities Across Mitel, Juniper, Vates, and Danfoss Products</a> (The Hacker News)\n\u2022 <a href=\"https://thehackernews.com/2026/11/com-affiliated-hackers-hijack-cloud.html\">Com-Affiliated Hackers Hijack Cloud Accounts via Vishing for Data Theft and Extortion</a> (The Hacker News)\n\u2022 <a href=\"https://www.securityweek.com/mitel-micollab-zero-days-exploited-in-suspected-ai-assisted-attacks/\">Mitel MiCollab Zero-Days Exploited in Suspected AI-Assisted Attacks</a> (SecurityWeek)\n\u2022 <a href=\"https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html\">Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation</a> (The Hacker News)\n\n<b>\ud83c\uddff\ud83c\udde6 South Africa</b>\n\u2022 Home Loans giant hit by repeated data breaches exposing banking information.\n\u2022 Ransomware incidents in South Africa projected to cost up to US$1.4\u202fmillion per attack.\n\u2022 <a href=\"https://news.google.com/rss/articles/CBMiigFBVV95cUxPZDY2eS1IdVNaVFI4OFNXZFZnR2xnOXBSQWtacFpoMzVreUpWNzUwWVdEbTl3VzY0NVBXQWZKcjQxMWNSQWdHaGptdTBKc1d4RnpuZTR2ZFZ2clU5ZmppRDktUjVJVWViaG03RndGbDRibDBNbHRCaGVSemVxQjBIZDdlRG9fZmNJT1E?oc=5\">Ransomware Attacks in Africa Could Cost Businesses Over $368,000 Per Incident</a> (FF News)\n\u2022 <a href=\"https://news.google.com/rss/articles/CBMigAJBVV95cUxONXRuSmdLbklWd2Z4ZjJ3NGlWUEtvYzltUFpSVTh6Wnh3LVpUaHJ2a2RKQ2liZWFROGtRYTRWWTEwV3pScVpwcVVaTWVLR1ZBRUtzWTdpTmNjYUI2T1Z6Ql91Q1JsSVBDLUxGSWFnbjdhQzVhUlZ3b1RhVk9jTWpvcld5SWR6SnVSQ1JBMXJsU3QzblFfQTE5UmVUZ2prUXQxWXo0bUphYlZRWklZN0JmVVV2eElnZHYxb2hKeW9sYkhuQkxzOFllSGl6RXlaNnlXNHJ6eFhpb3pVZERlUmctTnpTV19fVndFWEg1RERkYk5hTVB1bWs0OHFacUFWeENM?oc=5\">Kaspersky and VDC Strategy: Ransomware incidents could cost each affected company in Africa over $368,000</a> (Zawya)\n\u2022 <a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxORzdMaTlyTGxVZWZwUkhGOFhtV1o2MkVSTzRvcGVJWlFpSWo4dUo1d255NFh2emZfeU1XanZUa0xmYVdXdTU5eFhpNWtjSV9WVF9HQVczekpwMVZuMi0xOEhubzgxeGJQdUJLWkJrdy1yNHluU2xFUllGcUwxTk9WMVppR2xvb051TzNhcHBlT2VzeFJwZ3NpMVhDREdzZzduNm96TGY1QlpGbzA?oc=5\">Ransomware recovery costing SA firms up to US$1.4m per attack</a> (Africa Business Communities)\n\n<i>For leadership:</i> Prioritize patching Drupal, Mitel MiCollab, and Cisco Expressway systems and review incident response plans immediately.\n\n<i>AI summary fact-checked against the data. Sources: CISA KEV v2026.11.25, NVD, FIRST EPSS, security news. \u2b50 = on your vendor watchlist.</i>\nAsk me: /cve CVE-ID \u00b7 /vendor fortinet \u00b7 /kev \u00b7 /news, or any question."
+ "digest_html": "\ud83d\udee1 <b>Cyber Watch \u00b7 Fri 27 Nov 2026</b>\n<b>African ransomware attacks cost companies average $368,000 each, highlighting urgent need for stronger defenses</b>\n\n<b>\ud83d\udd27 Patch first</b>\n1. <code>CVE-2026-133469</code> Vates Xen Orchestra \u00b7 on KEV \u00b7 EPSS 32%\n   High EPSS (0.318) Vates Xen Orchestra input validation flaw; active exploitation risk\n2. <code>CVE-2026-133968</code> Project MONAI MONAI Label \u00b7 on KEV \u00b7 EPSS 27%\n   EPSS 0.272; Project MONAI path traversal actively exploited\n3. <code>CVE-2026-129448</code> Apache Roller \u00b7 on KEV \u00b7 EPSS 24%\n   EPSS 0.242; Apache Roller deserialization vulnerability on KEV list\n\n<b>\ud83d\udea8 New on CISA KEV (7 days): 19</b>\n\u2022 <code>CVE-2026-123890</code> Broadcom VMware vCenter \u00b7 added 20 Nov \u2b50\n\u2022 <code>CVE-2025-42884</code> SAP NetWeaver \u00b7 added 20 Nov \u2b50\n\u2022 <code>CVE-2026-76466</code> Cisco Expressway Series \u00b7 added 20 Nov \u2b50\n\u2022 <code>CVE-2026-103406</code> Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router \u00b7 added 25 Nov \u2b50\n\u2022 <code>CVE-2026-133469</code> Vates Xen Orchestra \u00b7 added 25 Nov\n  \u2026and 14 more (/kev)\n\n<b>\ud83c\udd95 New critical CVEs (48h): 23</b>\n\u2022 <code>CVE-2026-132165</code> drupal drupal \u00b7 CVSS 9.8 \u00b7 EPSS 11%\n\u2022 <code>CVE-2026-137090</code> build-git-clone before 1.0.4 contains an OS command injection\u2026 \u00b7 CVSS 9.3 \u00b7 EPSS 2%\n\u2022 <code>CVE-2026-136823</code> A vulnerability was found in D-Link R32 1.10B02. This affects an\u2026 \u00b7 CVSS 9.3 \u00b7 EPSS 2%\n\n<b>\ud83d\udcf0 Threat picture</b>\n\u2022 Ransomware costs in Africa average $368k per firm, stressing financial impact.\n\u2022 Flight Centre breach exposes millions of customer records in South Africa.\n\u2022 Remus malware steals Gmail messages via fake Google Sheets extension.\n\n<b>\ud83d\udd17 Read</b>\n\u2022 <a href=\"https://thehackernews.com/2026/11/hackers-exploit-10-vulnerabilities.html\">Hackers Exploit 10 Vulnerabilities Across Mitel, Juniper, Vates, and Danfoss Products</a> (The Hacker News)\n\u2022 <a href=\"https://www.bleepingcomputer.com/news/security/remus-malware-steals-gmail-messages-via-fake-google-sheets-extension/\">Remus malware steals Gmail messages via fake Google Sheets extension</a> (BleepingComputer)\n\u2022 <a href=\"https://www.securityweek.com/sap-confirms-cyberattack-source-code-reportedly-compromised/\">SAP Confirms Cyberattack, Source Code Reportedly Compromised</a> (SecurityWeek)\n\u2022 <a href=\"https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html\">Unpatched Cacti Zero-Day Enables RCE in Just Four HTTP Requests via Guest Access</a> (The Hacker News)\n\n<b>\ud83c\uddff\ud83c\udde6 South Africa</b>\n\u2022 Ransomware attacks in South Africa now average $368,000 per company, per Kaspersky report.\n\u2022 Flight Centre data breach puts millions of South African customers at risk.\n\u2022 <a href=\"https://news.google.com/rss/articles/CBMiaEFVX3lxTFBXWjdkOW9SbXNsUkhTVHNlVnpnNldSM29pMkVpX0lIYkFUejhYNjBrODgxQmIyS0NaNG9lbTBPSnRjUV9TX1U5Rml0aENnalh3bTBjM0F1d0cwNktfNlYzalE1aW1aQ2Q3?oc=5\">Africa ransomware cost averages $368,000 per company, Kaspersky says</a> (DNE Africa)\n\u2022 <a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxORzdMaTlyTGxVZWZwUkhGOFhtV1o2MkVSTzRvcGVJWlFpSWo4dUo1d255NFh2emZfeU1XanZUa0xmYVdXdTU5eFhpNWtjSV9WVF9HQVczekpwMVZuMi0xOEhubzgxeGJQdUJLWkJrdy1yNHluU2xFUllGcUwxTk9WMVppR2xvb051TzNhcHBlT2VzeFJwZ3NpMVhDREdzZzduNm96TGY1QlpGbzA?oc=5\">Ransomware recovery costing SA firms up to US$1.4m per attack</a> (Africa Business Communities)\n\u2022 <a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxOMHYxajVOcE5XelE1RDFnYUw2aWlNQU5mRjZyclJ0ZjFYdExGSndvQ1lRQ2xqTDhxUXpLdWl5bU1mNlE3eUtmNktfTk45bldWX1FMdlB3NmlMdmhfVjdva2xxOVJZeFJKdkk1dmNrR0trOFVtNkJBLWpuMDh6eTEwWHpvRkc4Y0pxdGZub0NaNTI4TkFVTnMyWVdZQnVOMnNC?oc=5\">Flight Centre Data Breach Puts Millions Of Customer Records At Risk</a> (ChannelNews.com.au)\n\n<i>For leadership:</i> Prioritize patching the three KEV-listed vulnerabilities and review ransomware response plans immediately.\n\n<i>AI summary fact-checked against the data. Sources: CISA KEV v2026.11.25, NVD, FIRST EPSS, security news. \u2b50 = on your vendor watchlist.</i>\nAsk me: /cve CVE-ID \u00b7 /vendor fortinet \u00b7 /kev \u00b7 /news, or any question."
 }

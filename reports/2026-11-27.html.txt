@@ -1,0 +1,46 @@
+🛡 <b>Cyber Watch · Fri 27 Nov 2026</b>
+<b>African ransomware attacks cost companies average $368,000 each, highlighting urgent need for stronger defenses</b>
+
+<b>🔧 Patch first</b>
+1. <code>CVE-2026-133469</code> Vates Xen Orchestra · on KEV · EPSS 32%
+   High EPSS (0.318) Vates Xen Orchestra input validation flaw; active exploitation risk
+2. <code>CVE-2026-133968</code> Project MONAI MONAI Label · on KEV · EPSS 27%
+   EPSS 0.272; Project MONAI path traversal actively exploited
+3. <code>CVE-2026-129448</code> Apache Roller · on KEV · EPSS 24%
+   EPSS 0.242; Apache Roller deserialization vulnerability on KEV list
+
+<b>🚨 New on CISA KEV (7 days): 19</b>
+• <code>CVE-2026-123890</code> Broadcom VMware vCenter · added 20 Nov ⭐
+• <code>CVE-2025-42884</code> SAP NetWeaver · added 20 Nov ⭐
+• <code>CVE-2026-76466</code> Cisco Expressway Series · added 20 Nov ⭐
+• <code>CVE-2026-103406</code> Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router · added 25 Nov ⭐
+• <code>CVE-2026-133469</code> Vates Xen Orchestra · added 25 Nov
+  …and 14 more (/kev)
+
+<b>🆕 New critical CVEs (48h): 23</b>
+• <code>CVE-2026-132165</code> drupal drupal · CVSS 9.8 · EPSS 11%
+• <code>CVE-2026-137090</code> build-git-clone before 1.0.4 contains an OS command injection… · CVSS 9.3 · EPSS 2%
+• <code>CVE-2026-136823</code> A vulnerability was found in D-Link R32 1.10B02. This affects an… · CVSS 9.3 · EPSS 2%
+
+<b>📰 Threat picture</b>
+• Ransomware costs in Africa average $368k per firm, stressing financial impact.
+• Flight Centre breach exposes millions of customer records in South Africa.
+• Remus malware steals Gmail messages via fake Google Sheets extension.
+
+<b>🔗 Read</b>
+• <a href="https://thehackernews.com/2026/11/hackers-exploit-10-vulnerabilities.html">Hackers Exploit 10 Vulnerabilities Across Mitel, Juniper, Vates, and Danfoss Products</a> (The Hacker News)
+• <a href="https://www.bleepingcomputer.com/news/security/remus-malware-steals-gmail-messages-via-fake-google-sheets-extension/">Remus malware steals Gmail messages via fake Google Sheets extension</a> (BleepingComputer)
+• <a href="https://www.securityweek.com/sap-confirms-cyberattack-source-code-reportedly-compromised/">SAP Confirms Cyberattack, Source Code Reportedly Compromised</a> (SecurityWeek)
+• <a href="https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html">Unpatched Cacti Zero-Day Enables RCE in Just Four HTTP Requests via Guest Access</a> (The Hacker News)
+
+<b>🇿🇦 South Africa</b>
+• Ransomware attacks in South Africa now average $368,000 per company, per Kaspersky report.
+• Flight Centre data breach puts millions of South African customers at risk.
+• <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTFBXWjdkOW9SbXNsUkhTVHNlVnpnNldSM29pMkVpX0lIYkFUejhYNjBrODgxQmIyS0NaNG9lbTBPSnRjUV9TX1U5Rml0aENnalh3bTBjM0F1d0cwNktfNlYzalE1aW1aQ2Q3?oc=5">Africa ransomware cost averages $368,000 per company, Kaspersky says</a> (DNE Africa)
+• <a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxORzdMaTlyTGxVZWZwUkhGOFhtV1o2MkVSTzRvcGVJWlFpSWo4dUo1d255NFh2emZfeU1XanZUa0xmYVdXdTU5eFhpNWtjSV9WVF9HQVczekpwMVZuMi0xOEhubzgxeGJQdUJLWkJrdy1yNHluU2xFUllGcUwxTk9WMVppR2xvb051TzNhcHBlT2VzeFJwZ3NpMVhDREdzZzduNm96TGY1QlpGbzA?oc=5">Ransomware recovery costing SA firms up to US$1.4m per attack</a> (Africa Business Communities)
+• <a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxOMHYxajVOcE5XelE1RDFnYUw2aWlNQU5mRjZyclJ0ZjFYdExGSndvQ1lRQ2xqTDhxUXpLdWl5bU1mNlE3eUtmNktfTk45bldWX1FMdlB3NmlMdmhfVjdva2xxOVJZeFJKdkk1dmNrR0trOFVtNkJBLWpuMDh6eTEwWHpvRkc4Y0pxdGZub0NaNTI4TkFVTnMyWVdZQnVOMnNC?oc=5">Flight Centre Data Breach Puts Millions Of Customer Records At Risk</a> (ChannelNews.com.au)
+
+<i>For leadership:</i> Prioritize patching the three KEV-listed vulnerabilities and review ransomware response plans immediately.
+
+<i>AI summary fact-checked against the data. Sources: CISA KEV v2026.11.25, NVD, FIRST EPSS, security news. ⭐ = on your vendor watchlist.</i>
+Ask me: /cve CVE-ID · /vendor fortinet · /kev · /news, or any question.
