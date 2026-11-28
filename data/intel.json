@@ -1,41 +1,8 @@
 {
- "generated": "2026-11-27T16:08:22+02:00",
- "kev_version": "2026.11.25",
- "kev_count": 1805,
+ "generated": "2026-11-28T15:25:17+02:00",
+ "kev_version": "2026.11.27",
+ "kev_count": 1808,
  "kev_recent": [
-  {
-   "cve": "CVE-2026-123890",
-   "vendor": "Broadcom",
-   "product": "VMware vCenter",
-   "name": "VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability",
-   "added": "2026-11-20",
-   "due": "2026-11-23",
-   "ransomware": false,
-   "desc": "Broadcom VMware vCenter contains an authentication bypass using an alternate path or channel vulnerability in the VMware Directory Service that allows an unauthenticated attacker with network access to vCenter to bypass authentication and g",
-   "priority": 61
-  },
-  {
-   "cve": "CVE-2025-42884",
-   "vendor": "SAP",
-   "product": "NetWeaver",
-   "name": "SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability",
-   "added": "2026-11-20",
-   "due": "2026-11-23",
-   "ransomware": false,
-   "desc": "SAP NetWeaver Enterprise Portal contains an improper neutralization of special elements in data query logic vulnerability that allows an unauthenticated attacker to disclose or modify server information via injected JNDI environment propert",
-   "priority": 60
-  },
-  {
-   "cve": "CVE-2026-76466",
-   "vendor": "Cisco",
-   "product": "Expressway Series",
-   "name": "Cisco Expressway Series Use of Hard-coded Credentials Vulnerability",
-   "added": "2026-11-20",
-   "due": "2026-11-23",
-   "ransomware": false,
-   "desc": "Cisco Expressway Series contains a use of hard-coded credentials vulnerability that allows an unauthenticated, remote attacker with persistent cookies and network access to execute commands as root on a clustered device via the database ser",
-   "priority": 60
-  },
   {
    "cve": "CVE-2026-103406",
    "vendor": "Hewlett Packard Enterprise (HPE)",
@@ -70,17 +37,6 @@
    "priority": 57
   },
   {
-   "cve": "CVE-2026-129448",
-   "vendor": "Apache",
-   "product": "Roller",
-   "name": "Apache Roller Deserialization of Untrusted Data Vulnerability",
-   "added": "2026-11-20",
-   "due": "2026-11-23",
-   "ransomware": false,
-   "desc": "Apache Roller contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via the XML-RPC endpoint, which accepts and deserializes vendor extension types before authent",
-   "priority": 56
-  },
-  {
    "cve": "CVE-2026-132165",
    "vendor": "Drupal",
    "product": "Core",
@@ -89,7 +45,7 @@
    "due": "2026-11-27",
    "ransomware": false,
    "desc": "Drupal Core contains a not failing securely vulnerability that could allow an unauthenticated attacker to take over an existing site or execute arbitrary code via the Drupal installer. Under specific conditions, the attacker can use install",
-   "priority": 53
+   "priority": 52
   },
   {
    "cve": "CVE-2026-131914",
@@ -211,80 +167,42 @@
    "ransomware": false,
    "desc": "Mitel MiCollab contains an XML injection vulnerability in its Audio, Web, and Video Conferencing (AWV) component that could allow an unauthenticated attacker to execute arbitrary commands using pre-staged malicious content.",
    "priority": 50
+  },
+  {
+   "cve": "CVE-2026-120705",
+   "vendor": "OSGeo",
+   "product": "GeoServer",
+   "name": "OSGeo GeoServer XML Injection Vulnerability",
+   "added": "2026-11-27",
+   "due": "2026-11-30",
+   "ransomware": false,
+   "desc": "OsGeo GeoServer contains an XML injection vulnerability that allows an unauthenticated remote attacker to cause the server to read local text files accessible to the GeoServer process or fetch attacker-specified HTTP or HTTPS URLs via a cra",
+   "priority": 50
+  },
+  {
+   "cve": "CVE-2026-129243",
+   "vendor": "OSGeo",
+   "product": "GeoServer",
+   "name": "OSGeo GeoServer Incorrect Authorization Vulnerability",
+   "added": "2026-11-27",
+   "due": "2026-11-30",
+   "ransomware": false,
+   "desc": "GeoServer contains an incorrect authorization vulnerability that allows an unauthenticated remote attacker to bypass service-level role checks and invoke operations protected solely by those checks via a request with a prefixed service para",
+   "priority": 50
+  },
+  {
+   "cve": "CVE-2026-136716",
+   "vendor": "Drupal",
+   "product": "Core",
+   "name": "Drupal Core Improper Check for Unusual or Exceptional Conditions Vulnerability",
+   "added": "2026-11-27",
+   "due": "2026-11-30",
+   "ransomware": false,
+   "desc": "Drupal Core contains an improper check for unusual or exceptional conditions vulnerability that allows an unauthenticated remote attacker to take over a site via the exposed Drupal installer when the site is in one of the affected unusual o",
+   "priority": 50
   }
  ],
  "critical": [
-  {
-   "cve": "CVE-2026-132165",
-   "published": "2026-11-26",
-   "status": "Analyzed",
-   "desc": "Missing Authentication for Critical Function vulnerability in Drupal Drupal core allows Exploiting Incorrectly Configured Access Control Security Levels. This issue affects Drupal core versions: from 0.0.0 to 10.6.22, from 11.0.0 to 11.3.22, from 11.4.0 to 11.4.13.",
-   "cvss": {
-    "score": 9.8,
-    "severity": "CRITICAL",
-    "version": "3.1",
-    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-   },
-   "vendor": "drupal",
-   "product": "drupal",
-   "cwe": [
-    "CWE-306"
-   ],
-   "refs": [
-    "https://www.drupal.org/sa-core-2026-017"
-   ],
-   "in_kev": true,
-   "priority": 68
-  },
-  {
-   "cve": "CVE-2026-137090",
-   "published": "2026-11-25",
-   "status": "Received",
-   "desc": "build-git-clone before 1.0.4 contains an OS command injection vulnerability in the clone() function that allows attackers to execute commands by supplying crafted repository URLs. Attackers can embed shell metacharacters such as ; or $() in the url argument, which is concatenated into a sh -c command, to execute operating system commands with Node.js process privileges.",
-   "cvss": {
-    "score": 9.3,
-    "severity": "CRITICAL",
-    "version": "4.0",
-    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
-   },
-   "vendor": "",
-   "product": "",
-   "cwe": [
-    "CWE-78"
-   ],
-   "refs": [
-    "https://github.com/emanuelmoraes-dev/build-git-clone/blob/68bc305028d04c9a71a030c4b0b5cc36450201b9/src/index.ts#L77",
-    "https://github.com/emanuelmoraes-dev/build-git-clone/commit/3d55e64e5b7c61e560b5d030d6a918cad5c67a29",
-    "https://github.com/emanuelmoraes-dev/build-git-clone/pull/1"
-   ],
-   "in_kev": false,
-   "priority": 15
-  },
-  {
-   "cve": "CVE-2026-136823",
-   "published": "2026-11-25",
-   "status": "Deferred",
-   "desc": "A vulnerability was found in D-Link R32 1.10B02. This affects an unknown function of the file /usr/bin/httpd of the component flupl self Endpoint. Performing a manipulation of the argument fpath results in os command injection. The attack can be initiated remotely. The exploit has been made public and could be used.",
-   "cvss": {
-    "score": 9.3,
-    "severity": "CRITICAL",
-    "version": "4.0",
-    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
-   },
-   "vendor": "",
-   "product": "",
-   "cwe": [
-    "CWE-77",
-    "CWE-78"
-   ],
-   "refs": [
-    "https://github.com/Zzzhangxxx/cve/blob/main/D-Link_R32_A1_1.10B02_flupl_self_fpath_OS_Command_Injection.md",
-    "https://vuldb.com/cve/CVE-2026-136823",
-    "https://vuldb.com/submit/1059269"
-   ],
-   "in_kev": false,
-   "priority": 15
-  },
   {
    "cve": "CVE-2026-104998",
    "published": "2026-11-26",
@@ -379,54 +297,6 @@
    ],
    "in_kev": false,
    "priority": 15
-  },
-  {
-   "cve": "CVE-2026-82489",
-   "published": "2026-11-25",
-   "status": "Deferred",
-   "desc": "openIMIS before 2026-10 contains an unauthenticated remote code execution vulnerability in the report module (openimis-be-report_py) where the /api/report/reportbro/preview endpoint evaluates printIf expressions server-side using simpleeval with an insufficient name-prefix blocklist. An attacker can craft an expression that reaches sys.modules['os'] via datetime.sys to execute arbitrary operating-",
-   "cvss": {
-    "score": 9.3,
-    "severity": "CRITICAL",
-    "version": "4.0",
-    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
-   },
-   "vendor": "",
-   "product": "",
-   "cwe": [
-    "CWE-94"
-   ],
-   "refs": [
-    "https://openimis.atlassian.net/wiki/spaces/OP/pages/5166989313/Release+2026-10",
-    "https://www.vulncheck.com/advisories/openimis-2026-10-report-module-unauthenticated-rce-via-reportbro-preview"
-   ],
-   "in_kev": false,
-   "priority": 14
-  },
-  {
-   "cve": "CVE-2026-137043",
-   "published": "2026-11-26",
-   "status": "Deferred",
-   "desc": "A security vulnerability has been detected in TOTOLINK N350RT 9.3.5u.6468_B20250827/9.3.5u.6466_B20250825. The affected element is the function setLanguageCfg of the file /cgi-bin/cstecgi.cgi. Such manipulation of the argument lang leads to authorization bypass. The attack can be executed remotely. The exploit has been disclosed publicly and may be used.",
-   "cvss": {
-    "score": 9.3,
-    "severity": "CRITICAL",
-    "version": "4.0",
-    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
-   },
-   "vendor": "",
-   "product": "",
-   "cwe": [
-    "CWE-285",
-    "CWE-639"
-   ],
-   "refs": [
-    "https://gist.github.com/aslanbekthedefender/15846cb866cab1e7a1dfb197a84ee823",
-    "https://vuldb.com/cve/CVE-2026-137043",
-    "https://vuldb.com/submit/1061323"
-   ],
-   "in_kev": false,
-   "priority": 14
   },
   {
    "cve": "CVE-2026-137567",
@@ -665,40 +535,63 @@
    "priority": 14
   },
   {
-   "cve": "CVE-2026-136821",
-   "published": "2026-11-25",
-   "status": "Deferred",
-   "desc": "A flaw has been found in D-Link R32 1.10B02. The affected element is the function SetTimeSettings of the component DHMAPI Action Handler. This manipulation of the argument TZLocation causes os command injection. It is possible to initiate the attack remotely. The exploit has been published and may be used.",
+   "cve": "CVE-2026-137964",
+   "published": "2026-11-27",
+   "status": "Awaiting Analysis",
+   "desc": "ToolJet before 3.21.96-LTS contains a command injection vulnerability in its GitHub Actions release workflow, which interpolates the pull request title directly into a shell run block. Attackers can submit a pull request against a release branch with shell metacharacters in its title that, once merged, executes commands with a cross-repository GITHUB_TOKEN, enabling unauthorized merges into enterp",
    "cvss": {
-    "score": 8.6,
-    "severity": "HIGH",
+    "score": 9.3,
+    "severity": "CRITICAL",
     "version": "4.0",
-    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
    },
    "vendor": "",
    "product": "",
    "cwe": [
-    "CWE-77",
-    "CWE-78"
+    "CWE-94"
    ],
    "refs": [
-    "https://github.com/Zzzhangxxx/cve/blob/main/D-Link_R32_A1_1.10B02_SetTimeSettings_TZLocation_OS_Command_Injection.md",
-    "https://vuldb.com/cve/CVE-2026-136821",
-    "https://vuldb.com/submit/1059267"
+    "https://github.com/ToolJet/ToolJet/security/advisories/GHSA-74h3-686h-cmvf",
+    "https://www.vulncheck.com/advisories/tooljet-before-3.21.96-lts-command-injection-via-release-workflow-pull-request-title"
    ],
    "in_kev": false,
-   "priority": 13
+   "priority": 14
   },
   {
-   "cve": "CVE-2026-136822",
-   "published": "2026-11-25",
+   "cve": "CVE-2026-138003",
+   "published": "2026-11-27",
    "status": "Deferred",
-   "desc": "A vulnerability has been found in D-Link R32 1.10B02. The impacted element is the function SetDeviceSettings of the file /usr/bin/httpd of the component DHMAPI Action Handler. Such manipulation of the argument TZLocation leads to os command injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.",
+   "desc": "A weakness has been identified in TRENDnet TEW-751DR 1.03B01. This impacts the function FUN_0040ed90 of the file wfadev.cgi of the component UPnP/WFA. This manipulation of the argument SOAPAction causes stack-based buffer overflow. The attack is possible to be carried out remotely. A high degree of complexity is needed for the attack. The exploitability is said to be difficult. The exploit has bee",
    "cvss": {
-    "score": 8.6,
-    "severity": "HIGH",
+    "score": 9.0,
+    "severity": "CRITICAL",
     "version": "4.0",
-    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+    "vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-119",
+    "CWE-121"
+   ],
+   "refs": [
+    "https://gist.github.com/qwq-nm/4120495fb8a560921da0f102fa90fa0d",
+    "https://vuldb.com/cve/CVE-2026-138003",
+    "https://vuldb.com/submit/1066758"
+   ],
+   "in_kev": false,
+   "priority": 14
+  },
+  {
+   "cve": "CVE-2026-138004",
+   "published": "2026-11-27",
+   "status": "Deferred",
+   "desc": "A security vulnerability has been detected in TRENDnet TEW-751DR and TEW-733GR 1.03B01. Affected is the function soapcgi_main of the file /soap.cgi of the component UPnP Igd Control Endpoint. Such manipulation of the argument service leads to os command injection. The attack may be performed from remote. The exploit has been disclosed publicly and may be used.",
+   "cvss": {
+    "score": 9.3,
+    "severity": "CRITICAL",
+    "version": "4.0",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
    },
    "vendor": "",
    "product": "",
@@ -707,12 +600,37 @@
     "CWE-78"
    ],
    "refs": [
-    "https://github.com/Zzzhangxxx/cve/blob/main/D-Link_R32_A1_1.10B02_SetDeviceSettings_TZLocation_OS_Command_Injection.md",
-    "https://vuldb.com/cve/CVE-2026-136822",
-    "https://vuldb.com/submit/1059268"
+    "https://gist.github.com/qwq-nm/251e7963d59f41beea2c7ad5ff7ca39f",
+    "https://vuldb.com/cve/CVE-2026-138004",
+    "https://vuldb.com/submit/1066849"
    ],
    "in_kev": false,
-   "priority": 13
+   "priority": 14
+  },
+  {
+   "cve": "CVE-2026-138005",
+   "published": "2026-11-28",
+   "status": "Deferred",
+   "desc": "A vulnerability was detected in TRENDnet TEW-751DR 1.03B01. Affected by this vulnerability is the function gena.php::GENA_notify_init of the file htdocs/upnpinc/gena.php of the component UPnP Event Handler. Performing a manipulation of the argument uri results in os command injection. It is possible to initiate the attack remotely. The exploit is now public and may be used.",
+   "cvss": {
+    "score": 9.3,
+    "severity": "CRITICAL",
+    "version": "4.0",
+    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+   },
+   "vendor": "",
+   "product": "",
+   "cwe": [
+    "CWE-77",
+    "CWE-78"
+   ],
+   "refs": [
+    "https://gist.github.com/qwq-nm/70b4fd27c21fd32e68f929261c01757f",
+    "https://vuldb.com/cve/CVE-2026-138005",
+    "https://vuldb.com/submit/1066878"
+   ],
+   "in_kev": false,
+   "priority": 14
   },
   {
    "cve": "CVE-2026-137494",
@@ -762,171 +680,205 @@
   }
  ],
  "epss": {
-  "CVE-2026-82489": {
-   "epss": 0.01116,
-   "percentile": 0.6573,
-   "date": "2026-11-26"
+  "CVE-2026-137706": {
+   "epss": 0.00527,
+   "percentile": 0.38039,
+   "date": "2026-11-27"
   },
-  "CVE-2026-76466": {
-   "epss": 0.01116,
-   "percentile": 0.6571,
-   "date": "2026-11-26"
+  "CVE-2026-137567": {
+   "epss": 0.00798,
+   "percentile": 0.53218,
+   "date": "2026-11-27"
   },
-  "CVE-2026-137090": {
-   "epss": 0.02309,
-   "percentile": 0.84086,
-   "date": "2026-11-26"
+  "CVE-2026-137550": {
+   "epss": 0.005,
+   "percentile": 0.35861,
+   "date": "2026-11-27"
   },
-  "CVE-2026-137043": {
-   "epss": 0.00794,
-   "percentile": 0.53037,
-   "date": "2026-11-26"
+  "CVE-2026-137544": {
+   "epss": 0.01461,
+   "percentile": 0.73882,
+   "date": "2026-11-27"
   },
-  "CVE-2026-136823": {
-   "epss": 0.02466,
-   "percentile": 0.85199,
-   "date": "2026-11-26"
+  "CVE-2026-137536": {
+   "epss": 0.00666,
+   "percentile": 0.46862,
+   "date": "2026-11-27"
   },
-  "CVE-2026-136822": {
-   "epss": 0.01801,
-   "percentile": 0.79019,
-   "date": "2026-11-26"
+  "CVE-2026-137499": {
+   "epss": 0.0119,
+   "percentile": 0.6785,
+   "date": "2026-11-27"
   },
-  "CVE-2026-136821": {
-   "epss": 0.01801,
-   "percentile": 0.79019,
-   "date": "2026-11-26"
+  "CVE-2026-137498": {
+   "epss": 0.01096,
+   "percentile": 0.65175,
+   "date": "2026-11-27"
+  },
+  "CVE-2026-137494": {
+   "epss": 0.00644,
+   "percentile": 0.45547,
+   "date": "2026-11-27"
+  },
+  "CVE-2026-137481": {
+   "epss": 0.01041,
+   "percentile": 0.6334,
+   "date": "2026-11-27"
+  },
+  "CVE-2026-136716": {
+   "epss": 0.01212,
+   "percentile": 0.68449,
+   "date": "2026-11-27"
+  },
+  "CVE-2026-136240": {
+   "epss": 0.01047,
+   "percentile": 0.6355,
+   "date": "2026-11-27"
+  },
+  "CVE-2026-135641": {
+   "epss": 0.00888,
+   "percentile": 0.57205,
+   "date": "2026-11-27"
   },
   "CVE-2026-134624": {
    "epss": 0.01793,
-   "percentile": 0.78906,
-   "date": "2026-11-26"
+   "percentile": 0.7893,
+   "date": "2026-11-27"
+  },
+  "CVE-2026-134173": {
+   "epss": 0.01814,
+   "percentile": 0.79216,
+   "date": "2026-11-27"
   },
   "CVE-2026-133968": {
    "epss": 0.27157,
-   "percentile": 0.98498,
-   "date": "2026-11-26"
+   "percentile": 0.98499,
+   "date": "2026-11-27"
+  },
+  "CVE-2026-133951": {
+   "epss": 0.00687,
+   "percentile": 0.48002,
+   "date": "2026-11-27"
   },
   "CVE-2026-133469": {
    "epss": 0.31768,
-   "percentile": 0.987,
-   "date": "2026-11-26"
+   "percentile": 0.98701,
+   "date": "2026-11-27"
   },
   "CVE-2026-133324": {
    "epss": 0.00832,
-   "percentile": 0.54808,
-   "date": "2026-11-26"
+   "percentile": 0.54848,
+   "date": "2026-11-27"
   },
   "CVE-2026-133323": {
    "epss": 0.05628,
-   "percentile": 0.93713,
-   "date": "2026-11-26"
+   "percentile": 0.9372,
+   "date": "2026-11-27"
   },
   "CVE-2026-133311": {
    "epss": 0.00985,
-   "percentile": 0.61187,
-   "date": "2026-11-26"
+   "percentile": 0.6122,
+   "date": "2026-11-27"
   },
   "CVE-2026-133303": {
    "epss": 0.01326,
-   "percentile": 0.71078,
-   "date": "2026-11-26"
+   "percentile": 0.71112,
+   "date": "2026-11-27"
   },
   "CVE-2026-133275": {
    "epss": 0.00771,
-   "percentile": 0.52058,
-   "date": "2026-11-26"
+   "percentile": 0.52094,
+   "date": "2026-11-27"
   },
   "CVE-2026-132224": {
    "epss": 0.01055,
-   "percentile": 0.63822,
-   "date": "2026-11-26"
+   "percentile": 0.63854,
+   "date": "2026-11-27"
   },
   "CVE-2026-132165": {
-   "epss": 0.11053,
-   "percentile": 0.96627,
-   "date": "2026-11-26"
+   "epss": 0.08381,
+   "percentile": 0.95738,
+   "date": "2026-11-27"
   },
   "CVE-2026-131914": {
-   "epss": 0.04292,
-   "percentile": 0.91897,
-   "date": "2026-11-26"
+   "epss": 0.04238,
+   "percentile": 0.91803,
+   "date": "2026-11-27"
   },
-  "CVE-2026-129448": {
-   "epss": 0.24159,
-   "percentile": 0.98332,
-   "date": "2026-11-26"
+  "CVE-2026-115867": {
+   "epss": 0.00921,
+   "percentile": 0.58584,
+   "date": "2026-11-27"
   },
-  "CVE-2026-123890": {
-   "epss": 0.05009,
-   "percentile": 0.93017,
-   "date": "2026-11-26"
+  "CVE-2026-106125": {
+   "epss": 0.01239,
+   "percentile": 0.69111,
+   "date": "2026-11-27"
+  },
+  "CVE-2026-104998": {
+   "epss": 0.01309,
+   "percentile": 0.70715,
+   "date": "2026-11-27"
   },
   "CVE-2026-103406": {
    "epss": 0.01535,
-   "percentile": 0.75157,
-   "date": "2026-11-26"
-  },
-  "CVE-2025-42884": {
-   "epss": 0.01102,
-   "percentile": 0.65308,
-   "date": "2026-11-26"
+   "percentile": 0.75183,
+   "date": "2026-11-27"
   },
   "CVE-2025-41450": {
    "epss": 0.04271,
-   "percentile": 0.91857,
-   "date": "2026-11-26"
+   "percentile": 0.91866,
+   "date": "2026-11-27"
   },
   "CVE-2023-25915": {
    "epss": 0.02485,
-   "percentile": 0.85331,
-   "date": "2026-11-26"
+   "percentile": 0.85348,
+   "date": "2026-11-27"
   },
   "CVE-2023-25914": {
    "epss": 0.01845,
-   "percentile": 0.79569,
-   "date": "2026-11-26"
+   "percentile": 0.79594,
+   "date": "2026-11-27"
   }
  },
  "news": [
   {
-   "title": "Africa ransomware cost averages $368,000 per company, Kaspersky says",
-   "source": "DNE Africa",
-   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBXWjdkOW9SbXNsUkhTVHNlVnpnNldSM29pMkVpX0lIYkFUejhYNjBrODgxQmIyS0NaNG9lbTBPSnRjUV9TX1U5Rml0aENnalh3bTBjM0F1d0cwNktfNlYzalE1aW1aQ2Q3?oc=5",
-   "published": "2026-11-26T22:16:00+00:00",
+   "title": "Check Point: June 2026 Sees Spike In Cyber Attacks, With New Ransomware",
+   "source": "Tech Build Africa",
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE0xbC1HbVJtaDJxWjVMcFVNR1ppWWlWSGRzZWl2Y3lWU2ZWcENyTXhSVGNhRlZ1Y0RIOE5wZTQ5RHFsRHFaTzNidW0tWkcxWVNKcnlWVFNuWFlTeWd2Qm1GZUJMbUw5RUZIbzRRd081TmdUY3JhSXVvemcydTc?oc=5",
+   "published": "2026-11-27T16:54:28+00:00",
    "tags": [
     "Ransomware",
+    "South Africa"
+   ],
+   "vendors": [
+    "Check Point"
+   ],
+   "cves": []
+  },
+  {
+   "title": "Ultra-luxury South African resort hit by data breach",
+   "source": "MyBroadband",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQYUVnVlo3RlFGaTY5X3hyMFNYV0RRWVgtMVQ3bHVsSlJqR05XQWs2UE9hUGx6eVZoOVhFeklMajYxbGpMVTQ3R0c5dkRUVWdLSHpyYk9sZU5BWnhzcjZjMGRrNldRbHZjMWpIZWJOZXBrcjdWTEdOTm5GN21TSkZhbDhoU0xlelhvZDc1SUgwakVsdGlORWlscTdkeFZrcERRSkJ6dE9TWQ?oc=5",
+   "published": "2026-11-27T19:01:23+00:00",
+   "tags": [
+    "Breach",
     "South Africa"
    ],
    "vendors": [],
    "cves": []
   },
   {
-   "title": "Hackers Exploit 10 Vulnerabilities Across Mitel, Juniper, Vates, and Danfoss Products",
-   "source": "The Hacker News",
-   "link": "https://thehackernews.com/2026/11/hackers-exploit-10-vulnerabilities.html",
-   "published": "2026-11-26T12:14:46+05:30",
+   "title": "International Relations Committee Welcomes Progress Report on Digitalisation of South Africa\u2019s Embassies",
+   "source": "Zawya",
+   "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPOUE0d2lZN2hnT2ptYnlVbDVtRlh5S1VBMUNVb2VrNndQS2l2WENsUXJUakUxbHBXNHBNRlpmMXk4YkxHVXFkaGVKT1A2Q1hyTWtpQVp1TEhJMG82Zk1tUzdmdHBhMWhGaVlaME1yRjNxc09JX21yN3lYX0V0OW9jTW8xeVBzaFZkLU5STFRKa3NsT0tLZTBZYlUtMHdoSXpyT05oR1EyM0taSTBDaTl6Z1htcTU0NEdZQURkVXYzYVp3cVhKUWtLaW1MUWtvUEhtNmNpb2hZTHNuaEt0LVN2R042M2xfcmhrNlhtRzJKQWwwNjJkRXY5dHZpdjZTRmtqR3c?oc=5",
+   "published": "2026-11-27T15:31:00+00:00",
    "tags": [
-    "Exploited",
-    "Advisory"
-   ],
-   "vendors": [
-    "Juniper"
-   ],
-   "cves": [
-    "CVE-2026-133275"
-   ]
-  },
-  {
-   "title": "Ransomware recovery costing SA firms up to US$1.4m per attack",
-   "source": "Africa Business Communities",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxORzdMaTlyTGxVZWZwUkhGOFhtV1o2MkVSTzRvcGVJWlFpSWo4dUo1d255NFh2emZfeU1XanZUa0xmYVdXdTU5eFhpNWtjSV9WVF9HQVczekpwMVZuMi0xOEhubzgxeGJQdUJLWkJrdy1yNHluU2xFUllGcUwxTk9WMVppR2xvb051TzNhcHBlT2VzeFJwZ3NpMVhDREdzZzduNm96TGY1QlpGbzA?oc=5",
-   "published": "2026-11-26T06:37:41+00:00",
-   "tags": [
-    "Ransomware",
     "South Africa"
    ],
-   "vendors": [],
+   "vendors": [
+    "Progress"
+   ],
    "cves": []
   },
   {
@@ -942,65 +894,32 @@
    "cves": []
   },
   {
-   "title": "One KYC vendor\u2019s breach now spans six South African firms",
-   "source": "Innovation Village",
-   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOMnNaMi1vU29Vd3QwWHI0ZXo3Nnh3eFBPbTd2R25FdHV2RmRYY05rTms3OU9naHNYUVlUWTBBT2cxY2pQZE1FWVR0WUNqdHdYUjFHNjByemdmUy1GMkU5dWtiRHUzSFpzQUJjREw4UnRkZ1p5MkdqSHRoUnVVU2R2c2c1VEM1bzFXQUVsNTZvMkF5dw?oc=5",
-   "published": "2026-11-26T22:16:19+00:00",
-   "tags": [
-    "Breach",
-    "South Africa"
-   ],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "Remus malware steals Gmail messages via fake Google Sheets extension",
+   "title": "Unpatched Cacti zero-day with public PoC gives remote code execution",
    "source": "BleepingComputer",
-   "link": "https://www.bleepingcomputer.com/news/security/remus-malware-steals-gmail-messages-via-fake-google-sheets-extension/",
-   "published": "2026-11-26T10:23:28-05:00",
+   "link": "https://www.bleepingcomputer.com/news/security/unpatched-cacti-zero-day-with-public-poc-gives-remote-code-execution/",
+   "published": "2026-11-27T12:06:13-05:00",
    "tags": [
-    "Exploited"
-   ],
-   "vendors": [
-    "Google"
-   ],
-   "cves": []
-  },
-  {
-   "title": "Breach rocks FIFA: hackers seize confidential data as world governing body reveals details",
-   "source": "Goal.com",
-   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQMmhvMDFsQnp3SXA0UWszTEFldUtjanBRNjFhRFhCZDU3UFBLRDFRT2hNcGpibWIxLWJsZ21FM3diNEpxaXY0MzFwaEZSRXNXZDA1cWRCVzdZVUdEc3Q4eUtBMXc2U1BmdjcwVnFDcW82QkEwZXRjQTZybkJKdXBDMzlDMnpzSW5KWlMtQUN3MVExV0tldEV4MWI4ZDJVWVJhb2xBTkVWNU5kWEtmQnltOVdKbW1sMF9lY1o1MjNwWUV0bjBWaGhLZzNZc1hKRVlIeW9pdHd6Vzg?oc=5",
-   "published": "2026-11-26T12:37:17+00:00",
-   "tags": [
-    "Breach",
-    "South Africa"
+    "Exploited",
+    "Advisory"
    ],
    "vendors": [],
    "cves": []
   },
   {
-   "title": "SA Home Loans hit by second data breach",
-   "source": "ITWeb",
-   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOWWZlTk1oTEg2blY2NUpSRnAwSGhxVENTV3R3V3A4U3FGLWZwQ1JIbnVMbGVCXzRvVVI1X1ktT0F3Zm9DTGdkWE40MDdCdDlOZ2JSLTJKaFVUSHBmc29iUlVWaHJYVjFrVmI1aGRyckg0TXRjbXRScm5fWENTSUYxRm5rekpJdmg1SXhWYjlSNzFKQQ?oc=5",
-   "published": "2026-11-26T08:59:00+00:00",
+   "title": "CISA Adds Three Known Exploited Vulnerabilities to Catalog",
+   "source": "CISA",
+   "link": "https://www.cisa.gov/news-events/alerts/2026/11/27/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+   "published": "2026-11-27T12:00:00+00:00",
    "tags": [
-    "Breach",
-    "South Africa"
+    "Exploited",
+    "Advisory"
    ],
    "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "SA Home Loans Discloses Data Breach Exposing Banking Details",
-   "source": "Wisevoter",
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNSi1HMURaRUVneDhjUmZ0X2E2WGd2Z1pUWGpRQ0xWUW1JNVBEV2FlUERFd3RIRndEb0FoVy1jdXdVZ25GZHdBdzBHb0pPNGJZXzJaSFZXY1lXUE0zZ1RDelZ0aVg5V1d2amM1aUtvNlVkUmh2MEU5b3BHaVRXWlJnYTBfWXRfVC1MdTdCUDhDRmtkUmRsQnlZ?oc=5",
-   "published": "2026-11-26T07:32:46+00:00",
-   "tags": [
-    "Breach",
-    "South Africa"
-   ],
-   "vendors": [],
-   "cves": []
+   "cves": [
+    "CVE-2026-120705",
+    "CVE-2026-129243",
+    "CVE-2026-136716"
+   ]
   },
   {
    "title": "SAP Confirms Cyberattack, Source Code Reportedly Compromised",
@@ -1028,49 +947,10 @@
    "cves": []
   },
   {
-   "title": "North Korea-Linked PolinRider Poisons Over 7,600 GitHub Repositories to Spread Malware",
-   "source": "The Hacker News",
-   "link": "https://thehackernews.com/2026/11/north-korea-linked-polinrider-poisons.html",
-   "published": "2026-11-26T20:43:41+05:30",
-   "tags": [
-    "Breach",
-    "Nation-state"
-   ],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "Mitel MiCollab Zero-Days Exploited in Suspected AI-Assisted Attacks",
-   "source": "SecurityWeek",
-   "link": "https://www.securityweek.com/mitel-micollab-zero-days-exploited-in-suspected-ai-assisted-attacks/",
-   "published": "2026-11-26T11:35:25+00:00",
-   "tags": [
-    "Ransomware",
-    "Advisory"
-   ],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation",
-   "source": "The Hacker News",
-   "link": "https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html",
-   "published": "2026-11-26T12:32:34+05:30",
-   "tags": [
-    "Exploited",
-    "Advisory"
-   ],
-   "vendors": [],
-   "cves": [
-    "CVE-2026-132165",
-    "CVE-2026-136716"
-   ]
-  },
-  {
-   "title": "EasyEquities suspends platform access after cybersecurity incident",
-   "source": "Moneyweb",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOWkVwTlA5RlhPZUlGLXM0Yy1LM28za3pMMTg5T2VkTkpFNmJtM1RfRFF6a3RjdjdZVWhuWjEzcTRJVGRMN1lxWVFRTWtUSTFBSFNDNzFDR0tPYURlaGMta2hDN0RZVGdpMlUxQk1BVUZ6Z1lsTzFqbC1LVWRuUUJhWGx4ajQydzd5NlhhalN3SzdEZHlLcFA3RXR3engyc2NoOGJiT1R4LUJKSlFLeTUxRDNCeThoN3RGUVFV?oc=5",
-   "published": "2026-11-27T12:05:00+00:00",
+   "title": "Cyberattack on telecom provider OnlineCity.io exposes SMS data across Denmark",
+   "source": "Beinsure",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPTWRFQ3Qtd1pERndxTW5PS2RoeE91bkxJVUNQQmpLZlZ6NjVlN0tITUluSGgxTlpUYzIyVDI3UUdPN08ybDFZNm9JNDdVQk0zSUhtNi05bGFSMDM3UFExNlRKN19HOHZ2WDZDTGdyUl93RDdzRXU5dXUwV01sQ3NWOVdSNEZVTE04Mk80NUtWeTFUaVE2aXhLcDhNLTk1TDZDSnVHTEQ4MA?oc=5",
+   "published": "2026-11-28T12:15:13+00:00",
    "tags": [
     "South Africa"
    ],
@@ -1080,8 +960,96 @@
   {
    "title": "EasyEquities shuts down platform access after cybersecurity incident",
    "source": "IOL",
-   "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9KdWNpMG5aLVVPZENPS2NnZVVaRUdhQ0N6NUNTVmZLdnVydlZBdnFvZHdqdXhFTHJjZ2F5dG1fNkE3X3IwU0I4VHpUY3ZFUC1hX081bHdTaw?oc=5",
-   "published": "2026-11-27T10:39:28+00:00",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPb3dfdDh6ZmFDb3ZOS0FycVFtQVNQdXFXdG9WcHFnZDZfWmV5WXFhYno0NGRha250WkNKVFBnUHpUeGNYWi0yQlZ1R1dpdnJHYzhzbFVsX3ozanFjb0VSX1REbVFFU0EyYnZVME1qRXlPU2FVbEJkS0R4S2VWcWdmSjFCQkl1Q1NjeF9qY2Vvd2NkeGs0UlMycVJNeVowRTdHRzJ1TDJBb0lWZGc?oc=5",
+   "published": "2026-11-28T06:50:09+00:00",
+   "tags": [
+    "South Africa"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "EasyEquities says small number of client accounts targeted as platform remains offline",
+   "source": "IOL",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPUmo0RVNUYkdIbkNJVzJaRzMyRWtBQXFzM21sMEVyWGFEd3AwdUoxbVVOZWpzb3BxbWNKNG8wdnR4aU5TcG1YOHZXWVJENHVQeWp3dkx5UmVUWHpYN2dwYmpyUmJsWUZFRnhDUFd1Q3ZpZlllVWNIRDR4NFB5MHBTTG1yUjZnc1Q4ZE5xaDExV0FtbzZZRnNXWVY5LThPaUprRU9FR0xQZ2pvWnlZM2lMejRDbU5uSVBhcVExRHhjS0dMalU?oc=5",
+   "published": "2026-11-28T06:45:00+00:00",
+   "tags": [
+    "South Africa"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "South Africa needs an AI readiness strategy, not a Silicon Valley study tour",
+   "source": "Mail & Guardian",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNV2RqcFVxMUo1dnlOLXk3emN5bHhPdG9mQVZ5bGlKM29ocU9KOWlwSVNIZVk2WnhPYm14c3hOaXhCbmp2a3k0YkR1LVozakw0NWRVWElocTkxU18xN3ItU2pxUUFaM0ZvXzRpY1dJOHdRVUFzMjlSeEJYTHZPWmxrdlRVUDZaT1ZZaS1vOHBUaHVjVDl3YTJUTVcxMmwwS3M0NlpveVhXQ1A0RG5IWmp4TV9EdjRGbG1BMkk0?oc=5",
+   "published": "2026-11-28T04:00:25+00:00",
+   "tags": [
+    "South Africa"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "South Africa\u2019s Purple Group investigating cybersecurity incident",
+   "source": "CNBC Africa",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNVlptOHNFRUpxSHZtZkk0QWVUSlItcTg0VnlMY0xWcG9mczIxV0xsZkwyalFnN0ozaThFeDVkM3dXektLTHc3U1NhWFJjVENjcXhDbzQyN1d0V0hWR0ltdmh3YzYwR1N4dmV6YUhuVVc4d0doT0ZmMUh4eHRxRVo1UnpfUXQ5Zy1FMTZSazR4a2VNMk9jZHFyUWV2bw?oc=5",
+   "published": "2026-11-28T02:21:00+00:00",
+   "tags": [
+    "South Africa"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "AI is advancing faster than our plans to manage its consequences",
+   "source": "Daily Maverick",
+   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPbkV1VTRvaERKSWpIZ3h5bnMwY29BZjJ2MkFkc244a3FMNFpoQ2tGVFdHaDY3VEVWeFh5bUJqd05ELWl1OFN6cUdDNXo2U0FXTzVrWFpmWk9ZcnpsbmRPcmEwOFJjc2N6aDVJOEw0UzFtNEkwQ0N4ZkRkRkcxVW8yVzFNMU1vM2FaUlVCUGdHS3JBc2FBdnUyNlBhc05pZndmM0VCTk84aXR1eFRuNE5ST1JpZWppTThwRzBmcjNJUDZOMGlVd05lV1lIck9mRjg?oc=5",
+   "published": "2026-11-27T19:19:30+00:00",
+   "tags": [
+    "South Africa"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "FIFA confirms cyber-attack after hackers posed as employees",
+   "source": "AfricaSoccer.com",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPQWdvc29SNXJJZmdpV2x1eF9SX25VbnE1aEVITnZ6S1VnckQzc0VzRG1rLWZwdXRzbjBmUTBsLVhtNFpmdkFpUTFTRzFCMXdmaFJnQ2xsZmFjbDk2c1JRVEhxaEhhVDBMcGZrOEVGOGhnWVZJX2c2QkNEODB6MnRVeE1NQV9BeGJ2cDVyNWRB?oc=5",
+   "published": "2026-11-27T13:29:31+00:00",
+   "tags": [
+    "South Africa"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "Hackers Breached US Air Force\u2019s Cloud Platform, Report Says",
+   "source": "Yahoo! Finance Canada",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOREZrM0FEY0oydTR1ajA3dUZmMXhWVnAyRWN6VEhtV1R1TWYtaEoyb0wtMXY2VjBxMENkekdYdlBMMHJ1N1ZjZ0lwV1AtMzNHMGJxMHh0NGc5YjdlRldPN2JGY0taR3FtbG1tNV94UHRBTkk2ZVdlTW9uMFlaZlJndEN6SzA?oc=5",
+   "published": "2026-11-27T11:20:39+00:00",
+   "tags": [
+    "South Africa"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "Flight Centre hack victims safe to travel on DFAT advice",
+   "source": "The Weekly Times",
+   "link": "https://news.google.com/rss/articles/CBMinAJBVV95cUxNZHd6Wmd6NDNTR21mSm1UMXVOUno1OEtJanhWRE1UQm5WYkdRSWQycGc3ZlMwWkZSZ3hVWDlZOGg3Y0pJVXFSMU9RQWtvRVdmck8tRFNwckdKRGlWcHE0ZnBXaTI1WG1nN1RYTGtvb2Rsa0NhN2Rtd0VfM09SbWZRZlZXc25aWWxlbHo0bDFuQWxlMmRZY2lFaWZGX2trYVdkQjdkSEo5cG5Ya1ZkLVM2Rm9YZjRPcGtzLVVqaE9jMVFrU3BMZzY3NjV4Wi11Sy1XUXg5ZllhaTF4Y3FaTVZLMDVfVnE5SkY5WTJIN1N2T3NJbHlsUkdjMG8tc1lhTzdsOXlZOV9acTBNRVVPYktobF9WU3FkSTc3Ri1ZcA?oc=5",
+   "published": "2026-11-27T10:17:23+00:00",
+   "tags": [
+    "South Africa"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "iOCO partners with 2026 CIO Awards sponsoring the Digital Innovation Award",
+   "source": "CIO South Africa",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPLUZTQVpvOGJleGhCT3p4SXVtX240RWRxbFpDTW1Kb2pzWXhXc0hJNDd3ZmJYTDY0N1d6UFowYTZuSlhMYWNXbWZSSW1HaGNWMUZISmRBdGNlMzFYRTl5NWVDbnl4VzhDemY1S2ozMFo1Mk9ib1ZlU0VYa3JTWXBzWDB2TlJXblVFMHpvT1NiVzI1REswZkNUNmdsX0EtOTU0MzZOQXVUeWg?oc=5",
+   "published": "2026-11-27T10:16:13+00:00",
    "tags": [
     "South Africa"
    ],
@@ -1114,6 +1082,17 @@
    "cves": []
   },
   {
+   "title": "BlueVision Expands to UAE and Canada",
+   "source": "Wisevoter",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQWERrZzVUYmNPaGJLOTJNV1FuVG9yMWFZbGRwT2pQZnNGUFgwZ2JkdEdVdXZvN0NhOFM5S18zUmxVeDRhRHNPZlRNOGUyZTJZdTQ4bzFWRmNZRnU1bDJNR3JPVjlYUV9YNVRqam5NQlVVTVFPc0p4bHJtV1BId2d2b01XUkRiNGtf?oc=5",
+   "published": "2026-11-27T08:37:59+00:00",
+   "tags": [
+    "South Africa"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
    "title": "Hex Package Manager Warns of Potential Data Breach",
    "source": "SecurityWeek",
    "link": "https://www.securityweek.com/hex-package-manager-warns-of-potential-data-breach/",
@@ -1126,10 +1105,10 @@
    "cves": []
   },
   {
-   "title": "Investment platform EasyEquities shuts down user access after another 'security incident'",
-   "source": "EWN",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOZ1pjZFVxWFd3RVd2NXZDSlc2WnFBSXdyOXdpSnZZb3laMUNKN29JU1NlczJ3eUpXenVvUkNzb193MXJsclNTVjJFUkttWmVLNHUtWlRoQTlUckZ6Vy1TTUl3TGJGSjk1NlU2ek4tS1hlQzRPQmlKdzBfRWpmMWMydS1MS2MtNm9DRHphSVpTeUtQRGtUdHJxZmF3RllfZm5SVUJ0eW5jb3V1QkcxUzI4dlZOSXhxcDNwbi1IRg?oc=5",
-   "published": "2026-11-26T20:03:06+00:00",
+   "title": "FIFA confirms cyberattack, hackers gain access to personal and business data",
+   "source": "IOL",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNbDVaOE9VYWFsbTFISzRWeUxBMGM3OXFSS2tDRlpvSkVmQjBzZG5HN0RwaldFaVZlNGJjVkFKTGI4dVMxbDNKdmJIR0JpSGJqaHRXaGtEZXBKcHVCNkNqdWpreFRObzdjNFJnY3lSbmZCZ2dCREgydDQ4UzdEZDkwUWRyQks1WTJkQVVILW02ZzBqeVBHRDJ0cDVmVVlkWE5FRmV5akItdU1LMGhXVW1ScUlzdVZqNW1XY2c?oc=5",
+   "published": "2026-11-27T07:09:40+00:00",
    "tags": [
     "South Africa"
    ],
@@ -1137,148 +1116,111 @@
    "cves": []
   },
   {
-   "title": "FIFA targeted in cyberattack, hackers gain access to \u2018personal and business information\u2019",
-   "source": "\u0634\u0628\u0643\u0629 \u062a\u0648\u0627\u0635\u0644 \u0627\u0644\u0625\u062e\u0628\u0627\u0631\u064a\u0629",
-   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBtMjVpVkZLaHFuclBoUHdpWU5DZ2dCcWFzcndjaVBzZlZtSmh6dkhQZUFPa1M3VnI4ajg2YS1nV3lCYUNJT3U0ZzgxcHlmeTBERVc4?oc=5",
-   "published": "2026-11-26T15:38:57+00:00",
+   "title": "New Boston Scientific data breach exposes personal, medical info",
+   "source": "BleepingComputer",
+   "link": "https://www.bleepingcomputer.com/news/security/new-boston-scientific-data-breach-exposes-personal-medical-info/",
+   "published": "2026-11-27T13:57:42-05:00",
    "tags": [
-    "South Africa"
+    "Breach"
    ],
    "vendors": [],
    "cves": []
   },
   {
-   "title": "Critical Juniper Session Smart Conductor Flaw Exploited in Attacks",
-   "source": "SecurityWeek",
-   "link": "https://www.securityweek.com/critical-juniper-session-smart-conductor-flaw-exploited-in-attacks/",
-   "published": "2026-11-26T13:04:06+00:00",
+   "title": "Suspected Vietnam-Linked Hackers Target Southeast Asia in South China Sea Espionage Campaign",
+   "source": "The Hacker News",
+   "link": "https://thehackernews.com/2026/11/suspected-vietnam-linked-hackers-target.html",
+   "published": "2026-11-27T22:06:11+05:30",
    "tags": [
-    "Advisory"
+    "Nation-state"
    ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "US Air Force cloud platform reportedly hacked in latest federal breach",
+   "source": "BleepingComputer",
+   "link": "https://www.bleepingcomputer.com/news/security/us-air-force-cloud-platform-reportedly-hacked-in-latest-federal-breach/",
+   "published": "2026-11-27T10:09:40-05:00",
+   "tags": [
+    "Breach"
+   ],
+   "vendors": [],
+   "cves": []
+  },
+  {
+   "title": "Microsoft Store App Found Delivering Vinci RAT Capable of Remote System Control",
+   "source": "The Hacker News",
+   "link": "https://thehackernews.com/2026/11/microsoft-store-app-found-delivering.html",
+   "published": "2026-11-27T17:19:34+05:30",
+   "tags": [],
    "vendors": [
-    "Juniper"
+    "Microsoft"
    ],
-   "cves": [
-    "CVE-2026-103406"
-   ]
+   "cves": []
   },
   {
-   "title": "Nigerian cybersecurity startup Aeon doubles its pre-seed round to $2 million",
-   "source": "Tech In Africa",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQekVJb1VlV1Y2dVNMVmJPWnc1X2xpLXZlbDBDOGIzb1R2aHNyRzI5RHNKNXBnSjBNOHRNN0ZocnZfRk1oc3lxTHJzc2puLUlaTDNlVHQtS3FaV2M4d2JLQmNsS0I5VkR4OGtZeEEyS0F2NDh3MnNXRlN1M21pdlUtWlhjVDM0bDJNeVF3ZjlaWGJQSWFLRFlqakZtbEN2dXdBdVdaMlhxeFk?oc=5",
-   "published": "2026-11-26T11:31:56+00:00",
+   "title": "Microsoft removes WSUS server role in Windows Server 2028",
+   "source": "BleepingComputer",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-removes-wsus-server-role-in-windows-server-2028/",
+   "published": "2026-11-27T06:18:36-05:00",
+   "tags": [],
+   "vendors": [
+    "Microsoft"
+   ],
+   "cves": []
+  },
+  {
+   "title": "In Other News: Tanker Cyberattacks, EU Quantum Act, New VirusTotal Capabilities",
+   "source": "SecurityWeek",
+   "link": "https://www.securityweek.com/in-other-news-tanker-cyberattacks-eu-quantum-act-new-virustotal-capabilities/",
+   "published": "2026-11-27T11:00:00+00:00",
    "tags": [
-    "South Africa"
+    "Breach"
    ],
    "vendors": [],
    "cves": []
   },
   {
-   "title": "Aeon-raises-pre-seed-round-to-2-million-to-build-cyber-defence-infrastructure-for-Africa-and-the-Global-South-1536x864",
-   "source": "Tech In Africa",
-   "link": "https://news.google.com/rss/articles/CBMixwJBVV95cUxQc1A1MERWaThUdmJCUXo0SmJiUDFTV04xRHlYVkpVNlk1ZzIwMlo2ZjNtbFhCTDdHb2tqalpIWC1DaG5CeEJQNEV4aW1VdDBJbWpOY25kTERYMmtCMUtOVFJhMl9VYXp5ZTktb2s1dGRINXZHbkFkYTRFeFo5cm1ZRE9EbmpIZktnaUJUZS0zNlViVmhWdTVmaE5YbGlhUl9TYk9Ra2p2d29oT1VSV0dzYzJHQ3JiZFdZcl8yNXpMakdRa2lVMnFuRjdFbXV5emN1QkdtY1ByZXhlcmxzWXZjY0hwRUJ2UENNOGIyODRNeF9pT2xaNERmd0VxUUdfOUFNa09FeGRjRzQ2dFJjVjdwMWlWbG5NV3hQaEhEc0RpYlpXZlplWmJlcWlaazdlTGoxREZnR2VXY3RpcjRhYWZJTGJTQndHODQ?oc=5",
-   "published": "2026-11-26T11:28:27+00:00",
-   "tags": [
-    "South Africa"
+   "title": "SAP confirms security incident after suspicious GitHub activity",
+   "source": "BleepingComputer",
+   "link": "https://www.bleepingcomputer.com/news/security/sap-confirms-security-incident-after-suspicious-github-activity/",
+   "published": "2026-11-27T04:56:36-05:00",
+   "tags": [],
+   "vendors": [
+    "SAP"
    ],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "AI\u2019s eventful few weeks: What does it mean for the industry, jobs and skills demand",
-   "source": "Polity.org.za",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOX0pYN2Q4d3lVd3g5RDBpbHZSVno3d3Z4QW1UajFSY0E4ekFQSmdnV3FKaHVwdm5rOWNELW03di1CM25WYkJxbGwwelpGUzZkaldkbnhaVlpQRFlCdUtlLVVIa09jbUJONTJXak5SSDFHdTlCclEtaXlzOFJCVHpsMC1qRVRWYTllVEVGTTh2d3FGZDhRSlBoc3J2RVF6bWxka0ZHdkhManBYVUc5TVQ5OTRhRllVaGczRVFDM09RaDhOclU?oc=5",
-   "published": "2026-11-26T10:33:00+00:00",
-   "tags": [
-    "South Africa"
-   ],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "EasyEquities security incident: second threat in 3 months",
-   "source": "DNE Africa",
-   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE51aFN5N2FxMGN2a2xNWTl3b0Z0dEdXUUtibVNNUGx6aUdDV1k4TUtXbXYweEsxYVV2c1pFT0JGQzZ3TkxxNHlUNkZPaGNkMkd3dkRPOXpHNXgzNEVlSmVPYUVkX2hDRi1lcmQzeXdIelhzd3c?oc=5",
-   "published": "2026-11-26T10:21:00+00:00",
-   "tags": [
-    "South Africa"
-   ],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "Another cyberattack on South Africa\u2019s most popular share trading platform EasyEquities",
-   "source": "Daily Investor",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQajRNeHdLRkRxYVllSDl5dlowWkJyTF84TDlVQ1hVRHNhUVBtb3poZlRPa25DWXhjMUxzUGc0Qjd4UVJuSjBDa1FLSGxDd0VLSjR4MHk2NWJTenVidVROQ3BaUUlPNzlFUjJyVFNOTUZORlR0MlRnbS1mYmdNNnBhZzFLNDNMTk4wS1ZrVFk4MC1lMWNfTFZ4UkhtbzVfWnFLSWU3SE9BMllOWmM1Wko0d09BTkJmSGlBZUx3ZzJnUm90OFM4Q0FmZw?oc=5",
-   "published": "2026-11-26T10:11:43+00:00",
-   "tags": [
-    "South Africa"
-   ],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "EasyEquities Restricts Logins During Security Probe",
-   "source": "Wisevoter",
-   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPeGtLaVBvWnVzdzFtNjVOS2NCYU1PNU4tVGpYNTJDcXh5X1AycldZcjNnRnZHblBkeXdsSmpsb0tUTzlDbEx4N3g0MHVDUEpoamsybjFlUnBDTzU1UjZPSXhxczhuNnBEem0tV1RwbmVqc3Q2bjVRaURvQThjeUlPbGQxR0Q5UGR4X0RJWDAtbk5QNjA?oc=5",
-   "published": "2026-11-26T08:48:33+00:00",
-   "tags": [
-    "South Africa"
-   ],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "EasyEquities suspends platform access following cybersecurity incident",
-   "source": "Moneyweb",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNWFdER0lwdjV0eHpVSElyMThkYUhCOFJfOEcxWVViN3laVV9lUmt0M24tQ25peTZfa2NUa01xVnB5eHFjYWY0UGdUZ1UzVDFBak9OMFlWMDViZXM1ZnFWeUZvOGRsODdyR1JZTVZvTXY3T013eGlRUG9BLVJUYmlsWWVzZ3BrTGoxXzJoU1RtTjJaUi03UTVxanJQUER4XzN6YzRkVmxnSGlqZGVyQkkwWEhIb014Rjk3bVFQNWdGZHo?oc=5",
-   "published": "2026-11-26T08:42:15+00:00",
-   "tags": [
-    "South Africa"
-   ],
-   "vendors": [],
-   "cves": []
-  },
-  {
-   "title": "Navigating A Sea Change In The Corporate Crime Landscape",
-   "source": "Legal 500",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOemdUd2QxSmxOTXFpQTM3c2ZxNjlsMExycU0xRDdydklUckRJcFBQRWwwcVVJTTFNM0UwT3VZZkI4Z1MxR3pUTEVPV1ZibU5EYzZuR3hmdGFsMlEyMlpValpDYjI1a2g0NVZSRzRfdHpyWDdfQmZwOE50aXdaSk82MWpfY1hFamV6VGZ1NFdCTXBRZWlxcFEyMXNRcGs2OFRHZ3Z5Vlk3aG5ibDdSRjlqNmNMRU1YMW14aEI0aw?oc=5",
-   "published": "2026-11-26T08:23:08+00:00",
-   "tags": [
-    "South Africa"
-   ],
-   "vendors": [],
    "cves": []
   }
  ],
  "ai": {
-  "headline": "African ransomware attacks cost companies average $368,000 each, highlighting urgent need for stronger defenses",
+  "headline": "Spike in cyber attacks across South Africa, new ransomware emerges, raising immediate risk to businesses",
   "patch_first": [
    {
     "cve": "CVE-2026-133469",
-    "why": "High EPSS (0.318) Vates Xen Orchestra input validation flaw; active exploitation risk"
+    "why": "Improper validation in Vates Xen Orchestra; high EPSS suggests likely exploitation"
    },
    {
     "cve": "CVE-2026-133968",
-    "why": "EPSS 0.272; Project MONAI path traversal actively exploited"
+    "why": "Path traversal in Project MONAI Label; moderate EPSS and active exploitation"
    },
    {
-    "cve": "CVE-2026-129448",
-    "why": "EPSS 0.242; Apache Roller deserialization vulnerability on KEV list"
+    "cve": "CVE-2026-132165",
+    "why": "Drupal Core remote code execution; critical CVSS and active exploitation"
    }
   ],
   "threats": [
-   "Ransomware costs in Africa average $368k per firm, stressing financial impact.",
-   "Flight Centre breach exposes millions of customer records in South Africa.",
-   "Remus malware steals Gmail messages via fake Google Sheets extension."
+   "Ultra\u2011luxury South African resort suffered a data breach, exposing guest information and highlighting supply\u2011chain risks.",
+   "Flight Centre breach puts millions of customer records at risk, underscoring the need for stronger data protection.",
+   "Unpatched Cacti zero\u2011day with public PoC enables remote code execution, actively exploited in the wild."
   ],
   "sa_angle": [
-   "Ransomware attacks in South Africa now average $368,000 per company, per Kaspersky report.",
-   "Flight Centre data breach puts millions of South African customers at risk."
+   "Ultra\u2011luxury resort breach shows attackers targeting high\u2011profile South African hospitality assets.",
+   "Flight Centre breach demonstrates large\u2011scale exposure of South African consumer data."
   ],
-  "exec_note": "Prioritize patching the three KEV-listed vulnerabilities and review ransomware response plans immediately.",
+  "exec_note": "Prioritize patching the listed critical vulnerabilities and review breach response plans for recent South African incidents.",
   "fact_check_removed": 0
  },
  "errors": [],
- "digest_html": "\ud83d\udee1 <b>Cyber Watch \u00b7 Fri 27 Nov 2026</b>\n<b>African ransomware attacks cost companies average $368,000 each, highlighting urgent need for stronger defenses</b>\n\n<b>\ud83d\udd27 Patch first</b>\n1. <code>CVE-2026-133469</code> Vates Xen Orchestra \u00b7 on KEV \u00b7 EPSS 32%\n   High EPSS (0.318) Vates Xen Orchestra input validation flaw; active exploitation risk\n2. <code>CVE-2026-133968</code> Project MONAI MONAI Label \u00b7 on KEV \u00b7 EPSS 27%\n   EPSS 0.272; Project MONAI path traversal actively exploited\n3. <code>CVE-2026-129448</code> Apache Roller \u00b7 on KEV \u00b7 EPSS 24%\n   EPSS 0.242; Apache Roller deserialization vulnerability on KEV list\n\n<b>\ud83d\udea8 New on CISA KEV (7 days): 19</b>\n\u2022 <code>CVE-2026-123890</code> Broadcom VMware vCenter \u00b7 added 20 Nov \u2b50\n\u2022 <code>CVE-2025-42884</code> SAP NetWeaver \u00b7 added 20 Nov \u2b50\n\u2022 <code>CVE-2026-76466</code> Cisco Expressway Series \u00b7 added 20 Nov \u2b50\n\u2022 <code>CVE-2026-103406</code> Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router \u00b7 added 25 Nov \u2b50\n\u2022 <code>CVE-2026-133469</code> Vates Xen Orchestra \u00b7 added 25 Nov\n  \u2026and 14 more (/kev)\n\n<b>\ud83c\udd95 New critical CVEs (48h): 23</b>\n\u2022 <code>CVE-2026-132165</code> drupal drupal \u00b7 CVSS 9.8 \u00b7 EPSS 11%\n\u2022 <code>CVE-2026-137090</code> build-git-clone before 1.0.4 contains an OS command injection\u2026 \u00b7 CVSS 9.3 \u00b7 EPSS 2%\n\u2022 <code>CVE-2026-136823</code> A vulnerability was found in D-Link R32 1.10B02. This affects an\u2026 \u00b7 CVSS 9.3 \u00b7 EPSS 2%\n\n<b>\ud83d\udcf0 Threat picture</b>\n\u2022 Ransomware costs in Africa average $368k per firm, stressing financial impact.\n\u2022 Flight Centre breach exposes millions of customer records in South Africa.\n\u2022 Remus malware steals Gmail messages via fake Google Sheets extension.\n\n<b>\ud83d\udd17 Read</b>\n\u2022 <a href=\"https://thehackernews.com/2026/11/hackers-exploit-10-vulnerabilities.html\">Hackers Exploit 10 Vulnerabilities Across Mitel, Juniper, Vates, and Danfoss Products</a> (The Hacker News)\n\u2022 <a href=\"https://www.bleepingcomputer.com/news/security/remus-malware-steals-gmail-messages-via-fake-google-sheets-extension/\">Remus malware steals Gmail messages via fake Google Sheets extension</a> (BleepingComputer)\n\u2022 <a href=\"https://www.securityweek.com/sap-confirms-cyberattack-source-code-reportedly-compromised/\">SAP Confirms Cyberattack, Source Code Reportedly Compromised</a> (SecurityWeek)\n\u2022 <a href=\"https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html\">Unpatched Cacti Zero-Day Enables RCE in Just Four HTTP Requests via Guest Access</a> (The Hacker News)\n\n<b>\ud83c\uddff\ud83c\udde6 South Africa</b>\n\u2022 Ransomware attacks in South Africa now average $368,000 per company, per Kaspersky report.\n\u2022 Flight Centre data breach puts millions of South African customers at risk.\n\u2022 <a href=\"https://news.google.com/rss/articles/CBMiaEFVX3lxTFBXWjdkOW9SbXNsUkhTVHNlVnpnNldSM29pMkVpX0lIYkFUejhYNjBrODgxQmIyS0NaNG9lbTBPSnRjUV9TX1U5Rml0aENnalh3bTBjM0F1d0cwNktfNlYzalE1aW1aQ2Q3?oc=5\">Africa ransomware cost averages $368,000 per company, Kaspersky says</a> (DNE Africa)\n\u2022 <a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxORzdMaTlyTGxVZWZwUkhGOFhtV1o2MkVSTzRvcGVJWlFpSWo4dUo1d255NFh2emZfeU1XanZUa0xmYVdXdTU5eFhpNWtjSV9WVF9HQVczekpwMVZuMi0xOEhubzgxeGJQdUJLWkJrdy1yNHluU2xFUllGcUwxTk9WMVppR2xvb051TzNhcHBlT2VzeFJwZ3NpMVhDREdzZzduNm96TGY1QlpGbzA?oc=5\">Ransomware recovery costing SA firms up to US$1.4m per attack</a> (Africa Business Communities)\n\u2022 <a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxOMHYxajVOcE5XelE1RDFnYUw2aWlNQU5mRjZyclJ0ZjFYdExGSndvQ1lRQ2xqTDhxUXpLdWl5bU1mNlE3eUtmNktfTk45bldWX1FMdlB3NmlMdmhfVjdva2xxOVJZeFJKdkk1dmNrR0trOFVtNkJBLWpuMDh6eTEwWHpvRkc4Y0pxdGZub0NaNTI4TkFVTnMyWVdZQnVOMnNC?oc=5\">Flight Centre Data Breach Puts Millions Of Customer Records At Risk</a> (ChannelNews.com.au)\n\n<i>For leadership:</i> Prioritize patching the three KEV-listed vulnerabilities and review ransomware response plans immediately.\n\n<i>AI summary fact-checked against the data. Sources: CISA KEV v2026.11.25, NVD, FIRST EPSS, security news. \u2b50 = on your vendor watchlist.</i>\nAsk me: /cve CVE-ID \u00b7 /vendor fortinet \u00b7 /kev \u00b7 /news, or any question."
+ "digest_html": "\ud83d\udee1 <b>Cyber Watch \u00b7 Sat 28 Nov 2026</b>\n<b>Spike in cyber attacks across South Africa, new ransomware emerges, raising immediate risk to businesses</b>\n\n<b>\ud83d\udd27 Patch first</b>\n1. <code>CVE-2026-133469</code> Vates Xen Orchestra \u00b7 on KEV \u00b7 EPSS 32%\n   Improper validation in Vates Xen Orchestra; high EPSS suggests likely exploitation\n2. <code>CVE-2026-133968</code> Project MONAI MONAI Label \u00b7 on KEV \u00b7 EPSS 27%\n   Path traversal in Project MONAI Label; moderate EPSS and active exploitation\n3. <code>CVE-2026-132165</code> Drupal Core \u00b7 on KEV \u00b7 EPSS 8%\n   Drupal Core remote code execution; critical CVSS and active exploitation\n\n<b>\ud83d\udea8 New on CISA KEV (7 days): 18</b>\n\u2022 <code>CVE-2026-103406</code> Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router \u00b7 added 25 Nov \u2b50\n\u2022 <code>CVE-2026-133469</code> Vates Xen Orchestra \u00b7 added 25 Nov\n\u2022 <code>CVE-2026-133968</code> Project MONAI MONAI Label \u00b7 added 23 Nov\n\u2022 <code>CVE-2026-132165</code> Drupal Core \u00b7 added 24 Nov\n\u2022 <code>CVE-2026-131914</code> Idunno AntiCsrf \u00b7 added 24 Nov\n  \u2026and 13 more (/kev)\n\n<b>\ud83c\udd95 New critical CVEs (48h): 20</b>\n\u2022 <code>CVE-2026-104998</code> The Product Input Fields for WooCommerce plugin for WordPress is\u2026 \u00b7 CVSS 9.8 \u00b7 EPSS 1%\n\u2022 <code>CVE-2026-137498</code> Budibase Server from 3.39.18 before 4.0.0 contains a prototype\u2026 \u00b7 CVSS 9.9 \u00b7 EPSS 1%\n\u2022 <code>CVE-2026-106125</code> The Sneeit Framework plugin for WordPress is vulnerable to Remote\u2026 \u00b7 CVSS 9.8 \u00b7 EPSS 1%\n\n<b>\ud83d\udcf0 Threat picture</b>\n\u2022 Ultra\u2011luxury South African resort suffered a data breach, exposing guest information and highlighting supply\u2011chain risks.\n\u2022 Flight Centre breach puts millions of customer records at risk, underscoring the need for stronger data protection.\n\u2022 Unpatched Cacti zero\u2011day with public PoC enables remote code execution, actively exploited in the wild.\n\n<b>\ud83d\udd17 Read</b>\n\u2022 <a href=\"https://www.bleepingcomputer.com/news/security/unpatched-cacti-zero-day-with-public-poc-gives-remote-code-execution/\">Unpatched Cacti zero-day with public PoC gives remote code execution</a> (BleepingComputer)\n\u2022 <a href=\"https://www.cisa.gov/news-events/alerts/2026/11/27/cisa-adds-three-known-exploited-vulnerabilities-catalog\">CISA Adds Three Known Exploited Vulnerabilities to Catalog</a> (CISA)\n\u2022 <a href=\"https://www.securityweek.com/sap-confirms-cyberattack-source-code-reportedly-compromised/\">SAP Confirms Cyberattack, Source Code Reportedly Compromised</a> (SecurityWeek)\n\u2022 <a href=\"https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html\">Unpatched Cacti Zero-Day Enables RCE in Just Four HTTP Requests via Guest Access</a> (The Hacker News)\n\n<b>\ud83c\uddff\ud83c\udde6 South Africa</b>\n\u2022 Ultra\u2011luxury resort breach shows attackers targeting high\u2011profile South African hospitality assets.\n\u2022 Flight Centre breach demonstrates large\u2011scale exposure of South African consumer data.\n\u2022 <a href=\"https://news.google.com/rss/articles/CBMifEFVX3lxTE0xbC1HbVJtaDJxWjVMcFVNR1ppWWlWSGRzZWl2Y3lWU2ZWcENyTXhSVGNhRlZ1Y0RIOE5wZTQ5RHFsRHFaTzNidW0tWkcxWVNKcnlWVFNuWFlTeWd2Qm1GZUJMbUw5RUZIbzRRd081TmdUY3JhSXVvemcydTc?oc=5\">Check Point: June 2026 Sees Spike In Cyber Attacks, With New Ransomware</a> (Tech Build Africa)\n\u2022 <a href=\"https://news.google.com/rss/articles/CBMipwFBVV95cUxQYUVnVlo3RlFGaTY5X3hyMFNYV0RRWVgtMVQ3bHVsSlJqR05XQWs2UE9hUGx6eVZoOVhFeklMajYxbGpMVTQ3R0c5dkRUVWdLSHpyYk9sZU5BWnhzcjZjMGRrNldRbHZjMWpIZWJOZXBrcjdWTEdOTm5GN21TSkZhbDhoU0xlelhvZDc1SUgwakVsdGlORWlscTdkeFZrcERRSkJ6dE9TWQ?oc=5\">Ultra-luxury South African resort hit by data breach</a> (MyBroadband)\n\u2022 <a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxOMHYxajVOcE5XelE1RDFnYUw2aWlNQU5mRjZyclJ0ZjFYdExGSndvQ1lRQ2xqTDhxUXpLdWl5bU1mNlE3eUtmNktfTk45bldWX1FMdlB3NmlMdmhfVjdva2xxOVJZeFJKdkk1dmNrR0trOFVtNkJBLWpuMDh6eTEwWHpvRkc4Y0pxdGZub0NaNTI4TkFVTnMyWVdZQnVOMnNC?oc=5\">Flight Centre Data Breach Puts Millions Of Customer Records At Risk</a> (ChannelNews.com.au)\n\n<i>For leadership:</i> Prioritize patching the listed critical vulnerabilities and review breach response plans for recent South African incidents.\n\n<i>AI summary fact-checked against the data. Sources: CISA KEV v2026.11.27, NVD, FIRST EPSS, security news. \u2b50 = on your vendor watchlist.</i>\nAsk me: /cve CVE-ID \u00b7 /vendor fortinet \u00b7 /kev \u00b7 /news, or any question."
 }

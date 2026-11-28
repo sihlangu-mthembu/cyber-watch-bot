@@ -1,0 +1,46 @@
+🛡 <b>Cyber Watch · Sat 28 Nov 2026</b>
+<b>Spike in cyber attacks across South Africa, new ransomware emerges, raising immediate risk to businesses</b>
+
+<b>🔧 Patch first</b>
+1. <code>CVE-2026-133469</code> Vates Xen Orchestra · on KEV · EPSS 32%
+   Improper validation in Vates Xen Orchestra; high EPSS suggests likely exploitation
+2. <code>CVE-2026-133968</code> Project MONAI MONAI Label · on KEV · EPSS 27%
+   Path traversal in Project MONAI Label; moderate EPSS and active exploitation
+3. <code>CVE-2026-132165</code> Drupal Core · on KEV · EPSS 8%
+   Drupal Core remote code execution; critical CVSS and active exploitation
+
+<b>🚨 New on CISA KEV (7 days): 18</b>
+• <code>CVE-2026-103406</code> Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router · added 25 Nov ⭐
+• <code>CVE-2026-133469</code> Vates Xen Orchestra · added 25 Nov
+• <code>CVE-2026-133968</code> Project MONAI MONAI Label · added 23 Nov
+• <code>CVE-2026-132165</code> Drupal Core · added 24 Nov
+• <code>CVE-2026-131914</code> Idunno AntiCsrf · added 24 Nov
+  …and 13 more (/kev)
+
+<b>🆕 New critical CVEs (48h): 20</b>
+• <code>CVE-2026-104998</code> The Product Input Fields for WooCommerce plugin for WordPress is… · CVSS 9.8 · EPSS 1%
+• <code>CVE-2026-137498</code> Budibase Server from 3.39.18 before 4.0.0 contains a prototype… · CVSS 9.9 · EPSS 1%
+• <code>CVE-2026-106125</code> The Sneeit Framework plugin for WordPress is vulnerable to Remote… · CVSS 9.8 · EPSS 1%
+
+<b>📰 Threat picture</b>
+• Ultra‑luxury South African resort suffered a data breach, exposing guest information and highlighting supply‑chain risks.
+• Flight Centre breach puts millions of customer records at risk, underscoring the need for stronger data protection.
+• Unpatched Cacti zero‑day with public PoC enables remote code execution, actively exploited in the wild.
+
+<b>🔗 Read</b>
+• <a href="https://www.bleepingcomputer.com/news/security/unpatched-cacti-zero-day-with-public-poc-gives-remote-code-execution/">Unpatched Cacti zero-day with public PoC gives remote code execution</a> (BleepingComputer)
+• <a href="https://www.cisa.gov/news-events/alerts/2026/11/27/cisa-adds-three-known-exploited-vulnerabilities-catalog">CISA Adds Three Known Exploited Vulnerabilities to Catalog</a> (CISA)
+• <a href="https://www.securityweek.com/sap-confirms-cyberattack-source-code-reportedly-compromised/">SAP Confirms Cyberattack, Source Code Reportedly Compromised</a> (SecurityWeek)
+• <a href="https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html">Unpatched Cacti Zero-Day Enables RCE in Just Four HTTP Requests via Guest Access</a> (The Hacker News)
+
+<b>🇿🇦 South Africa</b>
+• Ultra‑luxury resort breach shows attackers targeting high‑profile South African hospitality assets.
+• Flight Centre breach demonstrates large‑scale exposure of South African consumer data.
+• <a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE0xbC1HbVJtaDJxWjVMcFVNR1ppWWlWSGRzZWl2Y3lWU2ZWcENyTXhSVGNhRlZ1Y0RIOE5wZTQ5RHFsRHFaTzNidW0tWkcxWVNKcnlWVFNuWFlTeWd2Qm1GZUJMbUw5RUZIbzRRd081TmdUY3JhSXVvemcydTc?oc=5">Check Point: June 2026 Sees Spike In Cyber Attacks, With New Ransomware</a> (Tech Build Africa)
+• <a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxQYUVnVlo3RlFGaTY5X3hyMFNYV0RRWVgtMVQ3bHVsSlJqR05XQWs2UE9hUGx6eVZoOVhFeklMajYxbGpMVTQ3R0c5dkRUVWdLSHpyYk9sZU5BWnhzcjZjMGRrNldRbHZjMWpIZWJOZXBrcjdWTEdOTm5GN21TSkZhbDhoU0xlelhvZDc1SUgwakVsdGlORWlscTdkeFZrcERRSkJ6dE9TWQ?oc=5">Ultra-luxury South African resort hit by data breach</a> (MyBroadband)
+• <a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxOMHYxajVOcE5XelE1RDFnYUw2aWlNQU5mRjZyclJ0ZjFYdExGSndvQ1lRQ2xqTDhxUXpLdWl5bU1mNlE3eUtmNktfTk45bldWX1FMdlB3NmlMdmhfVjdva2xxOVJZeFJKdkk1dmNrR0trOFVtNkJBLWpuMDh6eTEwWHpvRkc4Y0pxdGZub0NaNTI4TkFVTnMyWVdZQnVOMnNC?oc=5">Flight Centre Data Breach Puts Millions Of Customer Records At Risk</a> (ChannelNews.com.au)
+
+<i>For leadership:</i> Prioritize patching the listed critical vulnerabilities and review breach response plans for recent South African incidents.
+
+<i>AI summary fact-checked against the data. Sources: CISA KEV v2026.11.27, NVD, FIRST EPSS, security news. ⭐ = on your vendor watchlist.</i>
+Ask me: /cve CVE-ID · /vendor fortinet · /kev · /news, or any question.
